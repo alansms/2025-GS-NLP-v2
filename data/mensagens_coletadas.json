@@ -1,0 +1,963 @@
+{
+  "mensagens": [
+    {
+      "id": "sim_0_1749077939",
+      "texto": "Acidente grave na Grande Recife, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T21:52:59.792292",
+      "autor_id": "user_5062",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 9,
+        "likes": 41,
+        "replies": 20,
+        "quotes": 0
+      },
+      "localizacao": {
+        "nome": "Grande Recife",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792325"
+    },
+    {
+      "id": "sim_1_1749077939",
+      "texto": "Deslizamento de terra em Belém, várias famílias desabrigadas",
+      "data_criacao": "2025-06-04T02:58:59.792338",
+      "autor_id": "user_5825",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 12,
+        "likes": 48,
+        "replies": 10,
+        "quotes": 7
+      },
+      "localizacao": {
+        "nome": "Belém",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792351"
+    },
+    {
+      "id": "sim_2_1749077939",
+      "texto": "Enchente na região de Grande Recife, água subindo rapidamente",
+      "data_criacao": "2025-06-04T01:10:59.792359",
+      "autor_id": "user_1182",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 13,
+        "likes": 30,
+        "replies": 13,
+        "quotes": 5
+      },
+      "localizacao": {
+        "nome": "Grande Recife",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792369"
+    },
+    {
+      "id": "sim_3_1749077939",
+      "texto": "Acidente grave na Goiânia, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T08:37:59.792377",
+      "autor_id": "user_6046",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 41,
+        "likes": 55,
+        "replies": 9,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Goiânia",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792387"
+    },
+    {
+      "id": "sim_4_1749077939",
+      "texto": "Deslizamento de terra em Zona Sul de São Paulo, várias famílias desabrigadas",
+      "data_criacao": "2025-06-04T03:26:59.792393",
+      "autor_id": "user_9430",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 20,
+        "likes": 54,
+        "replies": 17,
+        "quotes": 0
+      },
+      "localizacao": {
+        "nome": "Zona Sul de São Paulo",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792405"
+    },
+    {
+      "id": "sim_5_1749077939",
+      "texto": "Enchente na região de Fortaleza, água subindo rapidamente",
+      "data_criacao": "2025-06-04T10:57:59.792412",
+      "autor_id": "user_5235",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 15,
+        "likes": 0,
+        "replies": 6,
+        "quotes": 1
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792421"
+    },
+    {
+      "id": "sim_6_1749077939",
+      "texto": "Vendaval derrubou árvores em Belo Horizonte, trânsito interrompido",
+      "data_criacao": "2025-06-04T07:48:59.792428",
+      "autor_id": "user_2095",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 9,
+        "likes": 6,
+        "replies": 0,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Belo Horizonte",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792437"
+    },
+    {
+      "id": "sim_7_1749077939",
+      "texto": "Incêndio de grandes proporções em Fortaleza, bombeiros no local",
+      "data_criacao": "2025-06-04T16:34:59.792444",
+      "autor_id": "user_2055",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 49,
+        "likes": 78,
+        "replies": 13,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792453"
+    },
+    {
+      "id": "sim_8_1749077939",
+      "texto": "Enchente na região de Brasília, água subindo rapidamente",
+      "data_criacao": "2025-06-03T23:17:59.792459",
+      "autor_id": "user_8137",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 8,
+        "likes": 52,
+        "replies": 9,
+        "quotes": 5
+      },
+      "localizacao": {
+        "nome": "Brasília",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792468"
+    },
+    {
+      "id": "sim_9_1749077939",
+      "texto": "Alagamento na Belém, carros presos na água",
+      "data_criacao": "2025-06-04T11:22:59.792475",
+      "autor_id": "user_6769",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 13,
+        "likes": 78,
+        "replies": 3,
+        "quotes": 7
+      },
+      "localizacao": {
+        "nome": "Belém",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792484"
+    },
+    {
+      "id": "sim_10_1749077939",
+      "texto": "Granizo danificou veículos em Zona Sul de São Paulo, chuva intensa",
+      "data_criacao": "2025-06-04T22:04:59.792490",
+      "autor_id": "user_9433",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 26,
+        "likes": 23,
+        "replies": 1,
+        "quotes": 9
+      },
+      "localizacao": {
+        "nome": "Zona Sul de São Paulo",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792500"
+    },
+    {
+      "id": "sim_11_1749077939",
+      "texto": "Granizo danificou veículos em Curitiba, chuva intensa",
+      "data_criacao": "2025-06-04T02:54:59.792507",
+      "autor_id": "user_6163",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 50,
+        "likes": 59,
+        "replies": 5,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Curitiba",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792516"
+    },
+    {
+      "id": "sim_12_1749077939",
+      "texto": "Falta de energia em Porto Alegre após temporal",
+      "data_criacao": "2025-06-04T13:50:59.792522",
+      "autor_id": "user_5635",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 27,
+        "likes": 48,
+        "replies": 2,
+        "quotes": 6
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792531"
+    },
+    {
+      "id": "sim_13_1749077939",
+      "texto": "Vendaval derrubou árvores em Manaus, trânsito interrompido",
+      "data_criacao": "2025-06-04T06:27:59.792537",
+      "autor_id": "user_5541",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 47,
+        "likes": 93,
+        "replies": 3,
+        "quotes": 1
+      },
+      "localizacao": {
+        "nome": "Manaus",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792546"
+    },
+    {
+      "id": "sim_14_1749077939",
+      "texto": "Alagamento na Centro do Rio de Janeiro, carros presos na água",
+      "data_criacao": "2025-06-04T13:41:59.792552",
+      "autor_id": "user_6349",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 1,
+        "likes": 38,
+        "replies": 12,
+        "quotes": 6
+      },
+      "localizacao": {
+        "nome": "Centro do Rio de Janeiro",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792561"
+    },
+    {
+      "id": "sim_15_1749077939",
+      "texto": "Enchente na região de Grande Recife, água subindo rapidamente",
+      "data_criacao": "2025-06-04T11:35:59.792568",
+      "autor_id": "user_1139",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 30,
+        "likes": 78,
+        "replies": 8,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Grande Recife",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792577"
+    },
+    {
+      "id": "sim_16_1749077939",
+      "texto": "Acidente grave na Fortaleza, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T02:16:59.792583",
+      "autor_id": "user_3773",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 15,
+        "likes": 19,
+        "replies": 17,
+        "quotes": 0
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792592"
+    },
+    {
+      "id": "sim_17_1749077939",
+      "texto": "Falta de energia em Belo Horizonte após temporal",
+      "data_criacao": "2025-06-04T18:42:59.792598",
+      "autor_id": "user_6797",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 3,
+        "likes": 99,
+        "replies": 15,
+        "quotes": 1
+      },
+      "localizacao": {
+        "nome": "Belo Horizonte",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792607"
+    },
+    {
+      "id": "sim_18_1749077939",
+      "texto": "Vendaval derrubou árvores em Porto Alegre, trânsito interrompido",
+      "data_criacao": "2025-06-04T13:55:59.792613",
+      "autor_id": "user_1171",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 43,
+        "likes": 36,
+        "replies": 2,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792622"
+    },
+    {
+      "id": "sim_19_1749077939",
+      "texto": "Deslizamento de terra em Porto Alegre, várias famílias desabrigadas",
+      "data_criacao": "2025-06-04T03:40:59.792628",
+      "autor_id": "user_4443",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 40,
+        "likes": 36,
+        "replies": 2,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792637"
+    },
+    {
+      "id": "sim_20_1749077939",
+      "texto": "Acidente grave na Brasília, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T04:53:59.792644",
+      "autor_id": "user_1303",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 44,
+        "likes": 10,
+        "replies": 3,
+        "quotes": 7
+      },
+      "localizacao": {
+        "nome": "Brasília",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792652"
+    },
+    {
+      "id": "sim_21_1749077939",
+      "texto": "Deslizamento de terra em Porto Alegre, várias famílias desabrigadas",
+      "data_criacao": "2025-06-04T08:48:59.792659",
+      "autor_id": "user_7054",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 33,
+        "likes": 85,
+        "replies": 8,
+        "quotes": 0
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792668"
+    },
+    {
+      "id": "sim_22_1749077939",
+      "texto": "Enchente na região de Curitiba, água subindo rapidamente",
+      "data_criacao": "2025-06-04T05:49:59.792675",
+      "autor_id": "user_3910",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 23,
+        "likes": 4,
+        "replies": 15,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Curitiba",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792684"
+    },
+    {
+      "id": "sim_23_1749077939",
+      "texto": "Incêndio de grandes proporções em Zona Sul de São Paulo, bombeiros no local",
+      "data_criacao": "2025-06-04T02:38:59.792690",
+      "autor_id": "user_2208",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 49,
+        "likes": 57,
+        "replies": 15,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Zona Sul de São Paulo",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792699"
+    },
+    {
+      "id": "sim_24_1749077939",
+      "texto": "Acidente grave na Fortaleza, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T16:27:59.792706",
+      "autor_id": "user_7769",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 22,
+        "likes": 94,
+        "replies": 13,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792714"
+    },
+    {
+      "id": "sim_25_1749077939",
+      "texto": "Alagamento na Fortaleza, carros presos na água",
+      "data_criacao": "2025-06-04T09:04:59.792721",
+      "autor_id": "user_4902",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 30,
+        "likes": 21,
+        "replies": 20,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792729"
+    },
+    {
+      "id": "sim_26_1749077939",
+      "texto": "Enchente na região de Fortaleza, água subindo rapidamente",
+      "data_criacao": "2025-06-04T19:12:59.792736",
+      "autor_id": "user_9421",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 32,
+        "likes": 71,
+        "replies": 5,
+        "quotes": 6
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792745"
+    },
+    {
+      "id": "sim_27_1749077939",
+      "texto": "Incêndio de grandes proporções em Brasília, bombeiros no local",
+      "data_criacao": "2025-06-04T14:15:59.792752",
+      "autor_id": "user_7921",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 23,
+        "likes": 60,
+        "replies": 1,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Brasília",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792761"
+    },
+    {
+      "id": "sim_28_1749077939",
+      "texto": "Falta de energia em Manaus após temporal",
+      "data_criacao": "2025-06-04T03:32:59.792767",
+      "autor_id": "user_3013",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 29,
+        "likes": 72,
+        "replies": 1,
+        "quotes": 5
+      },
+      "localizacao": {
+        "nome": "Manaus",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792776"
+    },
+    {
+      "id": "sim_29_1749077939",
+      "texto": "Deslizamento de terra em Região Metropolitana de Salvador, várias famílias desabrigadas",
+      "data_criacao": "2025-06-04T06:42:59.792782",
+      "autor_id": "user_7730",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 1,
+        "likes": 82,
+        "replies": 14,
+        "quotes": 2
+      },
+      "localizacao": {
+        "nome": "Região Metropolitana de Salvador",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792791"
+    },
+    {
+      "id": "sim_30_1749077939",
+      "texto": "Incêndio de grandes proporções em Brasília, bombeiros no local",
+      "data_criacao": "2025-06-04T07:14:59.792797",
+      "autor_id": "user_1094",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 42,
+        "likes": 26,
+        "replies": 13,
+        "quotes": 9
+      },
+      "localizacao": {
+        "nome": "Brasília",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792805"
+    },
+    {
+      "id": "sim_31_1749077939",
+      "texto": "Enchente na região de Belo Horizonte, água subindo rapidamente",
+      "data_criacao": "2025-06-04T05:05:59.792811",
+      "autor_id": "user_4140",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 49,
+        "likes": 34,
+        "replies": 13,
+        "quotes": 10
+      },
+      "localizacao": {
+        "nome": "Belo Horizonte",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792820"
+    },
+    {
+      "id": "sim_32_1749077939",
+      "texto": "Enchente na região de Fortaleza, água subindo rapidamente",
+      "data_criacao": "2025-06-04T04:16:59.792826",
+      "autor_id": "user_5603",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 22,
+        "likes": 25,
+        "replies": 11,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Fortaleza",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792835"
+    },
+    {
+      "id": "sim_33_1749077939",
+      "texto": "Enchente na região de Curitiba, água subindo rapidamente",
+      "data_criacao": "2025-06-04T18:54:59.792841",
+      "autor_id": "user_9898",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 16,
+        "likes": 51,
+        "replies": 16,
+        "quotes": 1
+      },
+      "localizacao": {
+        "nome": "Curitiba",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792850"
+    },
+    {
+      "id": "sim_34_1749077939",
+      "texto": "Alagamento na Brasília, carros presos na água",
+      "data_criacao": "2025-06-04T18:31:59.792856",
+      "autor_id": "user_5812",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 26,
+        "likes": 50,
+        "replies": 4,
+        "quotes": 2
+      },
+      "localizacao": {
+        "nome": "Brasília",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792865"
+    },
+    {
+      "id": "sim_35_1749077939",
+      "texto": "Acidente grave na Porto Alegre, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T18:16:59.792871",
+      "autor_id": "user_9482",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 33,
+        "likes": 61,
+        "replies": 17,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792880"
+    },
+    {
+      "id": "sim_36_1749077939",
+      "texto": "Granizo danificou veículos em Região Metropolitana de Salvador, chuva intensa",
+      "data_criacao": "2025-06-04T07:47:59.792886",
+      "autor_id": "user_1649",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 6,
+        "likes": 74,
+        "replies": 16,
+        "quotes": 3
+      },
+      "localizacao": {
+        "nome": "Região Metropolitana de Salvador",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792895"
+    },
+    {
+      "id": "sim_37_1749077939",
+      "texto": "Acidente grave na Brasília, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T07:06:59.792901",
+      "autor_id": "user_1586",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 26,
+        "likes": 88,
+        "replies": 7,
+        "quotes": 7
+      },
+      "localizacao": {
+        "nome": "Brasília",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792910"
+    },
+    {
+      "id": "sim_38_1749077939",
+      "texto": "Vendaval derrubou árvores em Curitiba, trânsito interrompido",
+      "data_criacao": "2025-06-04T11:32:59.792916",
+      "autor_id": "user_2451",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 49,
+        "likes": 58,
+        "replies": 4,
+        "quotes": 1
+      },
+      "localizacao": {
+        "nome": "Curitiba",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792925"
+    },
+    {
+      "id": "sim_39_1749077939",
+      "texto": "Acidente grave na Goiânia, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T19:27:59.792931",
+      "autor_id": "user_5862",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 46,
+        "likes": 18,
+        "replies": 1,
+        "quotes": 6
+      },
+      "localizacao": {
+        "nome": "Goiânia",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792940"
+    },
+    {
+      "id": "sim_40_1749077939",
+      "texto": "Vendaval derrubou árvores em Grande Recife, trânsito interrompido",
+      "data_criacao": "2025-06-04T09:30:59.792947",
+      "autor_id": "user_3106",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 9,
+        "likes": 83,
+        "replies": 12,
+        "quotes": 2
+      },
+      "localizacao": {
+        "nome": "Grande Recife",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792955"
+    },
+    {
+      "id": "sim_41_1749077939",
+      "texto": "Acidente grave na Belo Horizonte, vítimas sendo socorridas",
+      "data_criacao": "2025-06-04T00:11:59.792962",
+      "autor_id": "user_6514",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 23,
+        "likes": 14,
+        "replies": 13,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Belo Horizonte",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792971"
+    },
+    {
+      "id": "sim_42_1749077939",
+      "texto": "Incêndio de grandes proporções em Porto Alegre, bombeiros no local",
+      "data_criacao": "2025-06-04T07:50:59.792977",
+      "autor_id": "user_1924",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 29,
+        "likes": 62,
+        "replies": 11,
+        "quotes": 0
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.792985"
+    },
+    {
+      "id": "sim_43_1749077939",
+      "texto": "Granizo danificou veículos em Zona Sul de São Paulo, chuva intensa",
+      "data_criacao": "2025-06-04T14:18:59.792992",
+      "autor_id": "user_5116",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 15,
+        "likes": 33,
+        "replies": 3,
+        "quotes": 10
+      },
+      "localizacao": {
+        "nome": "Zona Sul de São Paulo",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793000"
+    },
+    {
+      "id": "sim_44_1749077939",
+      "texto": "Alagamento na Belo Horizonte, carros presos na água",
+      "data_criacao": "2025-06-04T15:19:59.793007",
+      "autor_id": "user_9785",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 28,
+        "likes": 8,
+        "replies": 14,
+        "quotes": 7
+      },
+      "localizacao": {
+        "nome": "Belo Horizonte",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793015"
+    },
+    {
+      "id": "sim_45_1749077939",
+      "texto": "Alagamento na Porto Alegre, carros presos na água",
+      "data_criacao": "2025-06-04T11:04:59.793021",
+      "autor_id": "user_6883",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 5,
+        "likes": 41,
+        "replies": 13,
+        "quotes": 4
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793029"
+    },
+    {
+      "id": "sim_46_1749077939",
+      "texto": "Falta de energia em Grande Recife após temporal",
+      "data_criacao": "2025-06-04T17:34:59.793036",
+      "autor_id": "user_1700",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 1,
+        "likes": 7,
+        "replies": 19,
+        "quotes": 10
+      },
+      "localizacao": {
+        "nome": "Grande Recife",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793044"
+    },
+    {
+      "id": "sim_47_1749077939",
+      "texto": "Incêndio de grandes proporções em Curitiba, bombeiros no local",
+      "data_criacao": "2025-06-04T20:54:59.793050",
+      "autor_id": "user_4725",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 49,
+        "likes": 5,
+        "replies": 18,
+        "quotes": 1
+      },
+      "localizacao": {
+        "nome": "Curitiba",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793059"
+    },
+    {
+      "id": "sim_48_1749077939",
+      "texto": "Falta de energia em Porto Alegre após temporal",
+      "data_criacao": "2025-06-04T10:24:59.793065",
+      "autor_id": "user_6340",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 3,
+        "likes": 8,
+        "replies": 17,
+        "quotes": 7
+      },
+      "localizacao": {
+        "nome": "Porto Alegre",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793074"
+    },
+    {
+      "id": "sim_49_1749077939",
+      "texto": "Falta de energia em Belo Horizonte após temporal",
+      "data_criacao": "2025-06-04T10:08:59.793081",
+      "autor_id": "user_6397",
+      "idioma": "pt",
+      "metricas": {
+        "retweets": 14,
+        "likes": 35,
+        "replies": 6,
+        "quotes": 0
+      },
+      "localizacao": {
+        "nome": "Belo Horizonte",
+        "coordenadas": null
+      },
+      "fonte": "simulado",
+      "coletado_em": "2025-06-04T22:58:59.793091"
+    }
+  ],
+  "ultima_atualizacao": "2025-06-04T22:58:59.793363",
+  "total_coletadas": 50,
+  "estatisticas": {
+    "por_fonte": {
+      "twitter": 0,
+      "simulado": 50
+    },
+    "total_engajamento": 4248
+  }
+}
