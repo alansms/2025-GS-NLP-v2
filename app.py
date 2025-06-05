@@ -18,16 +18,50 @@ import json
 import os
 from datetime import datetime, timedelta
 import time
-import plotly.express as px
-import streamlit_folium as st_folium
-import matplotlib.pyplot as plt
+import sys
+import subprocess
+
+# Verificação e instalação automática de dependências
+try:
+    import plotly.express as px
+except ImportError:
+    st.warning("Instalando a biblioteca Plotly. Por favor, aguarde...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+    import plotly.express as px
+
+try:
+    import streamlit_folium as st_folium
+except ImportError:
+    st.warning("Instalando a biblioteca streamlit-folium. Por favor, aguarde...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "streamlit-folium"])
+    import streamlit_folium as st_folium
+
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    st.warning("Instalando a biblioteca matplotlib. Por favor, aguarde...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
+    import matplotlib.pyplot as plt
+
 from io import BytesIO
 import logging
 import traceback
 import sys
 
+# Importação da classe ConfigTwitter
+from coleta_twitter_api import ConfigTwitter
+
 # Importa as funções de correção para garantir colunas necessárias
 from correcao_filtros import garantir_colunas_necessarias, aplicar_filtros_seguros
+
+# Importa o gerenciador de configurações
+from config_manager import salvar_config_twitter, carregar_config_twitter
+
+# Importa o gerenciador de configurações
+from config_manager import salvar_config_twitter, carregar_config_twitter
+
+# Importa o gerenciador de configurações
+from config_manager import salvar_config_twitter, carregar_config_twitter
 
 # Configuração de logging
 logging.basicConfig(
@@ -74,6 +108,7 @@ try:
     ExtratorEntidades = importar_com_seguranca('extrator_entidades', 'ExtratorEntidades')
     ClassificadorDesastre = importar_com_seguranca('classificador_tipo', 'ClassificadorDesastre')
     from coleta_twitter_api import coletar_dados_emergencia, ConfigTwitter, ColetorTwitter
+    from coleta_serper import ColetorSerper  # Importando o novo coletor Serper
     GeradorNuvemPalavras = importar_com_seguranca('wordcloud_gen', 'GeradorNuvemPalavras')
     GeradorMapaEmergencia = importar_com_seguranca('mapa', 'GeradorMapaEmergencia')
     # Importação dos novos módulos
@@ -280,8 +315,29 @@ class MonitorEmergencias:
                 debug_info(f"Criando diretório: {diretorio}")
                 os.makedirs(diretorio, exist_ok=True)
 
+            # Cria uma cópia do DataFrame para manipulação
+            df_para_salvar = df.copy()
+
+            # Converte colunas de data/timestamp para formato de string ISO
+            for coluna in df_para_salvar.columns:
+                if pd.api.types.is_datetime64_any_dtype(df_para_salvar[coluna]):
+                    df_para_salvar[coluna] = df_para_salvar[coluna].astype(str)
+
+            # Função auxiliar para converter objetos não serializáveis em JSON
+            def converter_para_json(obj):
+                if isinstance(obj, pd.Timestamp):
+                    return obj.isoformat()
+                elif hasattr(obj, 'to_dict'):
+                    return obj.to_dict()
+                elif hasattr(obj, '__dict__'):
+                    return obj.__dict__
+                elif pd.isna(obj):
+                    return None
+                return str(obj)
+
             dados_json = {
-                'mensagens': df.to_dict('records'),
+                'mensagens': json.loads(json.dumps(df_para_salvar.to_dict('records'),
+                                               default=converter_para_json)),
                 'ultima_atualizacao': datetime.now().isoformat()
             }
 
@@ -362,38 +418,168 @@ class MonitorEmergencias:
     @monitorar_funcao
     def coletar_dados_tempo_real(self):
         """Coleta dados em tempo real usando a API do Twitter"""
+        # Variável para controlar se usaremos dados simulados
+        usar_dados_simulados = False
+        mensagem_erro = ""
+
         try:
             if not st.session_state.config_twitter:
                 st.warning("⚠️ Configuração da API do Twitter não encontrada. Configure na barra lateral.")
+                usar_dados_simulados = True
+                mensagem_erro = "Configuração da API do Twitter não encontrada"
+            else:
+                config = st.session_state.config_twitter
+
+                # Criando o coletor
+                coletor = ColetorTwitter(config)
+
+                # Definindo termos de busca relevantes para desastres naturais
+                termos_busca = [
+                    "enchente", "alagamento", "inundação", "chuva forte",
+                    "deslizamento", "desabamento", "desastre", "emergência",
+                    "resgate", "socorro", "vítimas", "terremoto", "tremor",
+                    "incêndio florestal", "seca", "estiagem", "tempestade",
+                    "furacão", "ciclone", "tornado", "vendaval", "granizo",
+                    "desabrigados", "soterrados"
+                ]
+
+                # Coletando mensagens
+                status_msg = st.empty()
+                status_msg.info("🔍 Coletando dados do Twitter...")
+
+                with st.spinner("Aguarde, buscando mensagens..."):
+                    try:
+                        resultados = coletor.buscar_mensagens(termos_busca, max_resultados=100)
+
+                        if not resultados or len(resultados) == 0:
+                            status_msg.warning("⚠️ Nenhuma mensagem encontrada.")
+                            usar_dados_simulados = True
+                            mensagem_erro = "Nenhuma mensagem encontrada na API"
+                        else:
+                            status_msg.success(f"✅ {len(resultados)} mensagens coletadas!")
+
+                            # Criar DataFrame com os resultados
+                            df_novos = pd.DataFrame(resultados)
+
+                            # Converter para o formato correto
+                            if 'data_criacao' in df_novos.columns:
+                                df_novos['data_criacao'] = pd.to_datetime(df_novos['data_criacao'])
+
+                            # Processar os novos dados com NLP
+                            df_processados = self.processar_dados_nlp(df_novos)
+
+                            # Atualizar os dados existentes
+                            if not st.session_state.dados_processados.empty:
+                                # Verificar e remover duplicados pelo ID
+                                ids_existentes = set(st.session_state.dados_processados['id'].astype(str))
+                                df_processados = df_processados[~df_processados['id'].astype(str).isin(ids_existentes)]
+
+                                if not df_processados.empty:
+                                    st.session_state.dados_processados = pd.concat([st.session_state.dados_processados, df_processados], ignore_index=True)
+                                    status_msg.success(f"✅ {len(df_processados)} novas mensagens adicionadas!")
+                                else:
+                                    status_msg.info("ℹ️ Nenhuma mensagem nova encontrada.")
+                            else:
+                                st.session_state.dados_processados = df_processados
+                                status_msg.success(f"✅ {len(df_processados)} mensagens adicionadas!")
+
+                            # Atualizar data da última coleta
+                            st.session_state.ultima_coleta = datetime.now()
+
+                            # Salvar os dados atualizados
+                            self.salvar_dados(st.session_state.dados_processados)
+
+                            return True
+
+                    except Exception as e:
+                        debug_info("Erro ao buscar mensagens da API", nivel='error', exception=e)
+                        status_msg.error(f"❌ Erro ao acessar a API do Twitter: {str(e)}")
+                        usar_dados_simulados = True
+                        mensagem_erro = str(e)
+
+                        # Verificar se é erro de rate limit
+                        if "Rate limit exceeded" in str(e):
+                            st.warning("⚠️ Limite de taxa da API excedido. Usando dados simulados.")
+
+        except Exception as e:
+            debug_info("Erro na coleta de dados", nivel='error', exception=e)
+            st.error(f"❌ Erro na coleta de dados: {str(e)}")
+            usar_dados_simulados = True
+            mensagem_erro = str(e)
+
+        # Se chegamos aqui, algo deu errado com a API - usar dados simulados
+        if usar_dados_simulados:
+            debug_info(f"Usando dados simulados devido a erro: {mensagem_erro}", nivel='warning')
+            status_msg = st.empty()
+            status_msg.warning(f"⚠️ Usando dados simulados devido a problemas com a API do Twitter: {mensagem_erro}")
+
+            try:
+                # Importar o simulador
+                from simulador_dados import SimuladorDados
+
+                with st.spinner("Gerando dados simulados para desenvolvimento..."):
+                    simulador = SimuladorDados()
+                    num_mensagens = 30  # Número razoável de mensagens simuladas
+
+                    # Gerar dados simulados
+                    df_simulados = simulador.gerar_dados_simulados(num_mensagens)
+
+                    # Processar os dados simulados com NLP (opcional, já que o simulador já gera dados processados)
+                    #df_processados = self.processar_dados_nlp(df_simulados)
+
+                    # Atualizar os dados existentes
+                    if not st.session_state.dados_processados.empty:
+                        # Verificar e remover duplicados pelo ID
+                        ids_existentes = set(st.session_state.dados_processados['id'].astype(str))
+                        df_novos_simulados = df_simulados[~df_simulados['id'].astype(str).isin(ids_existentes)]
+
+                        if not df_novos_simulados.empty:
+                            st.session_state.dados_processados = pd.concat(
+                                [st.session_state.dados_processados, df_novos_simulados],
+                                ignore_index=True
+                            )
+                            status_msg.info(f"ℹ️ {len(df_novos_simulados)} mensagens simuladas adicionadas para teste.")
+                        else:
+                            status_msg.info("ℹ️ Nenhuma nova mensagem simulada adicionada.")
+                    else:
+                        st.session_state.dados_processados = df_simulados
+                        status_msg.info(f"ℹ️ {len(df_simulados)} mensagens simuladas adicionadas para teste.")
+
+                    # Atualizar data da última coleta
+                    st.session_state.ultima_coleta = datetime.now()
+
+                    # Salvar os dados atualizados
+                    self.salvar_dados(st.session_state.dados_processados)
+
+                    # Adicionar indicador visual de modo simulação
+                    st.sidebar.warning("⚠️ MODO SIMULAÇÃO: Usando dados fictícios")
+
+                    return True
+
+            except Exception as e:
+                debug_info("Erro ao gerar dados simulados", nivel='error', exception=e)
+                st.error(f"❌ Erro ao gerar dados simulados: {str(e)}")
                 return False
 
-            config = st.session_state.config_twitter
-
-            # Criando o coletor
-            coletor = ColetorTwitter(config)
-
-            # Definindo termos de busca relevantes para desastres naturais
-            termos_busca = [
-                "enchente", "alagamento", "inundação", "chuva forte",
-                "deslizamento", "desabamento", "desastre", "emergência",
-                "resgate", "socorro", "vítimas", "terremoto", "tremor",
-                "incêndio florestal", "seca", "estiagem", "tempestade",
-                "furacão", "ciclone", "tornado", "vendaval", "granizo",
-                "desabrigados", "soterrados"
-            ]
-
-            # Coletando mensagens
+    @monitorar_funcao
+    def coletar_dados_serper(self):
+        """Coleta dados de notícias sobre desastres via API Serper (Google News)"""
+        try:
             status_msg = st.empty()
-            status_msg.info("🔍 Coletando dados do Twitter...")
+            status_msg.info("🔍 Coletando notícias sobre desastres via Serper API...")
 
-            with st.spinner("Aguarde, buscando mensagens..."):
-                resultados = coletor.buscar_mensagens(termos_busca, max_resultados=100)
+            # Criar o coletor Serper
+            coletor = ColetorSerper()
+
+            with st.spinner("Aguarde, buscando notícias sobre desastres..."):
+                # Buscar notícias
+                resultados = coletor.buscar_noticias(max_resultados=50)
 
                 if not resultados or len(resultados) == 0:
-                    status_msg.warning("⚠️ Nenhuma mensagem encontrada.")
+                    status_msg.warning("⚠️ Nenhuma notícia encontrada via Serper.")
                     return False
 
-                status_msg.success(f"✅ {len(resultados)} mensagens coletadas!")
+                status_msg.success(f"✅ {len(resultados)} notícias coletadas!")
 
                 # Criar DataFrame com os resultados
                 df_novos = pd.DataFrame(resultados)
@@ -403,6 +589,7 @@ class MonitorEmergencias:
                     df_novos['data_criacao'] = pd.to_datetime(df_novos['data_criacao'])
 
                 # Processar os novos dados com NLP
+                status_msg.info("🧠 Processando notícias com análise de linguagem natural...")
                 df_processados = self.processar_dados_nlp(df_novos)
 
                 # Atualizar os dados existentes
@@ -413,12 +600,12 @@ class MonitorEmergencias:
 
                     if not df_processados.empty:
                         st.session_state.dados_processados = pd.concat([st.session_state.dados_processados, df_processados], ignore_index=True)
-                        status_msg.success(f"✅ {len(df_processados)} novas mensagens adicionadas!")
+                        status_msg.success(f"✅ {len(df_processados)} novas notícias adicionadas!")
                     else:
-                        status_msg.info("ℹ️ Nenhuma mensagem nova encontrada.")
+                        status_msg.info("ℹ️ Nenhuma notícia nova encontrada.")
                 else:
                     st.session_state.dados_processados = df_processados
-                    status_msg.success(f"✅ {len(df_processados)} mensagens adicionadas!")
+                    status_msg.success(f"✅ {len(df_processados)} notícias adicionadas!")
 
                 # Atualizar data da última coleta
                 st.session_state.ultima_coleta = datetime.now()
@@ -426,17 +613,47 @@ class MonitorEmergencias:
                 # Salvar os dados atualizados
                 self.salvar_dados(st.session_state.dados_processados)
 
+                # Indicar que os dados incluem conteúdo do Serper
+                st.sidebar.info("ℹ️ Dados incluem notícias coletadas via Google News (Serper API)")
+
                 return True
 
         except Exception as e:
-            debug_info("Erro na coleta de dados", nivel='error', exception=e)
-            st.error(f"❌ Erro na coleta de dados: {str(e)}")
+            debug_info("Erro na coleta de dados via Serper", nivel='error', exception=e)
+            st.error(f"❌ Erro ao coletar notícias via Serper: {str(e)}")
             return False
 
     @monitorar_funcao
     def aplicar_filtros(self, df: pd.DataFrame) -> pd.DataFrame:
         """Aplica filtros aos dados com base nos critérios selecionados"""
+        if df.empty:
+            return df
+
+        # Verificar se temos a opção de mostrar dados simulados ativada
+        mostrar_simulados = st.session_state.get('mostrar_dados_simulados', False)
+
+        # Contar quantos dados reais e simulados temos
+        dados_reais = 0
+        if 'fonte' in df.columns:
+            dados_reais = len(df[df['fonte'] != 'simulado'])
+        elif 'origem' in df.columns:
+            dados_reais = len(df[df['origem'] != 'simulado'])
+
+        # Se não temos dados reais ou a opção de mostrar simulados está ativa, não filtramos os simulados
+        if dados_reais == 0 or mostrar_simulados:
+            if mostrar_simulados:
+                st.sidebar.info("ℹ️ Modo Desenvolvimento: Exibindo dados simulados")
+            elif dados_reais == 0:
+                st.sidebar.warning("⚠️ Sem dados reais disponíveis: Exibindo dados simulados")
+        else:
+            # Caso contrário, filtramos os dados simulados
+            if 'fonte' in df.columns:
+                df = df[df['fonte'] != 'simulado']
+            elif 'origem' in df.columns:
+                df = df[df['origem'] != 'simulado']
+            
         # Utilizamos a função segura para garantir que todas as colunas necessárias existam
+        # e aplicamos os filtros de tipo, urgência e período selecionados
         return aplicar_filtros_seguros(df)
 
     @monitorar_funcao
@@ -447,30 +664,38 @@ class MonitorEmergencias:
 
         # Barra lateral - Configurações
         with st.sidebar:
+            # Logo FIAP acima das configurações - responsivo e adaptável
+            st.image("FIAP-transparente.png", width=None, use_container_width=True, caption=None)
+
             st.title("⚙️ Configurações")
 
-            # Seção de Configuração API Twitter
+# Seção de Configuração API Twitter
             st.subheader("🐦 Configuração Twitter API")
             with st.expander("Configurar API do Twitter", expanded=not st.session_state.config_twitter):
-                api_key = st.text_input("API Key", type="password")
-                api_secret = st.text_input("API Secret", type="password")
-                access_token = st.text_input("Access Token", type="password")
-                access_secret = st.text_input("Access Token Secret", type="password")
-
+                bearer_token = st.text_input("Bearer Token (obrigatório)", type="password")
+                
                 if st.button("Salvar configurações"):
-                    if api_key and api_secret and access_token and access_secret:
+                    if bearer_token:
                         st.session_state.config_twitter = ConfigTwitter(
-                            bearer_token="",  # Campo obrigatório
-                            api_key=api_key,
-                            api_secret=api_secret,
-                            access_token=access_token,
-                            access_token_secret=access_secret
+                            bearer_token=bearer_token,
+                            api_key="",
+                            api_secret="",
+                            access_token="",
+                            access_token_secret=""
                         )
+                        # Salvar configurações
+                        from config_manager import salvar_config_twitter
+                        config_dict = {
+                            'bearer_token': bearer_token,
+                            'api_key': "",
+                            'api_secret': "",
+                            'access_token': "",
+                            'access_token_secret': ""
+                        }
+                        salvar_config_twitter(config_dict)
                         st.success("✅ Configurações salvas com sucesso!")
                     else:
-                        st.error("⚠️ Preencha todas as configurações.")
-
-            # Filtros
+                        st.error("❌ O Bearer Token é obrigatório.")
             st.subheader("🔍 Filtros")
             st.session_state.filtro_tipo = st.selectbox(
                 "Tipo de desastre",
@@ -487,8 +712,25 @@ class MonitorEmergencias:
 
             # Controles
             st.subheader("🎮 Controles")
-            if st.button("🔄 Atualizar dados agora"):
-                self.coletar_dados_tempo_real()
+
+            # Seleção de fonte de dados
+            st.write("**Fonte de dados:**")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                if st.button("🐦 Twitter API", help="Coletar dados em tempo real do Twitter"):
+                    self.coletar_dados_tempo_real()
+
+            with col2:
+                if st.button("📰 Google News", help="Coletar notícias via Serper API (Google News)"):
+                    self.coletar_dados_serper()
+
+            # Opção para mostrar dados simulados
+            st.session_state.mostrar_dados_simulados = st.checkbox(
+                "Modo Desenvolvimento (mostrar dados simulados)",
+                value=st.session_state.get('mostrar_dados_simulados', False),
+                help="Exibe todos os dados, incluindo os simulados, útil para desenvolvimento"
+            )
 
             st.session_state.auto_refresh = st.checkbox(
                 "Atualização automática (a cada 5 min)",

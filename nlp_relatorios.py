@@ -11,7 +11,12 @@ from nltk.probability import FreqDist
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+try:
+    import seaborn as sns
+    SEABORN_DISPONIVEL = True
+except ImportError:
+    SEABORN_DISPONIVEL = False
+    print("Aviso: Seaborn não está instalado. Alguns recursos visuais serão limitados.")
 import plotly.express as px
 import plotly.graph_objects as go
 from wordcloud import WordCloud
@@ -124,6 +129,77 @@ class ProcessadorNLTK:
         fdist = FreqDist(tokens)
         return dict(fdist.most_common(top_n))
 
+    def extrair_palavras_chave(self, texto: str, top_n: int = 10) -> List[Tuple[str, float]]:
+        """
+        Extrai palavras-chave usando TF-IDF simplificado
+
+        Args:
+            texto (str): Texto para analisar
+            top_n (int): Número de palavras-chave para retornar
+
+        Returns:
+            List[Tuple[str, float]]: Lista de palavras-chave com scores
+        """
+        # Tokeniza e remove stopwords
+        tokens = self.remover_stopwords(self.tokenizar_texto(texto))
+
+        # Calcula frequência
+        frequencia = FreqDist(tokens)
+
+        # Calcula score baseado na frequência e comprimento da palavra
+        # (Como aproximação simples de importância)
+        palavras_chave = [(word, freq * (0.5 + min(len(word)/10, 0.5)))
+                          for word, freq in frequencia.items()]
+
+        # Ordena por score e retorna os top_n
+        return sorted(palavras_chave, key=lambda x: x[1], reverse=True)[:top_n]
+
+    def identificar_topicos(self, textos: List[str], num_topicos: int = 5) -> Dict:
+        """
+        Identifica tópicos emergentes usando agrupamento simples de termos
+
+        Args:
+            textos (List[str]): Lista de textos para análise
+            num_topicos (int): Número de tópicos para identificar
+
+        Returns:
+            Dict: Dicionário com tópicos identificados
+        """
+        # Pré-processamento
+        tokens_por_texto = []
+        for texto in textos:
+            tokens = self.remover_stopwords(self.tokenizar_texto(texto))
+            if tokens:
+                tokens_por_texto.append(tokens)
+
+        if not tokens_por_texto:
+            return {"topicos": []}
+
+        # Combinação de todos os tokens para extrair os termos mais frequentes
+        todos_tokens = [token for sublist in tokens_por_texto for token in sublist]
+        freq_dist = FreqDist(todos_tokens)
+
+        # Seleciona os termos mais frequentes como "centroides" de tópicos
+        termos_principais = [term for term, _ in freq_dist.most_common(num_topicos)]
+
+        # Para cada termo principal, encontra os termos co-ocorrentes
+        topicos = {}
+        for i, termo in enumerate(termos_principais):
+            # Encontra textos que contêm este termo
+            textos_relacionados = []
+            for tokens in tokens_por_texto:
+                if termo in tokens:
+                    textos_relacionados.extend(tokens)
+
+            # Encontra termos relacionados
+            if textos_relacionados:
+                freq_relacionados = FreqDist(textos_relacionados)
+                termos_relacionados = [term for term, _ in freq_relacionados.most_common(7)
+                                     if term != termo]
+                topicos[f"Tópico {i+1} - {termo}"] = termos_relacionados
+
+        return {"topicos": topicos}
+
     def processar_texto_completo(self, texto: str) -> Dict:
         """
         Realiza processamento completo do texto
@@ -152,6 +228,9 @@ class ProcessadorNLTK:
         # Frequência
         frequencias = self.calcular_frequencia(tokens_sem_stopwords)
 
+        # Extração de palavras-chave
+        palavras_chave = self.extrair_palavras_chave(texto)
+
         return {
             'texto_original': texto,
             'numero_sentencas': len(sentencas),
@@ -161,7 +240,8 @@ class ProcessadorNLTK:
             'tokens_sem_stopwords': tokens_sem_stopwords,
             'stems': stems,
             'bigramas': bigramas,
-            'frequencias': frequencias
+            'frequencias': frequencias,
+            'palavras_chave': palavras_chave
         }
 
 

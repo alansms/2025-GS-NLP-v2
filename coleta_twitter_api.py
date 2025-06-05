@@ -15,6 +15,8 @@ import logging
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import hashlib
+import pickle
 
 
 @dataclass
@@ -56,10 +58,38 @@ class ColetorTwitter:
         
         # Inicializa conexão
         self._inicializar_conexao()
-    
+
+        # Configuração de cache
+        self.cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cache')
+        os.makedirs(self.cache_dir, exist_ok=True)
+
+        # Controle de taxa
+        self.last_request_time = datetime.now()
+        self.request_count = 0
+        self.max_requests_per_window = 300  # Máximo de requisições por janela de 15 minutos
+        self.request_window = 15 * 60  # 15 minutos em segundos
+
+        # Configurações de modo simulado
+        self.modo_simulado = False
+        self.arquivo_dados_simulados = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'mensagens_coletadas.json')
+
+    def ativar_modo_simulado(self, ativar: bool = True):
+        """
+        Ativa ou desativa o modo simulado que usa dados locais em vez da API
+
+        Args:
+            ativar (bool): Se deve ativar o modo simulado
+        """
+        self.modo_simulado = ativar
+        self.logger.info(f"Modo simulado {'ativado' if ativar else 'desativado'}")
+
     def _inicializar_conexao(self):
         """Inicializa conexão com Twitter API"""
         try:
+            # Log para debug da configuração (sem expor o token completo)
+            token_preview = self.config.bearer_token[:5] + "..." if self.config.bearer_token else "vazio"
+            self.logger.info(f"Inicializando conex��o com bearer_token: {token_preview}")
+
             # Cliente v2 (recomendado)
             self.client = tweepy.Client(
                 bearer_token=self.config.bearer_token,
@@ -70,9 +100,11 @@ class ColetorTwitter:
                 wait_on_rate_limit=True
             )
             
-            # Testa conexão
+            # Testa conexão com um endpoint que requer apenas Bearer Token
+            # O método get_me() requer OAuth 1.0a, não funciona apenas com Bearer Token
             try:
-                me = self.client.get_me()
+                # Usando um endpoint que funciona com Bearer Token
+                resultado = self.client.get_recent_tweets_count("teste", granularity="day")
                 self.logger.info("Conexão com Twitter API estabelecida com sucesso")
             except Exception as e:
                 self.logger.warning(f"Teste de conexão falhou: {e}")
@@ -81,6 +113,123 @@ class ColetorTwitter:
             self.logger.error(f"Erro ao inicializar Twitter API: {e}")
             self.client = None
     
+    def _verificar_limite_taxa(self) -> bool:
+        """
+        Verifica se o limite de taxa foi atingido
+
+        Returns:
+            bool: True se está ok para fazer requisição, False se deve esperar
+        """
+        agora = datetime.now()
+        tempo_decorrido = (agora - self.last_request_time).total_seconds()
+
+        # Reinicia contador se passou a janela de tempo
+        if tempo_decorrido > self.request_window:
+            self.request_count = 0
+            self.last_request_time = agora
+            return True
+
+        # Verifica se atingiu o limite
+        if self.request_count >= self.max_requests_per_window:
+            tempo_espera = self.request_window - tempo_decorrido
+            self.logger.warning(f"Limite de taxa atingido. Espere {int(tempo_espera)} segundos.")
+            return False
+
+        return True
+
+    def _gerar_chave_cache(self, query: str, max_resultados: int, horas_atras: int) -> str:
+        """
+        Gera uma chave única para o cache baseada nos parâmetros da consulta
+
+        Args:
+            query (str): Query de busca
+            max_resultados (int): Número máximo de resultados
+            horas_atras (int): Período de busca em horas
+
+        Returns:
+            str: Chave de cache MD5
+        """
+        # Combina parâmetros em uma string
+        params_str = f"{query}_{max_resultados}_{horas_atras}"
+
+        # Gera hash MD5
+        return hashlib.md5(params_str.encode()).hexdigest()
+
+    def _salvar_cache(self, chave: str, dados: List[Dict]):
+        """
+        Salva dados no cache
+
+        Args:
+            chave (str): Chave do cache
+            dados (List[Dict]): Dados a serem armazenados
+        """
+        caminho_arquivo = os.path.join(self.cache_dir, f"{chave}.pkl")
+
+        try:
+            with open(caminho_arquivo, 'wb') as f:
+                pickle.dump({
+                    'timestamp': datetime.now(),
+                    'dados': dados
+                }, f)
+            self.logger.info(f"Dados salvos em cache: {caminho_arquivo}")
+        except Exception as e:
+            self.logger.error(f"Erro ao salvar cache: {e}")
+
+    def _carregar_cache(self, chave: str, validade_minutos: int = 30) -> Optional[List[Dict]]:
+        """
+        Carrega dados do cache se existirem e forem válidos
+
+        Args:
+            chave (str): Chave do cache
+            validade_minutos (int): Tempo em minutos para considerar o cache válido
+
+        Returns:
+            Optional[List[Dict]]: Dados do cache ou None se inválido/inexistente
+        """
+        caminho_arquivo = os.path.join(self.cache_dir, f"{chave}.pkl")
+
+        if not os.path.exists(caminho_arquivo):
+            return None
+
+        try:
+            with open(caminho_arquivo, 'rb') as f:
+                cache = pickle.load(f)
+
+            # Verifica validade do cache
+            if (datetime.now() - cache['timestamp']).total_seconds() > (validade_minutos * 60):
+                self.logger.info(f"Cache expirado: {caminho_arquivo}")
+                return None
+
+            self.logger.info(f"Usando dados do cache: {caminho_arquivo}")
+            return cache['dados']
+        except Exception as e:
+            self.logger.error(f"Erro ao carregar cache: {e}")
+            return None
+
+    def _carregar_dados_simulados(self, max_resultados: int = 100) -> List[Dict]:
+        """
+        Carrega dados simulados do arquivo JSON
+
+        Args:
+            max_resultados (int): Número máximo de resultados a retornar
+
+        Returns:
+            List[Dict]: Lista de mensagens simuladas
+        """
+        try:
+            if os.path.exists(self.arquivo_dados_simulados):
+                with open(self.arquivo_dados_simulados, 'r', encoding='utf-8') as f:
+                    dados = json.load(f)
+
+                # Limita ao número máximo de resultados
+                return dados[:max_resultados]
+            else:
+                self.logger.error(f"Arquivo de dados simulados não encontrado: {self.arquivo_dados_simulados}")
+                return []
+        except Exception as e:
+            self.logger.error(f"Erro ao carregar dados simulados: {e}")
+            return []
+
     def construir_query_busca(self, termos_customizados: Optional[List[str]] = None,
                              incluir_retweets: bool = False,
                              apenas_portugues: bool = True) -> str:
@@ -110,8 +259,10 @@ class ColetorTwitter:
             filtros.append("lang:pt")
         
         # Filtra apenas tweets com localização (quando possível)
-        filtros.append("has:geo OR place_country:BR")
-        
+        # Removendo filtros que não são mais suportados pela API
+        # filtros.append("has:geo OR place_country:BR")
+        filtros.append("place:BR")  # Tentativa de usar um operador válido para Brasil
+
         # Combina query
         query_final = f"({query_termos})"
         if filtros:
@@ -121,7 +272,8 @@ class ColetorTwitter:
     
     def buscar_tweets_recentes(self, query: Optional[str] = None,
                               max_resultados: int = 100,
-                              horas_atras: int = 24) -> List[Dict]:
+                              horas_atras: int = 24,
+                              usar_cache: bool = True) -> List[Dict]:
         """
         Busca tweets recentes sobre emergências
         
@@ -129,10 +281,16 @@ class ColetorTwitter:
             query (str, optional): Query customizada
             max_resultados (int): Máximo de tweets a retornar
             horas_atras (int): Quantas horas atrás buscar
-            
+            usar_cache (bool): Se deve usar cache para requisições recentes
+
         Returns:
             List[Dict]: Lista de tweets processados
         """
+        # Verifica se deve usar modo simulado
+        if self.modo_simulado:
+            self.logger.info("Usando dados simulados em vez da API do Twitter")
+            return self._carregar_dados_simulados(max_resultados)
+
         if not self.client:
             self.logger.error("Cliente Twitter não inicializado")
             return []
@@ -140,13 +298,29 @@ class ColetorTwitter:
         if not query:
             query = self.construir_query_busca()
         
+        # Verifica cache se habilitado
+        if usar_cache:
+            chave_cache = self._gerar_chave_cache(query, max_resultados, horas_atras)
+            dados_cache = self._carregar_cache(chave_cache)
+            if dados_cache:
+                return dados_cache
+
         # Calcula data de início
         data_inicio = datetime.utcnow() - timedelta(hours=horas_atras)
         
         tweets_coletados = []
         
+        # Impõe limite de solicitações mais conservador
+        # Twitter limita a 450 solicitações por 15 minutos para a pesquisa
+        # Vamos ser mais conservadores e limitar a 100 solicitações por execução
+        max_requests = 10
+        requests_count = 0
+        max_per_request = min(max_resultados, 10)  # Limitamos a 10 por requisição
+
         try:
-            # Busca tweets
+            self.logger.info(f"Buscando tweets com limite conservador de {max_requests} requisições")
+
+            # Busca tweets com limite
             tweets = tweepy.Paginator(
                 self.client.search_recent_tweets,
                 query=query,
@@ -156,22 +330,55 @@ class ColetorTwitter:
                 place_fields=['full_name', 'country', 'place_type'],
                 expansions=['author_id', 'geo.place_id'],
                 start_time=data_inicio,
-                max_results=min(max_resultados, 100)  # API limit
-            ).flatten(limit=max_resultados)
-            
-            for tweet in tweets:
-                tweet_processado = self._processar_tweet(tweet)
-                if tweet_processado:
-                    tweets_coletados.append(tweet_processado)
-            
-            self.logger.info(f"Coletados {len(tweets_coletados)} tweets")
-            
+                max_results=max_per_request  # Limitado a 10 por requisição
+            )
+
+            # Controla o número de requisições
+            for page in tweets:
+                # Verifica limite de taxa antes de cada requisição
+                if not self._verificar_limite_taxa():
+                    tempo_espera = self.request_window - (datetime.now() - self.last_request_time).total_seconds()
+                    self.logger.warning(f"Aguardando {int(tempo_espera)} segundos antes da próxima requisição")
+                    time.sleep(min(60, max(1, tempo_espera)))  # Espera no máximo 60 segundos
+
+                requests_count += 1
+                self.request_count += 1
+                self.last_request_time = datetime.now()
+
+                if page.data:
+                    for tweet in page.data:
+                        tweet_processado = self._processar_tweet(tweet)
+                        if tweet_processado:
+                            tweets_coletados.append(tweet_processado)
+
+                # Verifica se atingiu limite de tweets ou requisições
+                if len(tweets_coletados) >= max_resultados or requests_count >= max_requests:
+                    self.logger.info(f"Limite atingido: {requests_count} requisições, {len(tweets_coletados)} tweets")
+                    break
+
+                # Pausa entre requisições para evitar rate limit
+                time.sleep(2)  # Pausa de 2 segundos entre requisições
+
+            self.logger.info(f"Coletados {len(tweets_coletados)} tweets em {requests_count} requisições")
+
+            # Salva em cache se habilitado
+            if usar_cache:
+                chave_cache = self._gerar_chave_cache(query, max_resultados, horas_atras)
+                self._salvar_cache(chave_cache, tweets_coletados)
+
         except tweepy.TooManyRequests:
-            self.logger.warning("Rate limit atingido. Aguardando...")
-            time.sleep(15 * 60)  # Aguarda 15 minutos
+            self.logger.warning("Rate limit atingido. Ativando modo simulado automaticamente.")
+            # Ativa o modo simulado automaticamente
+            self.ativar_modo_simulado(True)
+            # Retorna dados simulados em vez de esperar
+            return self._carregar_dados_simulados(max_resultados)
         except Exception as e:
             self.logger.error(f"Erro ao buscar tweets: {e}")
-        
+            # Se houver qualquer erro na API, ativamos o modo simulado como fallback
+            self.logger.warning("Ativando modo simulado devido a erro na API.")
+            self.ativar_modo_simulado(True)
+            return self._carregar_dados_simulados(max_resultados)
+
         return tweets_coletados
     
     def _processar_tweet(self, tweet) -> Optional[Dict]:
@@ -217,7 +424,8 @@ class ColetorTwitter:
                 for annotation in tweet.context_annotations:
                     tweet_data['contexto'].append({
                         'dominio': annotation.get('domain', {}).get('name'),
-                        'entidade': annotation.get('entity', {}).get('name')
+                        'entidade': annotation.get('entity', {}).get('name'
+                        )
                     })
             
             return tweet_data
