@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 import json
 import os
 import uuid
+import time
 
 class SimuladorDados:
     """Classe para gerar dados simulados de emergências para testes"""
@@ -153,6 +154,47 @@ class SimuladorDados:
             json.dump(dados_json, f, ensure_ascii=False, indent=2)
 
         return df
+
+# Função para simular dados em tempo real
+def simular_dados_tempo_real(intervalo=5, total_iteracoes=10, callback=None):
+    """
+    Simula a geração de dados de emergências em tempo real.
+
+    Args:
+        intervalo (int): Intervalo em segundos entre cada geração de dados
+        total_iteracoes (int): Número total de vezes que serão gerados dados
+        callback (function): Função de callback para processar os dados gerados
+
+    Returns:
+        dict: Dicion��rio com o formato esperado pelo aplicativo, contendo mensagens e data de atualização
+    """
+    simulador = SimuladorDados()
+    ultima_df = None
+
+    for i in range(total_iteracoes):
+        # Gera um conjunto pequeno de dados a cada iteração
+        df = simulador.gerar_dados_simulados(num_mensagens=random.randint(3, 8))
+        ultima_df = df
+
+        # Se um callback foi fornecido, chama-o com os dados gerados
+        if callback and callable(callback):
+            callback(df)
+
+        # Aguarda o intervalo especificado antes da próxima iteração
+        if i < total_iteracoes - 1:
+            time.sleep(intervalo)
+
+    # Se total_iteracoes for 0 ou negativo, gera pelo menos um conjunto de dados
+    if ultima_df is None:
+        ultima_df = simulador.gerar_dados_simulados(num_mensagens=random.randint(10, 50))
+
+    # Retorna os dados no formato esperado pelo aplicativo
+    dados_json = {
+        'mensagens': ultima_df.to_dict('records'),
+        'ultima_atualizacao': datetime.now().isoformat()
+    }
+
+    return dados_json
 
 # Exemplo de uso
 if __name__ == "__main__":

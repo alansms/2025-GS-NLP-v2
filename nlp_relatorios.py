@@ -494,6 +494,105 @@ class GeradorRelatorios:
         plt.tight_layout()
         return fig
 
+    def gerar_resumo_eventos(self, df: pd.DataFrame) -> str:
+        """
+        Gera um resumo textual dos eventos de desastres naturais
+
+        Args:
+            df (pd.DataFrame): DataFrame com mensagens processadas
+
+        Returns:
+            str: Resumo textual formatado dos eventos
+        """
+        # Verifica se o DataFrame está vazio
+        if df.empty:
+            return "Nenhum evento registrado no período selecionado."
+
+        # Coleta estatísticas básicas
+        total_eventos = len(df)
+
+        # Conta tipos de desastres
+        if 'tipo_desastre' in df.columns:
+            tipos_contagem = df['tipo_desastre'].value_counts()
+            tipos_principais = tipos_contagem.head(3)
+            tipos_texto = ", ".join([f"{count} {tipo}" for tipo, count in tipos_principais.items()])
+        else:
+            tipos_texto = "tipos não classificados"
+
+        # Análise de urgência
+        if 'nivel_urgencia' in df.columns:
+            urgencia_alta = df[df['nivel_urgencia'] == 'Alto'].shape[0]
+            pct_alta_urgencia = (urgencia_alta / total_eventos) * 100 if total_eventos > 0 else 0
+        else:
+            pct_alta_urgencia = 0
+
+        # Análise de sentimento
+        if 'sentimento' in df.columns:
+            sentimento_negativo = df[df['sentimento'].isin(['negativo', 'muito negativo'])].shape[0]
+            pct_negativo = (sentimento_negativo / total_eventos) * 100 if total_eventos > 0 else 0
+        else:
+            pct_negativo = 0
+
+        # Análise temporal
+        eventos_recentes = ""
+        if 'data_criacao' in df.columns or 'data' in df.columns:
+            # Usa a coluna 'data' se disponível, senão usa 'data_criacao'
+            data_col = 'data' if 'data' in df.columns else 'data_criacao'
+
+            # Converte para datetime se não for
+            if not pd.api.types.is_datetime64_any_dtype(df[data_col]):
+                df[data_col] = pd.to_datetime(df[data_col], errors='coerce')
+
+            # Verifica se há eventos nas últimas 24 horas
+            agora = pd.Timestamp.now()
+            eventos_24h = df[df[data_col] > (agora - pd.Timedelta(hours=24))].shape[0]
+
+            if eventos_24h > 0:
+                eventos_recentes = f" {eventos_24h} eventos foram registrados nas últimas 24 horas."
+
+        # Localizações mais afetadas
+        locais_afetados = ""
+        if 'localizacoes' in df.columns and not df['localizacoes'].isna().all():
+            # Extrai todos os locais mencionados
+            todos_locais = []
+            for loc in df['localizacoes']:
+                if isinstance(loc, list):
+                    for local in loc:
+                        if isinstance(local, dict) and 'texto' in local:
+                            todos_locais.append(local['texto'])
+                elif isinstance(loc, str) and loc:
+                    todos_locais.append(loc)
+
+            if todos_locais:
+                # Conta frequência e pega os 3 mais comuns
+                from collections import Counter
+                locais_freq = Counter(todos_locais).most_common(3)
+                locais_texto = ", ".join([local for local, _ in locais_freq])
+                locais_afetados = f" As regiões mais afetadas são: {locais_texto}."
+
+        # Construção do resumo
+        resumo = f"Análise de {total_eventos} eventos de desastres naturais. "
+        resumo += f"Os principais tipos de ocorrências são: {tipos_texto}."
+
+        if pct_alta_urgencia > 0:
+            resumo += f" {pct_alta_urgencia:.1f}% dos eventos são de alta urgência."
+
+        if pct_negativo > 0:
+            resumo += f" {pct_negativo:.1f}% das mensagens têm sentimento negativo."
+
+        resumo += eventos_recentes
+        resumo += locais_afetados
+
+        # Extrai palavras-chave dos textos para adicionar contexto
+        if 'texto' in df.columns and not df['texto'].isna().all():
+            textos = " ".join(df['texto'].dropna().astype(str))
+            palavras_chave = self.processador_nltk.extrair_palavras_chave(textos, top_n=5)
+            if palavras_chave:
+                palavras_texto = ", ".join([palavra for palavra, _ in palavras_chave])
+                resumo += f" Palavras-chave nas mensagens: {palavras_texto}."
+
+        return resumo
+
     def gerar_relatorio_completo(self, df: pd.DataFrame, caminho_saida: str) -> Dict:
         """
         Gera relatório completo de análise

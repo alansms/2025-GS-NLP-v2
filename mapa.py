@@ -120,8 +120,8 @@ class GeradorMapaEmergencia:
                               coluna_tipo: str = 'tipo_desastre',
                               coluna_urgencia: str = 'nivel_urgencia') -> pd.DataFrame:
         """
-        Processa DataFrame para extrair localizações
-        
+        Processa DataFrame para extrair localiza��ões
+
         Args:
             dados (pd.DataFrame): DataFrame com dados
             coluna_texto (str): Nome da coluna com texto
@@ -238,15 +238,43 @@ class GeradorMapaEmergencia:
             if mostrar_popup:
                 popup_html = self._criar_popup_emergencia(row)
             
+            # Determina cor do marcador baseado no tipo de desastre
+            # Mapeia as cores personalizadas para as cores padrão do Folium
+            cor_folium = 'blue'  # cor padrão
+            if tipo == 'enchente' or tipo == 'Enchente':
+                cor_folium = 'blue'
+            elif tipo == 'incendio' or tipo == 'Incêndio':
+                cor_folium = 'red'
+            elif tipo == 'deslizamento' or tipo == 'Deslizamento':
+                cor_folium = 'darkred'
+            elif tipo == 'vendaval' or tipo == 'Vendaval':
+                cor_folium = 'gray'
+            elif tipo == 'granizo' or tipo == 'Granizo':
+                cor_folium = 'lightblue'
+            elif tipo == 'terremoto' or tipo == 'Terremoto':
+                cor_folium = 'darkpurple'
+            elif tipo == 'acidente' or tipo == 'Acidente':
+                cor_folium = 'orange'
+            elif tipo == 'emergencia_medica' or tipo == 'Emergência Médica':
+                cor_folium = 'green'
+            elif tipo == 'seca' or tipo == 'Seca':
+                cor_folium = 'beige'
+
+            # Adicionar borda mais forte para urgências críticas
+            extra_options = {}
+            if urgencia == 'crítica':
+                extra_options = {"className": "fa-2x"}
+
             # Adiciona marcador
             folium.Marker(
                 location=[row['latitude'], row['longitude']],
                 popup=popup_html,
                 tooltip=f"{tipo.title()} - {urgencia.title()}",
                 icon=folium.Icon(
-                    color='red' if urgencia == 'crítica' else 'orange' if urgencia == 'alta' else 'blue',
+                    color=cor_folium,
                     icon=icone,
-                    prefix='fa'
+                    prefix='fa',
+                    **extra_options
                 )
             ).add_to(container)
         
@@ -479,104 +507,62 @@ class GeradorMapaEmergencia:
         """
         mapa.save(arquivo)
 
+    def gerar_mapa(self, dados: pd.DataFrame) -> folium.Map:
+        """
+        Gera um mapa completo com todas as emergências
 
-# Funções de conveniência
-def criar_mapa_emergencias_rapido(dados: pd.DataFrame, 
-                                 incluir_calor: bool = True,
-                                 agrupar_marcadores: bool = True) -> folium.Map:
-    """
-    Função de conveniência para criar mapa rapidamente
-    
-    Args:
-        dados (pd.DataFrame): Dados com emergências
-        incluir_calor (bool): Se deve incluir mapa de calor
-        agrupar_marcadores (bool): Se deve agrupar marcadores
-        
-    Returns:
-        folium.Map: Mapa gerado
-    """
-    # Verifica se o DataFrame está vazio ou None
-    if dados is None or dados.empty:
-        print("Aviso: DataFrame vazio ou None passado para criar_mapa_emergencias_rapido")
-        gerador = GeradorMapaEmergencia()
-        return gerador.criar_mapa_base()
-        
-    gerador = GeradorMapaEmergencia()
-    
-    # Processa localizações
-    dados_processados = gerador.processar_localizacoes(dados)
-    
-    # Cria mapa base
-    mapa = gerador.criar_mapa_base()
-    
-    # Adiciona marcadores
-    mapa = gerador.adicionar_marcadores_emergencia(
-        mapa, dados_processados, agrupar_marcadores=agrupar_marcadores
-    )
-    
-    # Adiciona mapa de calor se solicitado
-    if incluir_calor:
-        mapa = gerador.adicionar_mapa_calor(mapa, dados_processados)
-    
-    return mapa
+        Args:
+            dados (pd.DataFrame): DataFrame com dados de emergências
 
+        Returns:
+            folium.Map: Mapa completo com marcadores
+        """
+        # Verifica se o DataFrame está vazio
+        if dados.empty:
+            return self.criar_mapa_base()
 
-if __name__ == "__main__":
-    # Teste do módulo
-    print("=== Teste do Gerador de Mapa de Emergências ===")
-    
-    # Dados de teste
-    dados_teste = pd.DataFrame({
-        'texto': [
-            "Enchente na região de São Paulo, coordenadas -23.5505, -46.6333",
-            "Incêndio no Rio de Janeiro, bombeiros no local",
-            "Deslizamento em Belo Horizonte, várias famílias desabrigadas",
-            "Vendaval em Salvador, árvores derrubadas",
-            "Granizo em Brasília, carros danificados",
-            "Acidente em Curitiba, vítimas feridas",
-            "Emergência médica em Fortaleza, SAMU acionado"
-        ],
-        'tipo_desastre': ['enchente', 'incendio', 'deslizamento', 'vendaval', 
-                         'granizo', 'acidente', 'emergencia_medica'],
-        'nivel_urgencia': ['alta', 'crítica', 'alta', 'média', 'baixa', 'crítica', 'alta'],
-        'data_criacao': pd.date_range(start='2024-01-01', periods=7, freq='H')
-    })
-    
-    try:
-        gerador = GeradorMapaEmergencia()
-        
-        # Teste de processamento de localizações
-        dados_processados = gerador.processar_localizacoes(dados_teste)
-        print(f"✓ Processadas {len(dados_processados)} localizações")
-        
-        # Teste de criação de mapa
-        mapa = gerador.criar_mapa_base()
-        print("✓ Mapa base criado")
-        
-        # Teste de adição de marcadores
-        mapa = gerador.adicionar_marcadores_emergencia(mapa, dados_processados)
-        print("✓ Marcadores adicionados")
-        
-        # Teste de mapa de calor
-        mapa = gerador.adicionar_mapa_calor(mapa, dados_processados)
-        print("✓ Mapa de calor adicionado")
-        
-        # Teste de estatísticas
-        stats = gerador.gerar_estatisticas_mapa(dados_processados)
-        print(f"✓ Estatísticas geradas: {stats['total_emergencias']} emergências")
-        
-        # Salva mapa de teste
-        gerador.salvar_mapa(mapa, "teste_mapa.html")
-        print("✓ Mapa salvo como teste_mapa.html")
-        
-        # Teste da função rápida
-        mapa_rapido = criar_mapa_emergencias_rapido(dados_teste)
-        print("✓ Mapa rápido criado")
-        
-        print("\nTeste concluído com sucesso!")
-        
-    except Exception as e:
-        print(f"✗ Erro no teste: {e}")
-        import traceback
-        traceback.print_exc()
+        # Verifica se há coordenadas no DataFrame
+        if 'latitude' not in dados.columns or 'longitude' not in dados.columns:
+            raise ValueError("DataFrame não contém coordenadas (latitude/longitude)")
 
+        # Calcula centro do mapa baseado na média das coordenadas
+        try:
+            lat_media = dados['latitude'].mean()
+            lon_media = dados['longitude'].mean()
+            centro = (lat_media, lon_media)
+        except:
+            # Se falhar, usa o centro do Brasil
+            centro = self.centro_brasil
+
+        # Cria mapa base
+        mapa = self.criar_mapa_base(centro=centro, zoom_inicial=5)
+
+        # Adiciona marcadores
+        mapa = self.adicionar_marcadores_emergencia(
+            mapa=mapa,
+            dados=dados,
+            mostrar_popup=True,
+            agrupar_marcadores=True
+        )
+
+        # Adiciona mapa de calor se houver dados suficientes
+        if len(dados) >= 5:
+            mapa = self.adicionar_mapa_calor(
+                mapa=mapa,
+                dados=dados
+            )
+
+        # Adiciona minimap para navegação
+        plugins.MiniMap().add_to(mapa)
+
+        # Adiciona escala ao mapa usando método nativo do folium
+        folium.TileLayer(
+            tiles='cartodbpositron',
+            name='Base Light',
+            control=True,
+        ).add_to(mapa)
+
+        # Adiciona fullscreen
+        plugins.Fullscreen().add_to(mapa)
+
+        return mapa

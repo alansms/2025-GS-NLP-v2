@@ -194,29 +194,40 @@ class GeradorNuvemPalavras:
         ax.axis('off')
         ax.set_title(titulo, fontsize=16, fontweight='bold', pad=20)
         
-        # Adiciona legenda para cores de emergência
+        # Adiciona legenda para cores de emerg��ncia
         self._adicionar_legenda_cores(fig)
         
         plt.tight_layout()
         
-        # Salva arquivo se solicitado
+        # Salva figura se caminho fornecido
         if salvar_arquivo:
+            diretorio = os.path.dirname(salvar_arquivo)
+            if diretorio and not os.path.exists(diretorio):
+                os.makedirs(diretorio)
             plt.savefig(salvar_arquivo, dpi=300, bbox_inches='tight')
         
-        # Calcula estatísticas
-        estatisticas = {
-            'total_textos': len(textos),
-            'total_palavras_unicas': len(palavras_freq),
-            'palavra_mais_frequente': max(palavras_freq.items(), key=lambda x: x[1]) if palavras_freq else None,
-            'top_10_palavras': dict(list(palavras_freq.items())[:10]),
-            'palavras_emergencia_encontradas': [palavra for palavra in palavras_freq.keys() 
-                                              if palavra in self.palavras_emergencia],
-            'densidade_emergencia': len([p for p in palavras_freq.keys() 
-                                       if p in self.palavras_emergencia]) / len(palavras_freq) if palavras_freq else 0
-        }
-        
-        return fig, estatisticas
-    
+        # Retorna figura e estatísticas
+        return fig, palavras_freq
+
+    def gerar_wordcloud(self, texto):
+        """
+        Método alternativo para gerar nuvem de palavras a partir de um texto único
+        (Mantido para compatibilidade com código existente)
+
+        Args:
+            texto (str): Texto para gerar a nuvem de palavras
+
+        Returns:
+            plt.Figure: Figura matplotlib com a nuvem de palavras
+        """
+        # Verifica se o texto é string ou precisa ser convertido
+        if not isinstance(texto, str):
+            texto = str(texto)
+
+        # Chamada para o método principal usando o texto como uma lista com um elemento
+        fig, _ = self.gerar_nuvem_palavras([texto])
+        return fig
+
     def _adicionar_legenda_cores(self, fig):
         """
         Adiciona legenda explicando as cores das palavras
@@ -464,7 +475,7 @@ if __name__ == "__main__":
     
     # Dados de teste
     mensagens_teste = [
-        "Socorro! Enchente muito forte na região, água subindo rapidamente",
+        "Socorro! Enchente muito forte na regi��o, água subindo rapidamente",
         "Incêndio de grandes proporções no centro, bombeiros no local",
         "Deslizamento de terra soterrou casas, várias famílias desabrigadas",
         "Vendaval derrubou árvores e postes, falta energia elétrica",
