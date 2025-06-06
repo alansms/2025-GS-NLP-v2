@@ -1,0 +1,4 @@
+# Filtrar por nível de urgência
+if st.session_state.filtro_urgencia != "Todos" and 'nivel_urgencia' in df.columns:
+    df = df[df['nivel_urgencia'] == st.session_state.filtro_urgencia]
+

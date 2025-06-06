@@ -1,0 +1,23 @@
+{
+  "total_mensagens": 91,
+  "periodo": "06/06/2025 a 06/06/2025",
+  "por_tipo": {
+    "Acidente": 24,
+    "Seca": 14,
+    "Outro": 14,
+    "Enchente": 12,
+    "Terremoto": 11,
+    "Incêndio": 11,
+    "Deslizamento": 5
+  },
+  "por_urgencia": {
+    "Médio": 77,
+    "Alto": 8,
+    "Baixo": 6
+  },
+  "por_sentimento": {
+    "negativo": 50,
+    "neutro": 35,
+    "muito negativo": 6
+  }
+}
