@@ -129,6 +129,10 @@ try:
 except Exception as e:
     logger.error(f"Erro ao importar módulos: {str(e)}\n{traceback.format_exc()}")
 
+# Inicialização do processador NLTK para relatórios
+if 'processador_nltk' not in st.session_state:
+    st.session_state.processador_nltk = ProcessadorNLTK()
+
 # Função global de debug
 def debug_info(mensagem, nivel='info', exception=None):
     """Registra informações de debug com vários níveis"""
@@ -794,19 +798,74 @@ class MonitorEmergencias:
 
             # Seção de geração de relatórios
             st.subheader("📊 Relatórios")
-            if st.button("📑 Gerar Relatório Completo"):
+
+            relatorio_tipo = st.selectbox(
+                "Tipo de Relatório",
+                ["Completo", "Resumido", "Análise de Sentimento", "Análise de Urgência"]
+            )
+
+            periodo_relatorio = st.selectbox(
+                "Período do Relatório",
+                ["Últimas 24 horas", "Última semana", "Último mês", "Todo o período"]
+            )
+
+            formato_relatorio = st.radio(
+                "Formato do Relatório",
+                ["HTML", "PDF"],
+                horizontal=True
+            )
+
+            if st.button("📑 Gerar Relatório"):
                 try:
                     if not st.session_state.dados_processados.empty:
-                        with st.spinner("Gerando relatório completo..."):
+                        with st.spinner(f"Gerando relatório {relatorio_tipo.lower()}..."):
                             gerador = GeradorRelatorios()
-                            resultado = gerador.gerar_relatorio_completo(
-                                st.session_state.dados_processados,
-                                'relatorios'
-                            )
-                            caminho_html = resultado['arquivos'].get('relatorio_html', '')
-                            if caminho_html and os.path.exists(caminho_html):
-                                st.success(f"✅ Relatório gerado com sucesso!")
-                                st.markdown(f"[Clique para abrir o relatório]({caminho_html})", unsafe_allow_html=True)
+
+                            # Filtra os dados pelo período selecionado
+                            df_relatorio = df_filtrado.copy()
+                            if periodo_relatorio != "Todo o período":
+                                agora = pd.Timestamp.now()
+                                if periodo_relatorio == "Últimas 24 horas":
+                                    inicio = agora - pd.Timedelta(days=1)
+                                elif periodo_relatorio == "Última semana":
+                                    inicio = agora - pd.Timedelta(days=7)
+                                else:  # Último mês
+                                    inicio = agora - pd.Timedelta(days=30)
+                                df_relatorio = df_relatorio[df_relatorio['data_criacao'] >= inicio]
+
+                            # Gera o relatório de acordo com o tipo selecionado
+                            if relatorio_tipo == "Completo":
+                                resultado = gerador.gerar_relatorio_completo(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+                            elif relatorio_tipo == "Resumido":
+                                resultado = gerador.gerar_relatorio_resumido(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+                            elif relatorio_tipo == "Análise de Sentimento":
+                                resultado = gerador.gerar_relatorio_sentimentos(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+                            else:  # Análise de Urgência
+                                resultado = gerador.gerar_relatorio_urgencia(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+
+                            # Verifica qual arquivo foi gerado
+                            if formato_relatorio == "HTML":
+                                caminho_arquivo = resultado['arquivos'].get('relatorio_html', '')
+                            else:
+                                caminho_arquivo = resultado['arquivos'].get('relatorio_pdf', '')
+
+                            if caminho_arquivo and os.path.exists(caminho_arquivo):
+                                st.success(f"✅ Relatório {relatorio_tipo.lower()} gerado com sucesso!")
+
+                                # Abre o arquivo gerado
+                                with open(caminho_arquivo, 'rb') as f:
+                                    arquivo_bytes = f.read()
+
+                                # Cria botão de download
+                                nome_arquivo = os.path.basename(caminho_arquivo)
+                                st.download_button(
+                                    label=f"⬇️ Download do Relatório ({formato_relatorio})",
+                                    data=arquivo_bytes,
+                                    file_name=nome_arquivo,
+                                    mime=f"application/{formato_relatorio.lower()}"
+                                )
+                            else:
+                                st.error("Não foi possível encontrar o arquivo gerado.")
                     else:
                         st.warning("Não há dados para gerar relatório.")
                 except Exception as e:
