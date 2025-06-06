@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Monitoramento de Desastres Naturais-v2.iml" filepath="$PROJECT_DIR$/.idea/Monitoramento de Desastres Naturais-v2.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Monitoramento de Desastres Naturais.iml" filepath="$PROJECT_DIR$/.idea/Monitoramento de Desastres Naturais.iml" />
+>>>>>>> 9df7f39285249c2d6c949fecf9915143851ada3c
     </modules>
   </component>
 </project>

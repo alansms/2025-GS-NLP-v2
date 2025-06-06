@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.12" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (Monitoramento de Desastres Naturais-v2)" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.12 (Monitoramento de Desastres Naturais)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Monitoramento de Desastres Naturais)" project-jdk-type="Python SDK" />
+>>>>>>> 9df7f39285249c2d6c949fecf9915143851ada3c
 </project>

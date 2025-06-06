@@ -1,0 +1,2329 @@
+{
+  "mensagens": [
+    {
+      "id": "699e00c6-b52d-457c-8f86-03047f69244e",
+      "texto": "MP aponta os 19 bairros de Porto Alegre que podem receber indenização em ação por enchente; veja a lista. O Ministério Público (MP) anexou — na ação que pede indenização pelos danos da enchente em Porto Alegre — um parecer que aponta as áreas da cidade que...",
+      "titulo": "MP aponta os 19 bairros de Porto Alegre que podem receber indenização em ação por enchente; veja a lista",
+      "data_criacao": "2025-06-05 14:42:45.523385",
+      "usuario": "GZH",
+      "link": "https://gauchazh.clicrbs.com.br/porto-alegre/noticia/2025/06/mp-aponta-os-19-bairros-de-porto-alegre-que-podem-receber-indenizacao-em-acao-por-enchente-veja-a-lista-cmbjk5zlw001101e5frm860qo.html",
+      "tipo_desastre": "enchente",
+      "termo_busca": "enchente",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Porto Alegre",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            27,
+            39
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.3109336115799324,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Ministério Público",
+          "tipo": "nome_proprio",
+          "posicao": [
+            108,
+            126
+          ],
+          "contexto": "indenização em ação por enchente; veja a lista. O Ministério Público (MP) anexou — na ação que pede indenização pelos"
+        },
+        {
+          "nome": "pelos danos",
+          "tipo": "nome_proprio",
+          "posicao": [
+            170,
+            181
+          ],
+          "contexto": "úblico (MP) anexou — na ação que pede indenização pelos danos da enchente em Porto Alegre — um parecer que apon"
+        },
+        {
+          "nome": "Porto Alegre",
+          "tipo": "nome_proprio",
+          "posicao": [
+            197,
+            209
+          ],
+          "contexto": "o que pede indenização pelos danos da enchente em Porto Alegre — um parecer que aponta as áreas da cidade que..."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "7c2897ab-8f8c-4a27-9d6a-67f9ec9c868e",
+      "texto": "Editora gaúcha atingida pela enchente doa 11 mil livros a bibliotecas do RS. Com apoio da Lei Aldir Blanc, editora retoma acervo e doa títulos diversos a 150 bibliotecas públicas em 140 cidades gaúchas.",
+      "titulo": "Editora gaúcha atingida pela enchente doa 11 mil livros a bibliotecas do RS",
+      "data_criacao": "2025-06-05 14:42:45.523854",
+      "usuario": "Extra Classe",
+      "link": "https://www.extraclasse.org.br/cultura/2025/06/editora-gaucha-atingida-pela-enchente-doa-11-mil-livros-a-bibliotecas-do-rs/",
+      "tipo_desastre": "enchente",
+      "termo_busca": "enchente",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "públicas",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            170,
+            178
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.765,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.26811139978821485,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "atingida pela",
+          "tipo": "nome_proprio",
+          "posicao": [
+            15,
+            28
+          ],
+          "contexto": "Editora gaúcha atingida pela enchente doa 11 mil livros a bibliotecas do RS. C"
+        },
+        {
+          "nome": "Lei Aldir Blanc",
+          "tipo": "nome_proprio",
+          "posicao": [
+            90,
+            105
+          ],
+          "contexto": "a 11 mil livros a bibliotecas do RS. Com apoio da Lei Aldir Blanc, editora retoma acervo e doa títulos diversos a 1"
+        },
+        {
+          "nome": "títulos",
+          "tipo": "nome_proprio",
+          "posicao": [
+            135,
+            142
+          ],
+          "contexto": "o da Lei Aldir Blanc, editora retoma acervo e doa títulos diversos a 150 bibliotecas públicas em 140 cidade"
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "4b6e9354-37f6-4225-9662-375c20ea71f0",
+      "texto": "Lajeado homenageia voluntários da enchente com Medalha Capitão Pedro Siebra. Em meio à reconstrução de Lajeado após as enchentes de maio, a quarta-feira foi marcada pelo reconhecimento de voluntários e profissionais que se destacaram...",
+      "titulo": "Lajeado homenageia voluntários da enchente com Medalha Capitão Pedro Siebra",
+      "data_criacao": "2025-06-05 14:42:45.523982",
+      "usuario": "Grupo A Hora",
+      "link": "https://grupoahora.net.br/conteudos/2025/06/05/lajeado-homenageia-voluntarios-da-enchente-com-medalha-capitao-pedro-siebra/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "enchente",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.21683902532863958,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Medalha Capitão Pedro Siebra",
+          "tipo": "nome_proprio",
+          "posicao": [
+            47,
+            75
+          ],
+          "contexto": "Lajeado homenageia voluntários da enchente com Medalha Capitão Pedro Siebra. Em meio à reconstrução de Lajeado após as enchen"
+        },
+        {
+          "nome": "de Lajeado",
+          "tipo": "nome_proprio",
+          "posicao": [
+            100,
+            110
+          ],
+          "contexto": "alha Capitão Pedro Siebra. Em meio à reconstrução de Lajeado após as enchentes de maio, a quarta-feira foi mar"
+        },
+        {
+          "nome": "marcada pelo",
+          "tipo": "nome_proprio",
+          "posicao": [
+            157,
+            169
+          ],
+          "contexto": "ado após as enchentes de maio, a quarta-feira foi marcada pelo reconhecimento de voluntários e profissionais que"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "e5ccd772-4f6e-4255-8244-ea0bae1607ed",
+      "texto": "Bombeiros resgatam mulher de carro durante enchente nos EUA. Bombeiros salvaram uma mulher que estava presa dentro de um carro durante uma enchente nos Estados Unidos. O incidente ocorreu em meio a um forte temporal...",
+      "titulo": "Bombeiros resgatam mulher de carro durante enchente nos EUA",
+      "data_criacao": "2025-06-05 14:42:45.524069",
+      "usuario": "R7",
+      "link": "https://noticias.r7.com/jr-24h/conteudo-exclusivo/video/bombeiros-resgatam-mulher-de-carro-durante-enchente-nos-eua-05062025/",
+      "tipo_desastre": "enchente",
+      "termo_busca": "enchente",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.27667622316471985,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 2
+    },
+    {
+      "id": "ee3141cf-4f7e-445c-8e0e-1a883ecac9a9",
+      "texto": "Bombeiro é homenageado na Câmara de Porto Alegre por atuação em resgates na enchente. Soldado Natan Cícero de Carvalho Luiz teve seus esforços reconhecidos em ato de bravura.",
+      "titulo": "Bombeiro é homenageado na Câmara de Porto Alegre por atuação em resgates na enchente",
+      "data_criacao": "2025-06-05 14:42:45.524145",
+      "usuario": "Correio do Povo",
+      "link": "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADcia/bombeiro-%C3%A9-homenageado-na-c%C3%A2mara-de-porto-alegre-por-atua%C3%A7%C3%A3o-em-resgates-na-enchente-1.1615758",
+      "tipo_desastre": "acidente",
+      "termo_busca": "enchente",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Bombeiro",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            0,
+            8
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Porto Alegre",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            36,
+            48
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.20924105987946612,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Soldado Natan Cícero de Carvalho Luiz",
+          "tipo": "nome_proprio",
+          "posicao": [
+            86,
+            123
+          ],
+          "contexto": "Porto Alegre por atuação em resgates na enchente. Soldado Natan Cícero de Carvalho Luiz teve seus esforços reconhecidos em ato de bravura"
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "48adcdec-fab4-4425-8018-c95877fe944c",
+      "texto": "SC tem cidades em alerta para alto risco de temporais e alagamentos. A Defesa Civil de Santa Catarina alerta para a passagem de uma frente fria pelo estado que irá reforçar o quadro de instabilidade, com a ocorrência de.",
+      "titulo": "SC tem cidades em alerta para alto risco de temporais e alagamentos",
+      "data_criacao": "2025-06-05 14:42:46.592806",
+      "usuario": "NSC Total",
+      "link": "https://www.nsctotal.com.br/noticias/sc-tem-cidades-em-alerta-para-alto-risco-de-temporais-e-alagamentos",
+      "tipo_desastre": "acidente",
+      "termo_busca": "alagamento",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.28323000767025347,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "para alto risco de temporais",
+          "tipo": "nome_proprio",
+          "posicao": [
+            25,
+            53
+          ],
+          "contexto": "SC tem cidades em alerta para alto risco de temporais e alagamentos. A Defesa Civil de Santa Catarina a"
+        },
+        {
+          "nome": "pelo",
+          "tipo": "nome_proprio",
+          "posicao": [
+            144,
+            148
+          ],
+          "contexto": "atarina alerta para a passagem de uma frente fria pelo estado que irá reforçar o quadro de instabilidade"
+        },
+        {
+          "nome": "que irá reforçar",
+          "tipo": "nome_proprio",
+          "posicao": [
+            156,
+            172
+          ],
+          "contexto": "ta para a passagem de uma frente fria pelo estado que irá reforçar o quadro de instabilidade, com a ocorrência de."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "c6c16d77-4d3e-4144-90c1-eb8c97322b20",
+      "texto": "Santos começa instalação de válvulas para reduzir alagamentos no Canal 3. Os preparativos para a instalação de três válvulas antirretorno junto ao canal da Avenida Washington Luís (canal 3) foram iniciados.",
+      "titulo": "Santos começa instalação de válvulas para reduzir alagamentos no Canal 3",
+      "data_criacao": "2025-06-05 14:42:46.593224",
+      "usuario": "Jornal da Orla de Santos",
+      "link": "https://jornaldaorla.com.br/noticias/santos-comeca-instalacao-de-valvulas-para-reduzir-alagamentos-no-canal-3/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "alagamento",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Avenida Washington Luís (canal 3",
+          "tipo": "endereco",
+          "label": "ENDERECO",
+          "posicao": [
+            156,
+            188
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2229961094888989,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 4
+    },
+    {
+      "id": "55d1e6a7-425d-44d0-9a46-22a7e5150266",
+      "texto": "Alagamento é registrado na saída da marginal BR-277 no acesso ao Lago Municipal. Cascavel, uma cidade no oeste do Paraná, sofreu fortes chuvas na manhã de quinta-feira (05), causando inúmeros alagamentos em vários pontos da cidade.",
+      "titulo": "Alagamento é registrado na saída da marginal BR-277 no acesso ao Lago Municipal",
+      "data_criacao": "2025-06-05 14:42:46.593446",
+      "usuario": "CGN",
+      "link": "https://cgn.inf.br/noticia/1853430/alagamento-e-registrado-na-saida-da-marginal-br-277-no-acesso-ao-lago-municipal",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "alagamento",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "inúmeros",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            183,
+            191
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.483,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2785347857936368,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "de quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            152,
+            167
+          ],
+          "contexto": "no oeste do Paraná, sofreu fortes chuvas na manhã de quinta-feira (05), causando inúmeros alagamentos em vários pon"
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "fba4245a-7360-49de-95a4-2a29f53cbaff",
+      "texto": "Carro fica preso em alagamento na Rua Salgado Filho, em Cascavel. Veja como as chuvas em Cascavel afetaram a cidade, com alagamentos e danos, incluindo um carro arrastado.",
+      "titulo": "Carro fica preso em alagamento na Rua Salgado Filho, em Cascavel",
+      "data_criacao": "2025-06-05 14:42:46.593611",
+      "usuario": "O Paraná",
+      "link": "https://oparana.com.br/clima/carro-fica-preso-em-alagamento-na-rua-salgado-filho-em-cascavel/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "alagamento",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.30587226284157937,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 2
+    },
+    {
+      "id": "61ae7c3f-e2b8-429b-92e3-f48b8ebe9920",
+      "texto": "Alagamento gera transtornos em obra de duplicação na Avenida Egydio Geronymo Munaretto. Empresários e motoristas que dependem da Avenida Egydio Geronymo Munaretto enfrentam sérias dificuldades devido à obra de duplicação em andamento na via.",
+      "titulo": "Alagamento gera transtornos em obra de duplicação na Avenida Egydio Geronymo Munaretto",
+      "data_criacao": "2025-06-05 14:42:46.593711",
+      "usuario": "AquiAgora",
+      "link": "https://www.aquiagora.net/noticias/ver/156400/Alagamento_gera_transtornos_em_obra_de_duplicacao_na_Avenida_Egydio_Geronymo_Munaretto",
+      "tipo_desastre": "acidente",
+      "termo_busca": "alagamento",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2540797431793255,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Geronymo Munaretto",
+          "tipo": "nome_proprio",
+          "posicao": [
+            144,
+            162
+          ],
+          "contexto": "ários e motoristas que dependem da Avenida Egydio Geronymo Munaretto enfrentam sérias dificuldades devido à obra de du"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "785158eb-fb5a-4d32-a3ec-cc188f0f474f",
+      "texto": "Europa ameaçada por inundação de novas drogas, diz agência da UE. Em 2023, autoridades da UE apreenderam carregamentos massivos de substâncias sintéticas desconhecidas, além de novos e potentes opioides mais perigosos que...",
+      "titulo": "Europa ameaçada por inundação de novas drogas, diz agência da UE",
+      "data_criacao": "2025-06-05 14:42:47.461084",
+      "usuario": "Terra",
+      "link": "https://www.terra.com.br/noticias/europa-ameacada-por-inundacao-de-novas-drogas-diz-agencia-da-ue,4cde9123cd7596e4ebaf74b595ea27dfr20q03g6.html",
+      "tipo_desastre": "acidente",
+      "termo_busca": "inundação",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Europa ameaçada",
+          "tipo": "entidade_nomeada",
+          "label": "LOC",
+          "posicao": [
+            0,
+            15
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "UE",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            90,
+            92
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.18672326032963896,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "diz agência da UE",
+          "tipo": "nome_proprio",
+          "posicao": [
+            47,
+            64
+          ],
+          "contexto": "Europa ameaçada por inundação de novas drogas, diz agência da UE. Em 2023, autoridades da UE apreenderam carregame"
+        },
+        {
+          "nome": "mais perigosos",
+          "tipo": "nome_proprio",
+          "posicao": [
+            203,
+            217
+          ],
+          "contexto": "desconhecidas, além de novos e potentes opioides mais perigosos que..."
+        }
+      ],
+      "score_completude": 7
+    },
+    {
+      "id": "fc4792b6-ca11-46e4-bdc4-9b978523a4ca",
+      "texto": "Chuvas deixam três mortos na cidade do Rio de Janeiro. As fortes chuvas que atingiram a cidade do Rio de Janeiro na noite de quarta-feira deixaram pelo menos três mortos. Em Guaratiba, na zona oeste,...",
+      "titulo": "Chuvas deixam três mortos na cidade do Rio de Janeiro",
+      "data_criacao": "2025-06-05 14:42:47.461667",
+      "usuario": "Correio do Povo",
+      "link": "https://www.correiodopovo.com.br/not%C3%ADcias/geral/chuvas-deixam-tr%C3%AAs-mortos-na-cidade-do-rio-de-janeiro-1.318032",
+      "tipo_desastre": "enchente",
+      "termo_busca": "inundação",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            39,
+            53
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rio de Janeiro",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            98,
+            112
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "zona",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            188,
+            192
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rio de Janeiro",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            39,
+            53
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.26802889289636395,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "deixaram pelo",
+          "tipo": "nome_proprio",
+          "posicao": [
+            138,
+            151
+          ],
+          "contexto": "cidade do Rio de Janeiro na noite de quarta-feira deixaram pelo menos três mortos. Em Guaratiba, na zona oeste,.."
+        },
+        {
+          "nome": "Em Guaratiba",
+          "tipo": "nome_proprio",
+          "posicao": [
+            171,
+            183
+          ],
+          "contexto": "de quarta-feira deixaram pelo menos três mortos. Em Guaratiba, na zona oeste,..."
+        }
+      ],
+      "score_completude": 8
+    },
+    {
+      "id": "2bf3b7ba-ebd3-4646-b2de-3ee0a0b00d62",
+      "texto": "Apac alerta para risco de inundação em Jaboatão. A Agência Pernambucana de Águas e Clima (Apac) anunciou que o Rio Duas Unas, no Centro do Jaboatão dos Guararapes, no Grande Recife, atingiu a cota de...",
+      "titulo": "Apac alerta para risco de inundação em Jaboatão",
+      "data_criacao": "2025-06-05 14:42:47.461920",
+      "usuario": "LeiaJá",
+      "link": "https://www.leiaja.com/noticias/2025/06/05/apac-alerta-para-risco-de-inundacao-em-jaboatao/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "inundação",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Jaboatão dos Guararapes",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            139,
+            162
+          ],
+          "confianca": "média"
+        },
+        {
+          "texto": "Recife",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            174,
+            180
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.5267,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.31631559012305005,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "risco de inundação",
+          "tipo": "nome_proprio",
+          "posicao": [
+            17,
+            35
+          ],
+          "contexto": "Apac alerta para risco de inundação em Jaboatão. A Agência Pernambucana de Águas e Cl"
+        },
+        {
+          "nome": "Jaboatão",
+          "tipo": "nome_proprio",
+          "posicao": [
+            39,
+            47
+          ],
+          "contexto": "Apac alerta para risco de inundação em Jaboatão. A Agência Pernambucana de Águas e Clima (Apac) a"
+        },
+        {
+          "nome": "Agência Pernambucana de Águas",
+          "tipo": "nome_proprio",
+          "posicao": [
+            51,
+            80
+          ],
+          "contexto": "pac alerta para risco de inundação em Jaboatão. A Agência Pernambucana de Águas e Clima (Apac) anunciou que o Rio Duas Unas, no C"
+        },
+        {
+          "nome": "Rio Duas Unas",
+          "tipo": "nome_proprio",
+          "posicao": [
+            111,
+            124
+          ],
+          "contexto": "rnambucana de Águas e Clima (Apac) anunciou que o Rio Duas Unas, no Centro do Jaboatão dos Guararapes, no Grande"
+        },
+        {
+          "nome": "Jaboatão",
+          "tipo": "nome_proprio",
+          "posicao": [
+            139,
+            147
+          ],
+          "contexto": "(Apac) anunciou que o Rio Duas Unas, no Centro do Jaboatão dos Guararapes, no Grande Recife, atingiu a cota"
+        },
+        {
+          "nome": "Guararapes",
+          "tipo": "nome_proprio",
+          "posicao": [
+            152,
+            162
+          ],
+          "contexto": "ou que o Rio Duas Unas, no Centro do Jaboatão dos Guararapes, no Grande Recife, atingiu a cota de..."
+        }
+      ],
+      "score_completude": 8
+    },
+    {
+      "id": "330666a7-7556-4f3e-ad0b-613fbc3470a5",
+      "texto": "Fortes chuvas já causam transtornos em Cascavel. As fortes chuvas que atingem Cascavel nesta quarta-feira (5) já começam a causar transtornos em diferentes pontos da cidade.",
+      "titulo": "Fortes chuvas já causam transtornos em Cascavel",
+      "data_criacao": "2025-06-05 14:42:47.462126",
+      "usuario": "AquiAgora",
+      "link": "https://www.aquiagora.net/noticias/ver/156392/Fortes_chuvas_ja_causam_transtornos_em_Cascavel",
+      "tipo_desastre": "acidente",
+      "termo_busca": "inundação",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.27025778287896335,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "já causam transtornos",
+          "tipo": "nome_proprio",
+          "posicao": [
+            14,
+            35
+          ],
+          "contexto": "Fortes chuvas já causam transtornos em Cascavel. As fortes chuvas que atingem Cascave"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "ec249d8a-7b55-47dd-8a1f-02c60230e7f7",
+      "texto": "Chuva intensa provoca alagamentos e queda de árvore em vários pontos de Foz do Iguaçu. A forte chuva que atinge Foz do Iguaçu desde a madrugada desta quinta-feira (5) causou diversos transtornos, incluindo pontos de alagamento, queda de...",
+      "titulo": "Chuva intensa provoca alagamentos e queda de árvore em vários pontos de Foz do Iguaçu",
+      "data_criacao": "2025-06-05 14:42:47.462322",
+      "usuario": "Guia SMI",
+      "link": "http://www.guiasmi.com.br/noticia/85797",
+      "tipo_desastre": "enchente",
+      "termo_busca": "inundação",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Chuva",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            0,
+            5
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "causou",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            167,
+            173
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.4674952913416862,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            150,
+            162
+          ],
+          "contexto": "que atinge Foz do Iguaçu desde a madrugada desta quinta-feira (5) causou diversos transtornos, incluindo pontos"
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "ccdc58f4-651e-4352-b89b-d0305fd1b51d",
+      "texto": "Litoral do Nordeste pode ter chuvas fortes nos próximos dias. Entre os dias 5 e 10 de junho, os maiores acumulados devem se concentrar sobre os Estados do Maranhão, Pernambuco, Paraíba e Ceará.",
+      "titulo": "Litoral do Nordeste pode ter chuvas fortes nos próximos dias",
+      "data_criacao": "2025-06-05 14:42:48.209804",
+      "usuario": "Imirante.com",
+      "link": "https://imirante.com/noticias/sao-luis/2025/06/05/litoral-do-nordeste-pode-ter-chuvas-fortes-nos-proximos-dias",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "chuvas fortes",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Paraíba",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            177,
+            184
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Ceará",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            187,
+            192
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.35701395197313057,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "devem se",
+          "tipo": "nome_proprio",
+          "posicao": [
+            115,
+            123
+          ],
+          "contexto": "re os dias 5 e 10 de junho, os maiores acumulados devem se concentrar sobre os Estados do Maranhão, Pernambu"
+        },
+        {
+          "nome": "Pernambuco",
+          "tipo": "nome_proprio",
+          "posicao": [
+            165,
+            175
+          ],
+          "contexto": "devem se concentrar sobre os Estados do Maranhão, Pernambuco, Paraíba e Ceará."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "9eda9c14-4802-41fe-845a-33314365bf1f",
+      "texto": "Defesa Civil intensifica ações após fortes chuvas em Guarapuava. A Defesa Civil de Guarapuava está atuando de forma intensiva desde a madrugada desta quinta-feira (05) devido aos alagamentos causados pela forte chuva.",
+      "titulo": "Defesa Civil intensifica ações após fortes chuvas em Guarapuava",
+      "data_criacao": "2025-06-05 14:42:48.210233",
+      "usuario": "Extra Guarapuava",
+      "link": "https://www.extraguarapuava.com.br/meio-ambiente/defesa-civil-intensifica-acoes-apos-fortes-chuvas-em-guarapuava/",
+      "tipo_desastre": "enchente",
+      "termo_busca": "chuvas fortes",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "chuva",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            211,
+            216
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.4441546508806524,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Guarapuava",
+          "tipo": "nome_proprio",
+          "posicao": [
+            53,
+            63
+          ],
+          "contexto": "esa Civil intensifica ações após fortes chuvas em Guarapuava. A Defesa Civil de Guarapuava está atuando de for"
+        },
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            150,
+            162
+          ],
+          "contexto": "tuando de forma intensiva desde a madrugada desta quinta-feira (05) devido aos alagamentos causados pela forte c"
+        },
+        {
+          "nome": "devido aos",
+          "tipo": "nome_proprio",
+          "posicao": [
+            168,
+            178
+          ],
+          "contexto": "tensiva desde a madrugada desta quinta-feira (05) devido aos alagamentos causados pela forte chuva."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "465805cb-0ece-4f9c-b07e-6776fe1dee9a",
+      "texto": "Prefeitura de Irati reforça monitoramento após fortes chuvas e tranquiliza população. A Prefeitura de Irati, por meio da Defesa Civil Municipal, está mobilizada desde a noite de quarta-feira (4), para acompanhar os efeitos das chuvas intensas...",
+      "titulo": "Prefeitura de Irati reforça monitoramento após fortes chuvas e tranquiliza população",
+      "data_criacao": "2025-06-05 14:42:48.210389",
+      "usuario": "Jornal Hoje Centro Sul",
+      "link": "https://www.hojecentrosul.com.br/prefeitura-de-irati-reforca-monitoramento-apos-fortes-chuvas-e-tranquiliza-populacao",
+      "tipo_desastre": "granizo",
+      "termo_busca": "chuvas fortes",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Prefeitura de Irati",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            88,
+            107
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.19959340780320048,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Prefeitura de Irati",
+          "tipo": "nome_proprio",
+          "posicao": [
+            0,
+            19
+          ],
+          "contexto": "Prefeitura de Irati reforça monitoramento após fortes chuvas e tranqu"
+        },
+        {
+          "nome": "para acompanhar",
+          "tipo": "nome_proprio",
+          "posicao": [
+            196,
+            211
+          ],
+          "contexto": "stá mobilizada desde a noite de quarta-feira (4), para acompanhar os efeitos das chuvas intensas..."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "7ebe8826-b84b-4eba-9fb1-27ebc77f3245",
+      "texto": "Paraná registra fortes chuvas nesta quinta-feira (05); previsão aponta trégua nesta sexta (06). Diversas regiões da capital paranaense registraram ventos e chuvas fortes, além de um grande quantidade de raios entre a madrugada e a manhã desta...",
+      "titulo": "Paraná registra fortes chuvas nesta quinta-feira (05); previsão aponta trégua nesta sexta (06)",
+      "data_criacao": "2025-06-05 14:42:48.210506",
+      "usuario": "CBN Curitiba",
+      "link": "https://cbncuritiba.com.br/materias/parana-registra-fortes-chuvas-nesta-quinta-feira-05-previsao-aponta-tregua-nesta-sexta-06/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "chuvas fortes",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "previsão",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            55,
+            63
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Diversas",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            96,
+            104
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.3189977973305042,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            36,
+            48
+          ],
+          "contexto": "Paraná registra fortes chuvas nesta quinta-feira (05); previsão aponta trégua nesta sexta (06). Di"
+        }
+      ],
+      "score_completude": 7
+    },
+    {
+      "id": "4fd7f19f-a503-489d-b40c-47ecfa3ab0cc",
+      "texto": "Chuva intensa causa alagamentos e transtornos em Medianeira e região nesta quinta-feira (05). Medianeira e municípios da região enfrentam desde a madrugada desta quinta-feira (05) uma forte chuva que, até o momento da publicação desta reportagem,...",
+      "titulo": "Chuva intensa causa alagamentos e transtornos em Medianeira e região nesta quinta-feira (05)",
+      "data_criacao": "2025-06-05 14:42:50.270594",
+      "usuario": "AquiAgora",
+      "link": "https://www.aquiagora.net/noticias/ver/156391/Chuva_intensa_causa_alagamentos_e_transtornos_em_Medianeira_e_regiao_nesta_quinta_feira__05_",
+      "tipo_desastre": "enchente",
+      "termo_busca": "transbordamento de rio",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.389167534042231,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            75,
+            87
+          ],
+          "contexto": "mentos e transtornos em Medianeira e região nesta quinta-feira (05). Medianeira e municípios da região enfrentam"
+        },
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            162,
+            174
+          ],
+          "contexto": "ípios da região enfrentam desde a madrugada desta quinta-feira (05) uma forte chuva que, até o momento da public"
+        },
+        {
+          "nome": "desta",
+          "tipo": "nome_proprio",
+          "posicao": [
+            229,
+            234
+          ],
+          "contexto": "uma forte chuva que, até o momento da publicação desta reportagem,..."
+        }
+      ],
+      "score_completude": 3
+    },
+    {
+      "id": "b0e2e194-4980-4a2e-93e9-1cfe993b0b9d",
+      "texto": "Parque Shopping reforça Campanha do Agasalho com a chegada do período chuvoso em Alagoas. Com o início do período chuvoso e a intensificação das baixas temperaturas em Maceió, o Parque Shopping reforça o compromisso com a solidariedade em mais...",
+      "titulo": "Parque Shopping reforça Campanha do Agasalho com a chegada do período chuvoso em Alagoas",
+      "data_criacao": "2025-06-05 14:42:50.272167",
+      "usuario": "AL1",
+      "link": "https://al1.com.br/informacao/noticias/151889/parque-shopping-reforca-campanha-do-agasalho-com-a-chegada-do-periodo-chuvoso-em-alagoas",
+      "tipo_desastre": "acidente",
+      "termo_busca": "transbordamento de rio",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Agasalho",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            36,
+            44
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Alagoas",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            81,
+            88
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Maceió",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            168,
+            174
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.28586473741484986,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 4
+    },
+    {
+      "id": "99f73c89-b6b4-4894-ac3f-68a9e172bc18",
+      "texto": "Temporal com granizo e alagamentos provoca transtornos em Medianeira. Medianeira enfrenta desde as primeiras horas da madrugada desta quinta-feira (05) uma forte e persistente chuva, que até o momento não deu sinais de trégua.",
+      "titulo": "Temporal com granizo e alagamentos provoca transtornos em Medianeira",
+      "data_criacao": "2025-06-05 14:42:50.272364",
+      "usuario": "Guia SMI",
+      "link": "http://www.guiasmi.com.br/noticia/85798",
+      "tipo_desastre": "acidente",
+      "termo_busca": "transbordamento de rio",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "chuva",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            176,
+            181
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.11401757526150921,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Medianeira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            58,
+            68
+          ],
+          "contexto": "com granizo e alagamentos provoca transtornos em Medianeira. Medianeira enfrenta desde as primeiras horas da"
+        },
+        {
+          "nome": "horas da madrugada desta",
+          "tipo": "nome_proprio",
+          "posicao": [
+            109,
+            133
+          ],
+          "contexto": "edianeira. Medianeira enfrenta desde as primeiras horas da madrugada desta quinta-feira (05) uma forte e persistente chuva,"
+        },
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            134,
+            146
+          ],
+          "contexto": "renta desde as primeiras horas da madrugada desta quinta-feira (05) uma forte e persistente chuva, que até o mom"
+        }
+      ],
+      "score_completude": 7
+    },
+    {
+      "id": "63e7868f-93bd-426b-b620-e51275cccee6",
+      "texto": "Estudo revela o que fez a Terra tremer misteriosamente a cada 90 segundos. Cientistas identificaram, em setembro de 2023, ondas sísmicas com intervalos de 90 segundos em diversas partes do planeta.",
+      "titulo": "Estudo revela o que fez a Terra tremer misteriosamente a cada 90 segundos",
+      "data_criacao": "2025-06-05 14:42:51.066222",
+      "usuario": "Olhar Digital",
+      "link": "https://olhardigital.com.br/2025/06/05/ciencia-e-espaco/estudo-revela-o-que-fez-a-terra-tremer-misteriosamente-a-cada-90-segundos/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "deslizamento de terra",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2970709719816534,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "intervalos de 90",
+          "tipo": "nome_proprio",
+          "posicao": [
+            141,
+            157
+          ],
+          "contexto": "ificaram, em setembro de 2023, ondas sísmicas com intervalos de 90 segundos em diversas partes do planeta."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "654dd10f-5b6f-4097-b92a-25cc52ca3443",
+      "texto": "Onda gigante abalou o mundo por 9 dias e só agora foi revelada por imagens de satélite. Uma imagem do satélite Copernicus Sentinel-2 do Fiorde Dickson, no leste da Groenlândia Foto: © Thomas Monahan. Por O TEMPO SERVIÇOS",
+      "titulo": "Onda gigante abalou o mundo por 9 dias e só agora foi revelada por imagens de satélite",
+      "data_criacao": "2025-06-05 14:42:51.066708",
+      "usuario": "O TEMPO",
+      "link": "https://otempo.com.br/tempo/2025/6/5/onda-gigante-abalou-o-mundo-por-9-dias-e-so-agora-foi-revelada-por-imagens-de-satelite",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "deslizamento de terra",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.22221248325980433,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Fiorde Dickson",
+          "tipo": "nome_proprio",
+          "posicao": [
+            136,
+            150
+          ],
+          "contexto": ". Uma imagem do satélite Copernicus Sentinel-2 do Fiorde Dickson, no leste da Groenlândia Foto: © Thomas Monahan."
+        },
+        {
+          "nome": "Thomas Monahan",
+          "tipo": "nome_proprio",
+          "posicao": [
+            184,
+            198
+          ],
+          "contexto": "o Fiorde Dickson, no leste da Groenlândia Foto: © Thomas Monahan. Por O TEMPO SERVIÇOS"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "285f4fd8-abb4-4886-8df5-b3068d7f1bd5",
+      "texto": "‘Mega-tsunamis’ misteriosos que abalaram a Terra por nove dias são revelados por satélite; veja. Ondas com até 200 metros de altura foram provocadas por grandes deslizamentos de terra no interior de fiorde na Groenlândia.",
+      "titulo": "‘Mega-tsunamis’ misteriosos que abalaram a Terra por nove dias são revelados por satélite; veja",
+      "data_criacao": "2025-06-05 14:42:51.066887",
+      "usuario": "R7",
+      "link": "https://noticias.r7.com/internacional/mega-tsunamis-misteriosos-que-abalaram-a-terra-por-nove-dias-sao-revelados-por-satelite-veja-05062025/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "deslizamento de terra",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.3731012084100864,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 0
+    },
+    {
+      "id": "3d25cbe0-ef6b-45ea-88ce-24855dfb535e",
+      "texto": "Cavaletes soterrados, lona rasgada, lama correndo: barranco em avenida completa mais de um ano. Em maio de 2024, as fortes chuvas que representaram a maior catástrofe ambiental do Rio Grande do Sul provocaram estragos em centenas de municípios gaúchos.",
+      "titulo": "Cavaletes soterrados, lona rasgada, lama correndo: barranco em avenida completa mais de um ano",
+      "data_criacao": "2025-06-05 14:42:51.067048",
+      "usuario": "Martin Behrend",
+      "link": "https://www.martinbehrend.com.br/noticias/noticia/id/16512/titulo/cavaletes-soterrados-lona-rasgada-lama-correndo-barranco-em-avenida-completa-mais-de-um-ano",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "deslizamento de terra",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "avenida completa mais de um ano. Em maio de 2024",
+          "tipo": "endereco",
+          "label": "ENDERECO",
+          "posicao": [
+            63,
+            111
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.4761997058585534,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "lona rasgada",
+          "tipo": "nome_proprio",
+          "posicao": [
+            22,
+            34
+          ],
+          "contexto": "Cavaletes soterrados, lona rasgada, lama correndo: barranco em avenida completa mais"
+        }
+      ],
+      "score_completude": 9
+    },
+    {
+      "id": "9c6b5eb9-e763-437e-8c1b-756c3c07919f",
+      "texto": "Fausto Jr. fiscaliza BR-319 e cobra ações urgentes do Dnit. O deputado federal Fausto Santos Jr. (União-AM) se reuniu nesta quarta-feira (4/06) com o superintendente regional do Departamento Nacional de...",
+      "titulo": "Fausto Jr. fiscaliza BR-319 e cobra ações urgentes do Dnit",
+      "data_criacao": "2025-06-05 14:42:51.838808",
+      "usuario": "bncamazonas.com.br",
+      "link": "https://bncamazonas.com.br/brasilia/fausto-jr/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "desmoronamento",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.22351971242376076,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Fausto Jr.",
+          "tipo": "nome_proprio",
+          "posicao": [
+            0,
+            10
+          ],
+          "contexto": "Fausto Jr. fiscaliza BR-319 e cobra ações urgentes do Dnit."
+        },
+        {
+          "nome": "Fausto Santos Jr.",
+          "tipo": "nome_proprio",
+          "posicao": [
+            79,
+            96
+          ],
+          "contexto": "cobra ações urgentes do Dnit. O deputado federal Fausto Santos Jr. (União-AM) se reuniu nesta quarta-feira (4/06) co"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "8f730f29-0e38-460d-a6f3-7404ebfd7811",
+      "texto": "Terremoto danifica parcialmente sítio arqueológico de Pompeia na Itália. Um pequeno terremoto no sul da Itália causou o colapso parcial de uma parede e parte de uma abóbada no sítio arqueológico de Pompeia, disseram autoridades...",
+      "titulo": "Terremoto danifica parcialmente sítio arqueológico de Pompeia na Itália",
+      "data_criacao": "2025-06-05 14:42:52.941468",
+      "usuario": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/internacional/terremoto-danifica-parcialmente-sitio-arqueologico-de-pompeia-na-italia/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "terremoto",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            65,
+            71
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            104,
+            110
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.5267,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.22298392489902344,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 4
+    },
+    {
+      "id": "2a8766b7-2ed0-4067-b6ad-20d743d05517",
+      "texto": "Terremoto de magnitude 3,2 atinge sul da Itália danifica parte do sítio arqueológico de Pompeia. Terremoto de magnitude 3,2 atinge Pompeia, causando danos parciais em estrutura histórica, mas sem feridos.",
+      "titulo": "Terremoto de magnitude 3,2 atinge sul da Itália danifica parte do sítio arqueológico de Pompeia",
+      "data_criacao": "2025-06-05 14:42:52.941916",
+      "usuario": "Exame",
+      "link": "https://exame.com/mundo/terremoto-de-magnitude-32-atinge-sul-da-italia-danifica-parte-do-sitio-arqueologico-de-pompeia/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "terremoto",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            41,
+            47
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.4112519493123973,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Terremoto de magnitude",
+          "tipo": "nome_proprio",
+          "posicao": [
+            97,
+            119
+          ],
+          "contexto": "danifica parte do sítio arqueológico de Pompeia. Terremoto de magnitude 3,2 atinge Pompeia, causando danos parciais em es"
+        },
+        {
+          "nome": "estrutura histórica",
+          "tipo": "nome_proprio",
+          "posicao": [
+            167,
+            186
+          ],
+          "contexto": "de 3,2 atinge Pompeia, causando danos parciais em estrutura histórica, mas sem feridos."
+        },
+        {
+          "nome": "mas sem",
+          "tipo": "nome_proprio",
+          "posicao": [
+            188,
+            195
+          ],
+          "contexto": ", causando danos parciais em estrutura histórica, mas sem feridos."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "14c8e1bb-5313-4ff9-a415-531332cf10e4",
+      "texto": "Terremoto danifica parte do sítio arqueológico de Pompeia no sul da Itália. Um pequeno terremoto no sul da Itália causou o desabamento parcial de um muro e de parte de uma abóbada no sítio arqueológico de Pompeia,...",
+      "titulo": "Terremoto danifica parte do sítio arqueológico de Pompeia no sul da Itália",
+      "data_criacao": "2025-06-05 14:42:52.942097",
+      "usuario": "InfoMoney",
+      "link": "https://www.infomoney.com.br/mundo/terremoto-danifica-parte-do-sitio-arqueologico-de-pompeia-no-sul-da-italia/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "terremoto",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            68,
+            74
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            107,
+            113
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.6808,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.3907888379153012,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 4
+    },
+    {
+      "id": "41498eee-afee-4283-9866-d9223479a08e",
+      "texto": "Após terremoto, sítio arqueológico de Pompeia é parcialmente danificado. Terremoto registrado nesta quinta-feira, 5, no sul da Itália, provocou danos em Pompeia, um importante sítio arqueológico romano.",
+      "titulo": "Após terremoto, sítio arqueológico de Pompeia é parcialmente danificado",
+      "data_criacao": "2025-06-05 14:42:52.942256",
+      "usuario": "Aventuras na História",
+      "link": "https://aventurasnahistoria.com.br/noticias/historia-hoje/apos-terremoto-sitio-arqueologico-de-pompeia-e-parcialmente-danificado.phtml",
+      "tipo_desastre": "acidente",
+      "termo_busca": "terremoto",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "registrado",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            83,
+            93
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            127,
+            133
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.1911063530391,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Após",
+          "tipo": "nome_proprio",
+          "posicao": [
+            0,
+            4
+          ],
+          "contexto": "Após terremoto, sítio arqueológico de Pompeia é parcia"
+        },
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            100,
+            112
+          ],
+          "contexto": "rcialmente danificado. Terremoto registrado nesta quinta-feira, 5, no sul da Itália, provocou danos em Pompeia,"
+        }
+      ],
+      "score_completude": 7
+    },
+    {
+      "id": "58f44806-ad8e-43c6-b6da-2bc54db7e358",
+      "texto": "Terremoto danifica parte do sítio arqueológico de Pompeia no sul da Itália. Um pequeno terremoto no sul da Itália causou o desabamento parcial de um muro e de parte de uma ...",
+      "titulo": "Terremoto danifica parte do sítio arqueológico de Pompeia no sul da Itália",
+      "data_criacao": "2025-06-05 14:42:52.942413",
+      "usuario": "Terra",
+      "link": "https://www.terra.com.br/diversao/terremoto-danifica-parte-do-sitio-arqueologico-de-pompeia-no-sul-da-italia,c8e5b6b125184e072e92e854b39b8b6d6ccjlcxj.html",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "terremoto",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            68,
+            74
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Itália",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            107,
+            113
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.5267,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.36320261807381543,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 4
+    },
+    {
+      "id": "c4785fd2-c9e0-417d-9843-31be78136e2f",
+      "texto": "Tremor de terra atinge cidade no litoral da Bahia. Abalo sísmico foi registrado na tarde desta terça-feira (3) próximo à região do Recôncavo Baiano.",
+      "titulo": "Tremor de terra atinge cidade no litoral da Bahia",
+      "data_criacao": "2025-06-05 14:42:53.435346",
+      "usuario": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/nacional/nordeste/ba/tremor-de-terra-atinge-cidade-no-litoral-da-bahia/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "abalo sísmico",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "registrado",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            69,
+            79
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.514189879728059,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "da Bahia",
+          "tipo": "nome_proprio",
+          "posicao": [
+            41,
+            49
+          ],
+          "contexto": "Tremor de terra atinge cidade no litoral da Bahia. Abalo sísmico foi registrado na tarde desta terç"
+        },
+        {
+          "nome": "tarde desta terça-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            83,
+            106
+          ],
+          "contexto": "litoral da Bahia. Abalo sísmico foi registrado na tarde desta terça-feira (3) próximo à região do Recôncavo Baiano."
+        },
+        {
+          "nome": "Recôncavo Baiano",
+          "tipo": "nome_proprio",
+          "posicao": [
+            131,
+            147
+          ],
+          "contexto": "a tarde desta terça-feira (3) próximo à região do Recôncavo Baiano."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "832e2867-e8d6-4d36-a1ff-3f84215cb6e2",
+      "texto": "BZNotícias - Tremor de terra é registrado em Carnaubais, no interior do RN. O Laboratório Sismológico da Universidade Federal do Rio Grande do Norte (LabSis/UFRN) registrou, na noite dessa quarta-feira (4), um tremor de terra no...",
+      "titulo": "BZNotícias - Tremor de terra é registrado em Carnaubais, no interior do RN",
+      "data_criacao": "2025-06-05 14:42:53.435885",
+      "usuario": "Portal da Abelhinha",
+      "link": "https://bznoticias.com.br/noticia/tremor-de-terra-e-registrado-em-carnaubais-no-interior-do-rn",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "abalo sísmico",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "registrado",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            31,
+            41
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Carnaubais",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            45,
+            55
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.5267,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.5415289727769297,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Laboratório Sismológico da Universidade",
+          "tipo": "nome_proprio",
+          "posicao": [
+            78,
+            117
+          ],
+          "contexto": "é registrado em Carnaubais, no interior do RN. O Laboratório Sismológico da Universidade Federal do Rio Grande do Norte (LabSis/UFRN) regi"
+        },
+        {
+          "nome": "Norte",
+          "tipo": "nome_proprio",
+          "posicao": [
+            143,
+            148
+          ],
+          "contexto": "mológico da Universidade Federal do Rio Grande do Norte (LabSis/UFRN) registrou, na noite dessa quarta-fe"
+        }
+      ],
+      "score_completude": 8
+    },
+    {
+      "id": "0dcf5959-a95c-440a-a41a-7dd9f114a526",
+      "texto": "Confundido com abalo natural, tremor foi causado por desmonte de mina em Bonito - Ponta Porã Informa -. A explosão ocorreu na área explorada pela Calluz, mineradora que se instalou nas proximidades da Estrada do 21 (MS-345). Moradores de Bonito se assustaram...",
+      "titulo": "Confundido com abalo natural, tremor foi causado por desmonte de mina em Bonito - Ponta Porã Informa -",
+      "data_criacao": "2025-06-05 14:42:53.436123",
+      "usuario": "Ponta Porã Informa",
+      "link": "https://www.pontaporainforma.com.br/confundido-com-abalo-natural-tremor-foi-causado-por-desmonte-de-mina-em-bonito/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "abalo sísmico",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Confundido",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            0,
+            10
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "explorada",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            131,
+            140
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "positivo",
+      "score_sentimento": 0.3612,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2537246198530063,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Moradores de Bonito",
+          "tipo": "nome_proprio",
+          "posicao": [
+            225,
+            244
+          ],
+          "contexto": "talou nas proximidades da Estrada do 21 (MS-345). Moradores de Bonito se assustaram..."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "988d4e64-f847-4d00-948a-38c948a0608b",
+      "texto": "Em recado claro, Jerry fala em “recuperar fatos recentes” e “reconstruir caminhos”. Um artigo publicado nesta quinta-feira (5) pelo deputado federal Márcio Jerry, presidente estadual do PCdoB e, por décadas, braço-direito de Flávio Dino,...",
+      "titulo": "Em recado claro, Jerry fala em “recuperar fatos recentes” e “reconstruir caminhos”",
+      "data_criacao": "2025-06-05 14:42:53.436317",
+      "usuario": "Marrapá",
+      "link": "https://marrapa.com/marrapa-politica/em-recado-claro-jerry-fala-em-recuperar-fatos-recentes-e-reconstruir-caminhos/05/06/2025/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "abalo sísmico",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2535793998804533,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Jerry fala",
+          "tipo": "nome_proprio",
+          "posicao": [
+            17,
+            27
+          ],
+          "contexto": "Em recado claro, Jerry fala em “recuperar fatos recentes” e “reconstruir cami"
+        },
+        {
+          "nome": "quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            110,
+            122
+          ],
+          "contexto": "“reconstruir caminhos”. Um artigo publicado nesta quinta-feira (5) pelo deputado federal Márcio Jerry, president"
+        },
+        {
+          "nome": "pelo",
+          "tipo": "nome_proprio",
+          "posicao": [
+            127,
+            131
+          ],
+          "contexto": "nhos”. Um artigo publicado nesta quinta-feira (5) pelo deputado federal Márcio Jerry, presidente estadua"
+        },
+        {
+          "nome": "Márcio Jerry",
+          "tipo": "nome_proprio",
+          "posicao": [
+            149,
+            161
+          ],
+          "contexto": "cado nesta quinta-feira (5) pelo deputado federal Márcio Jerry, presidente estadual do PCdoB e, por décadas, bra"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "79b1866d-2fa1-4750-8443-d7e8c65a470d",
+      "texto": "McDonald's abole sorriso 'obrigatório' de atendentes. A campanha 'Sem sorrisos' visa atrair a Geração Z e valoriza a autenticidade no ambiente de trabalho.",
+      "titulo": "McDonald's abole sorriso 'obrigatório' de atendentes",
+      "data_criacao": "2025-06-05 14:42:53.436547",
+      "usuario": "Bnews",
+      "link": "https://www.bnews.com.br/noticias/economia-e-mercado/mcdonalds-abole-sorriso-obrigatorio-de-atendentes-sem-sorrisos.html",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "abalo sísmico",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.261044819159506,
+      "telefones": [],
+      "pessoas": [],
+      "score_completude": 0
+    },
+    {
+      "id": "da2dc5a1-3684-4326-8ddd-85d1d1431268",
+      "texto": "Confundido com abalo natural, tremor foi causado por desmonte de mina em Bonito. Moradores de Bonito se assustaram por volta das 09h30 de ontem (03) com tremor de terra que fez até objetos caírem dentro de casa e crianças saírem correndo...",
+      "titulo": "Confundido com abalo natural, tremor foi causado por desmonte de mina em Bonito",
+      "data_criacao": "2025-06-05 14:42:54.328497",
+      "usuario": "Diário Corumbaense",
+      "link": "https://www.diarionline.com.br/?s=noticia&id=151212",
+      "tipo_desastre": "acidente",
+      "termo_busca": "sismo",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Confundido",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            0,
+            10
+          ],
+          "confianca": "alta"
+        },
+        {
+          "texto": "Bonito",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            73,
+            79
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "positivo",
+      "score_sentimento": 0.3612,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.14857414293017243,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Moradores de Bonito",
+          "tipo": "nome_proprio",
+          "posicao": [
+            81,
+            100
+          ],
+          "contexto": "remor foi causado por desmonte de mina em Bonito. Moradores de Bonito se assustaram por volta das 09h30 de ontem (03) c"
+        },
+        {
+          "nome": "crianças",
+          "tipo": "pessoa_vulneravel",
+          "categoria": "crianças",
+          "posicao": [
+            213,
+            221
+          ],
+          "contexto": "terra que fez até objetos caírem dentro de casa e crianças saírem correndo..."
+        }
+      ],
+      "score_completude": 8
+    },
+    {
+      "id": "10a0a296-a3e4-40b0-aabb-db3e60d2680c",
+      "texto": "Atividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira. A atividade sísmica a sul do concelho da Povoação, na ilha de São Miguel, intensificou-se, desde quarta-feira, com pelo menos 14 sismos já sentidos até esta...",
+      "titulo": "Atividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira",
+      "data_criacao": "2025-06-05 14:42:54.329209",
+      "usuario": "Observador",
+      "link": "https://observador.pt/2025/06/05/atividade-sismica-na-ilha-de-sao-miguel-intensificou-se-desde-quarta-feira/",
+      "tipo_desastre": "incendio",
+      "termo_busca": "sismo",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Atividade",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            0,
+            9
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2550302161374505,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "de São Miguel",
+          "tipo": "nome_proprio",
+          "posicao": [
+            26,
+            39
+          ],
+          "contexto": "Atividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira. A atividade s"
+        },
+        {
+          "nome": "de São Miguel",
+          "tipo": "nome_proprio",
+          "posicao": [
+            135,
+            148
+          ],
+          "contexto": "de sísmica a sul do concelho da Povoação, na ilha de São Miguel, intensificou-se, desde quarta-feira, com pelo me"
+        },
+        {
+          "nome": "pelo",
+          "tipo": "nome_proprio",
+          "posicao": [
+            191,
+            195
+          ],
+          "contexto": "Miguel, intensificou-se, desde quarta-feira, com pelo menos 14 sismos já sentidos até esta..."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "c03eea32-cfe1-4498-857b-421028c91290",
+      "texto": "Actividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira. O sismo mais forte dos últimos dias foi registado na manhã desta quinta-feira, com uma magnitude de 3,4 graus.",
+      "titulo": "Actividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira",
+      "data_criacao": "2025-06-05 14:42:54.329521",
+      "usuario": "Público",
+      "link": "https://www.publico.pt/2025/06/05/ciencia/noticia/actividade-sismica-ilha-sao-miguel-intensificouse-desde-quartafeira-2135664",
+      "tipo_desastre": "vendaval",
+      "termo_busca": "sismo",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.1474755310194382,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "de São Miguel",
+          "tipo": "nome_proprio",
+          "posicao": [
+            27,
+            40
+          ],
+          "contexto": "Actividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira. O sismo mais"
+        },
+        {
+          "nome": "desta quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            136,
+            154
+          ],
+          "contexto": "ais forte dos últimos dias foi registado na manhã desta quinta-feira, com uma magnitude de 3,4 graus."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "1f444cbd-1f58-4cbf-bdbf-e18f1e636155",
+      "texto": "Sismo de 5,8 na Turquia, na cidade costeira de Marmaris. Uma morte confirmada, após ataque de pânico. Os habitantes da Turquia ocidental e das ilhas gregas foram acordados na segunda-feira à noite com forte terramoto, de magnitude 5,8,...",
+      "titulo": "Sismo de 5,8 na Turquia, na cidade costeira de Marmaris. Uma morte confirmada, após ataque de pânico",
+      "data_criacao": "2025-06-05 14:42:54.329806",
+      "usuario": "SAPO 24",
+      "link": "https://24.sapo.pt/atualidade/artigos/sismo-de-58-na-turquia-na-cidade-costeira-de-marmaris-uma-morte-confirmada-apos-ataque-de-panico",
+      "tipo_desastre": "vendaval",
+      "termo_busca": "sismo",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.1332504289321642,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "cidade costeira de Marmaris",
+          "tipo": "nome_proprio",
+          "posicao": [
+            28,
+            55
+          ],
+          "contexto": "Sismo de 5,8 na Turquia, na cidade costeira de Marmaris. Uma morte confirmada, após ataque de pânico. Os"
+        },
+        {
+          "nome": "após ataque de pânico",
+          "tipo": "nome_proprio",
+          "posicao": [
+            79,
+            100
+          ],
+          "contexto": "idade costeira de Marmaris. Uma morte confirmada, após ataque de pânico. Os habitantes da Turquia ocidental e das ilhas g"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "6bac7cf0-9fd9-48e5-bed9-d070e3c78b8c",
+      "texto": "Cinco sismos sentidos durante a tarde de quarta-feira em São Miguel. Cinco sismos com magnitudes entre 2,7 e 3,3 foram sentidos quarta-feira na ilha de São Miguel, informou o Centro de Informação e Vigilância Sismovulcânica...",
+      "titulo": "Cinco sismos sentidos durante a tarde de quarta-feira em São Miguel",
+      "data_criacao": "2025-06-05 14:42:54.330000",
+      "usuario": "Açoriano Oriental",
+      "link": "https://www.acorianooriental.pt/noticia/cinco-sismos-sentidos-durante-a-tarde-de-quarta-feira-em-sao-miguel-369134",
+      "tipo_desastre": "acidente",
+      "termo_busca": "sismo",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.437323281280519,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "São Miguel",
+          "tipo": "nome_proprio",
+          "posicao": [
+            57,
+            67
+          ],
+          "contexto": "ismos sentidos durante a tarde de quarta-feira em São Miguel. Cinco sismos com magnitudes entre 2,7 e 3,3 fora"
+        },
+        {
+          "nome": "de São Miguel",
+          "tipo": "nome_proprio",
+          "posicao": [
+            149,
+            162
+          ],
+          "contexto": "tre 2,7 e 3,3 foram sentidos quarta-feira na ilha de São Miguel, informou o Centro de Informação e Vigilância Sis"
+        },
+        {
+          "nome": "Vigilância Sismovulcânica",
+          "tipo": "nome_proprio",
+          "posicao": [
+            198,
+            223
+          ],
+          "contexto": "de São Miguel, informou o Centro de Informação e Vigilância Sismovulcânica..."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "027eac35-edba-439e-8a39-1c794f1dd05d",
+      "texto": "Moradores de cidade baiana relatam batidas em portas durante tremor de terra. Um tremor de terra de baixa intensidade chamou atenção de residentes de Vera Cruz [Ilha de Itaparica], na Região Metropolitana de Salvador (RMS).",
+      "titulo": "Moradores de cidade baiana relatam batidas em portas durante tremor de terra",
+      "data_criacao": "2025-06-05 14:42:55.076871",
+      "usuario": "PrimeiroJornal",
+      "link": "https://primeirojornal.com.br/2025/06/moradores-de-cidade-baiana-relatam-batidas-em-portas-durante-tremor-de-terra/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "tremor de terra",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Salvador",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            208,
+            216
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.28146610394014393,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Moradores de cidade baiana relatam batidas",
+          "tipo": "nome_proprio",
+          "posicao": [
+            0,
+            42
+          ],
+          "contexto": "Moradores de cidade baiana relatam batidas em portas durante tremor de terra. Um tremor de t"
+        },
+        {
+          "nome": "Ilha de Itaparica",
+          "tipo": "nome_proprio",
+          "posicao": [
+            161,
+            178
+          ],
+          "contexto": "sidade chamou atenção de residentes de Vera Cruz [Ilha de Itaparica], na Região Metropolitana de Salvador (RMS)."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "9b4859b0-5394-4c16-b7a2-0941b450825b",
+      "texto": "Dakila Pesquisas investiga anomalias que provocam terremotos na região oeste de MS. Em Bonito, interior de Mato Grosso do Sul, um tremor de terra na manhã de terça-feira, 3 de junho, assustou moradores da cidade turística localizada a 297...",
+      "titulo": "Dakila Pesquisas investiga anomalias que provocam terremotos na região oeste de MS",
+      "data_criacao": "2025-06-05 14:42:55.077324",
+      "usuario": "Jornal Midiamax",
+      "link": "https://midiamax.uol.com.br/artigo/2025/dakila-pesquisas-investiga-anomalias-que-provocam-terremotos-na-regiao-sudoeste-de-ms/",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "tremor de terra",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.34820582955868784,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Bonito",
+          "tipo": "nome_proprio",
+          "posicao": [
+            87,
+            93
+          ],
+          "contexto": "que provocam terremotos na região oeste de MS. Em Bonito, interior de Mato Grosso do Sul, um tremor de ter"
+        },
+        {
+          "nome": "de Mato Grosso",
+          "tipo": "nome_proprio",
+          "posicao": [
+            104,
+            118
+          ],
+          "contexto": "emotos na região oeste de MS. Em Bonito, interior de Mato Grosso do Sul, um tremor de terra na manhã de terça-feir"
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "75db4d92-a9cf-468b-9796-f7da52be73a3",
+      "texto": "Estudo revela o que fez a Terra tremer misteriosamente a cada 90 segundos - aRede. Cientistas identificaram, em setembro de 2023, ondas sísmicas com intervalos de 90 segundos em diversas partes do planeta.",
+      "titulo": "Estudo revela o que fez a Terra tremer misteriosamente a cada 90 segundos - aRede",
+      "data_criacao": "2025-06-05 14:42:55.077527",
+      "usuario": "aRede",
+      "link": "https://arede.info/cotidiano/577159/estudo-revela-o-que-fez-a-terra-tremer-misteriosamente-a-cada-90-segundos",
+      "tipo_desastre": "acidente",
+      "termo_busca": "tremor de terra",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.2970709719816534,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "intervalos de 90",
+          "tipo": "nome_proprio",
+          "posicao": [
+            149,
+            165
+          ],
+          "contexto": "ificaram, em setembro de 2023, ondas sísmicas com intervalos de 90 segundos em diversas partes do planeta."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "b15e7278-cc55-4aba-886e-caeca24d7414",
+      "texto": "Mais de 20 ônibus pegam fogo em pátio na Filadélfia. Vários ônibus pegaram fogo em um pátio na cidade da Filadélfia, nos Estados Unidos, na manhã desta quinta-feira (5). O incêndio começou aproximadamente às...",
+      "titulo": "Mais de 20 ônibus pegam fogo em pátio na Filadélfia",
+      "data_criacao": "2025-06-05 14:42:55.957365",
+      "usuario": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/internacional/mais-de-20-onibus-pegam-fogo-em-patio-na-filadelfia/",
+      "tipo_desastre": "incendio",
+      "termo_busca": "incêndio florestal",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "alta",
+      "score_urgencia": 4,
+      "confianca_classificacao": 0.4114730912210035,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "desta quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            146,
+            164
+          ],
+          "contexto": "idade da Filadélfia, nos Estados Unidos, na manhã desta quinta-feira (5). O incêndio começou aproximadamente às..."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "24f7f6fa-9142-4f99-802d-2156bb63be67",
+      "texto": "IBAMA: produtores em MT devem adotar medidas urgentes contra incêndios. Atenção, produtor! IBAMA divulga lista de propriedades rurais em Mato Grosso que precisam adotar medidas urgentes contra incêndios florestais;...",
+      "titulo": "IBAMA: produtores em MT devem adotar medidas urgentes contra incêndios",
+      "data_criacao": "2025-06-05 14:42:55.958174",
+      "usuario": "CompreRural",
+      "link": "https://www.comprerural.com/ibama-produtores-em-mt-devem-adotar-medidas-urgentes-contra-incendios/",
+      "tipo_desastre": "acidente",
+      "termo_busca": "incêndio florestal",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "alta",
+      "score_urgencia": 4,
+      "confianca_classificacao": 0.359334866430916,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Mato Grosso",
+          "tipo": "nome_proprio",
+          "posicao": [
+            137,
+            148
+          ],
+          "contexto": "or! IBAMA divulga lista de propriedades rurais em Mato Grosso que precisam adotar medidas urgentes contra incên"
+        },
+        {
+          "nome": "precisam adotar",
+          "tipo": "nome_proprio",
+          "posicao": [
+            153,
+            168
+          ],
+          "contexto": "a lista de propriedades rurais em Mato Grosso que precisam adotar medidas urgentes contra incêndios florestais;..."
+        }
+      ],
+      "score_completude": 2
+    },
+    {
+      "id": "fc962458-ec42-431c-b5ef-b5bd0ddcd25d",
+      "texto": "(VÍDEO) Incêndio de grandes proporções atinge área de vegetação. Um incêndio florestal de grandes proporções mobilizou equipes do Corpo de Bombeiros na tarde desta quinta-feira (5), no bairro Moura, em Canelinha.",
+      "titulo": "(VÍDEO) Incêndio de grandes proporções atinge área de vegetação",
+      "data_criacao": "2025-06-05 14:42:55.958360",
+      "usuario": "Rádio Cidade",
+      "link": "https://rc.fm.br/web/page_noticia/id_989381/",
+      "tipo_desastre": "incendio",
+      "termo_busca": "incêndio florestal",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "Canelinha",
+          "tipo": "entidade_nomeada",
+          "label": "GPE",
+          "posicao": [
+            202,
+            211
+          ],
+          "confianca": "alta"
+        }
+      ],
+      "sentimento": "negativo",
+      "score_sentimento": -0.296,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.677056893256034,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Corpo de Bombeiros",
+          "tipo": "nome_proprio",
+          "posicao": [
+            130,
+            148
+          ],
+          "contexto": "restal de grandes proporções mobilizou equipes do Corpo de Bombeiros na tarde desta quinta-feira (5), no bairro Moura,"
+        },
+        {
+          "nome": "tarde desta quinta-feira",
+          "tipo": "nome_proprio",
+          "posicao": [
+            152,
+            176
+          ],
+          "contexto": "orções mobilizou equipes do Corpo de Bombeiros na tarde desta quinta-feira (5), no bairro Moura, em Canelinha."
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "47ae2ad3-e73c-4c3c-a700-cc424df95b85",
+      "texto": "Governo federal ativa sala de situação para combate a incêndios florestais. 04 de junho de 2025. Ana Cláudia Leocádio – Da Cenarium. BRASÍLIA (DF) – O governo federal ativou, em maio, a Sala de Situação de ministros para a...",
+      "titulo": "Governo federal ativa sala de situação para combate a incêndios florestais",
+      "data_criacao": "2025-06-05 14:42:55.958444",
+      "usuario": "AGÊNCIA CENARIUM",
+      "link": "https://agenciacenarium.com.br/governo-federal-ativa-sala-de-situacao-para-combate-a-incendios-florestais/",
+      "tipo_desastre": "incendio",
+      "termo_busca": "incêndio florestal",
+      "fonte": "serper",
+      "localizacoes": [
+        {
+          "texto": "BRASÍLIA",
+          "tipo": "cidade",
+          "label": "CIDADE",
+          "posicao": [
+            133,
+            141
+          ],
+          "confianca": "média"
+        }
+      ],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "média",
+      "score_urgencia": 2,
+      "confianca_classificacao": 0.21893401150009478,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "Cláudia Leocádio",
+          "tipo": "nome_proprio",
+          "posicao": [
+            101,
+            117
+          ],
+          "contexto": "a incêndios florestais. 04 de junho de 2025. Ana Cláudia Leocádio – Da Cenarium. BRASÍLIA (DF) – O governo federal"
+        }
+      ],
+      "score_completude": 6
+    },
+    {
+      "id": "7a71798e-5f89-40e2-b3ec-af8dc687bef1",
+      "texto": "Fitch eleva classificações da Hawaiian Electric Industries e subsidiárias, perspectiva positiva. A Fitch Ratings elevou a classificação de Inadimplência do Emissor (IDR) de Longo Prazo da Hawaiian Electric Industries, Inc. (HEI) para 'B+' de 'B'.",
+      "titulo": "Fitch eleva classificações da Hawaiian Electric Industries e subsidiárias, perspectiva positiva",
+      "data_criacao": "2025-06-05 14:42:55.958597",
+      "usuario": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+      "link": "https://br.investing.com/news/stock-market-news/fitch-eleva-classificacoes-da-hawaiian-electric-industries-e-subsidiarias-perspectiva-positiva-93CH-1574224",
+      "tipo_desastre": "deslizamento",
+      "termo_busca": "incêndio florestal",
+      "fonte": "serper",
+      "localizacoes": [],
+      "sentimento": "neutro",
+      "score_sentimento": 0.0,
+      "nivel_urgencia": "baixa",
+      "score_urgencia": 0,
+      "confianca_classificacao": 0.1583554894331355,
+      "telefones": [],
+      "pessoas": [
+        {
+          "nome": "classificações da",
+          "tipo": "nome_proprio",
+          "posicao": [
+            12,
+            29
+          ],
+          "contexto": "Fitch eleva classificações da Hawaiian Electric Industries e subsidiárias, pers"
+        },
+        {
+          "nome": "B+",
+          "tipo": "nome_proprio",
+          "posicao": [
+            235,
+            237
+          ],
+          "contexto": "da Hawaiian Electric Industries, Inc. (HEI) para 'B+' de 'B'."
+        }
+      ],
+      "score_completude": 2
+    }
+  ],
+  "ultima_atualizacao": "2025-06-05T14:42:57.495939"
+}
