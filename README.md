@@ -6,7 +6,7 @@ Sistema de monitoramento e análise de mensagens emergenciais sobre desastres na
 
 Este projeto consiste em um sistema avançado de monitoramento de emergências que:
 
-- Coleta dados em tempo real do Twitter sobre desastres naturais
+- Coleta dados em tempo real com Serper API com noticias filtradas sobre desastres naturais
 - Processa mensagens usando técnicas avançadas de NLP
 - Classifica automaticamente tipos de desastres
 - Analisa sentimentos e urgência das mensagens
@@ -40,9 +40,9 @@ source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Configure a API do Twitter (opcional):
-- Crie uma conta em developer.twitter.com
-- Obtenha o Bearer Token
+3. Configure o Serper API:
+- Crie uma conta em https://serper.dev/
+- Obtenha a chave da API
 - Configure na interface da aplicação
 
 4. Execute a aplicação:
