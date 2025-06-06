@@ -20,6 +20,17 @@ from datetime import datetime, timedelta
 import time
 import sys
 import subprocess
+import pickle  # Adicionado para persistência de objetos
+
+# Inicialização de variáveis de sessão para persistência
+if 'dados_carregados' not in st.session_state:
+    st.session_state.dados_carregados = False
+if 'ultima_atualizacao_manual' not in st.session_state:
+    st.session_state.ultima_atualizacao_manual = None
+if 'dados_persistidos' not in st.session_state:
+    st.session_state.dados_persistidos = None
+if 'forcar_atualizacao' not in st.session_state:
+    st.session_state.forcar_atualizacao = False
 
 # Verificação e instalação automática de dependências
 try:
@@ -113,6 +124,8 @@ try:
     GeradorMapaEmergencia = importar_com_seguranca('mapa', 'GeradorMapaEmergencia')
     # Importação dos novos módulos
     from nlp_relatorios import ProcessadorNLTK, GeradorRelatorios, plotly_para_streamlit
+    # Importação do módulo de persistência
+    from persistencia import GerenciadorPersistencia
 except Exception as e:
     logger.error(f"Erro ao importar módulos: {str(e)}\n{traceback.format_exc()}")
 
@@ -242,9 +255,16 @@ class MonitorEmergencias:
         debug_info("Inicializando MonitorEmergencias")
         self.arquivo_dados = 'data/mensagens_coletadas.json'
         self.erros_execucao = []
+
+        # Inicializa o gerenciador de persistência
+        self.persistencia = GerenciadorPersistencia(diretorio_cache='data/cache')
+
+        # Inicializa variáveis de sessão
         self.inicializar_sessao()
-        self.carregar_dados()
-    
+
+        # Carrega dados com persistência
+        self.carregar_dados_persistentes()
+
     @monitorar_funcao
     def inicializar_sessao(self):
         """Inicializa variáveis de sessão"""
@@ -485,9 +505,10 @@ class MonitorEmergencias:
 
                             # Atualizar data da última coleta
                             st.session_state.ultima_coleta = datetime.now()
+                            st.session_state.ultima_atualizacao_manual = datetime.now()
 
-                            # Salvar os dados atualizados
-                            self.salvar_dados(st.session_state.dados_processados)
+                            # Salvar os dados atualizados usando persistência
+                            self.salvar_dados_persistentes(st.session_state.dados_processados)
 
                             return True
 
@@ -524,9 +545,6 @@ class MonitorEmergencias:
                     # Gerar dados simulados
                     df_simulados = simulador.gerar_dados_simulados(num_mensagens)
 
-                    # Processar os dados simulados com NLP (opcional, já que o simulador já gera dados processados)
-                    #df_processados = self.processar_dados_nlp(df_simulados)
-
                     # Atualizar os dados existentes
                     if not st.session_state.dados_processados.empty:
                         # Verificar e remover duplicados pelo ID
@@ -547,9 +565,10 @@ class MonitorEmergencias:
 
                     # Atualizar data da última coleta
                     st.session_state.ultima_coleta = datetime.now()
+                    st.session_state.ultima_atualizacao_manual = datetime.now()
 
-                    # Salvar os dados atualizados
-                    self.salvar_dados(st.session_state.dados_processados)
+                    # Salvar os dados atualizados usando persistência
+                    self.salvar_dados_persistentes(st.session_state.dados_processados)
 
                     # Adicionar indicador visual de modo simulação
                     st.sidebar.warning("⚠️ MODO SIMULAÇÃO: Usando dados fictícios")
@@ -609,9 +628,10 @@ class MonitorEmergencias:
 
                 # Atualizar data da última coleta
                 st.session_state.ultima_coleta = datetime.now()
+                st.session_state.ultima_atualizacao_manual = datetime.now()
 
-                # Salvar os dados atualizados
-                self.salvar_dados(st.session_state.dados_processados)
+                # Salvar os dados atualizados usando persistência
+                self.salvar_dados_persistentes(st.session_state.dados_processados)
 
                 # Indicar que os dados incluem conteúdo do Serper
                 st.sidebar.info("ℹ️ Dados incluem notícias coletadas via Google News (Serper API)")
@@ -668,6 +688,34 @@ class MonitorEmergencias:
             st.image("FIAP-transparente.png", width=None, use_container_width=True, caption=None)
 
             st.title("⚙️ Configurações")
+
+            # Seção de Atualização Manual
+            st.subheader("🔄 Atualização de Dados")
+
+            col1, col2 = st.columns([1, 1])
+            with col1:
+                if st.button("Atualizar Notícias", help="Buscar notícias atualizadas sobre desastres via Google News"):
+                    with st.spinner("Coletando notícias atualizadas..."):
+                        if self.coletar_dados_serper():
+                            st.success("✅ Notícias atualizadas com sucesso!")
+                        else:
+                            st.error("❌ Falha ao atualizar notícias")
+
+            with col2:
+                if st.button("Atualizar Twitter", help="Buscar novas mensagens do Twitter sobre desastres"):
+                    with st.spinner("Coletando dados do Twitter..."):
+                        if self.coletar_dados_tempo_real():
+                            st.success("✅ Dados do Twitter atualizados!")
+                        else:
+                            st.error("❌ Falha ao atualizar dados do Twitter")
+
+            # Mostrar última atualização
+            if st.session_state.ultima_atualizacao_manual:
+                ultima_att = st.session_state.ultima_atualizacao_manual
+                st.info(f"📅 Última atualização manual: {ultima_att.strftime('%d/%m/%Y %H:%M:%S')}")
+
+            # Separador visual
+            st.markdown("---")
 
 # Seção de Configuração API Twitter
             st.subheader("🐦 Configuração Twitter API")
@@ -1083,6 +1131,96 @@ class MonitorEmergencias:
             if ultima_coleta is None or (agora - ultima_coleta).total_seconds() >= 300:  # 5 minutos
                 self.coletar_dados_tempo_real()
                 st.experimental_rerun()
+
+    @monitorar_funcao
+    def carregar_dados_persistentes(self):
+        """Carrega dados usando o sistema de persistência"""
+        try:
+            # Verifica se os dados já estão carregados na sessão atual
+            if not st.session_state.dados_processados.empty and not st.session_state.forcar_atualizacao:
+                debug_info("Usando dados já carregados na sessão atual")
+                return True
+
+            # Verifica se devemos forçar uma atualização
+            if st.session_state.forcar_atualizacao:
+                debug_info("Forçando atualização de dados")
+                st.session_state.forcar_atualizacao = False
+                return self.coletar_dados_tempo_real()
+
+            # Carrega os dados do cache
+            debug_info("Tentando carregar dados do cache persistente")
+            df, metadata = self.persistencia.carregar_dados()
+
+            if not df.empty:
+                # Atualiza os dados na sessão
+                st.session_state.dados_processados = df
+                st.session_state.dados_carregados = True
+
+                # Atualiza informações de timestamp
+                ultima_atualizacao = self.persistencia.verificar_atualizacao()
+                if ultima_atualizacao:
+                    st.session_state.ultima_atualizacao = ultima_atualizacao
+
+                # Atualiza outras informações da sessão
+                if metadata:
+                    if 'ultima_coleta' in metadata:
+                        st.session_state.ultima_coleta = metadata.get('ultima_coleta')
+
+                debug_info(f"Dados carregados do cache com sucesso: {len(df)} registros")
+                return True
+            else:
+                debug_info("Nenhum dado encontrado no cache, tentando carregar do arquivo JSON padrão")
+                # Se não encontrar dados no cache, tenta o método antigo
+                self.carregar_dados()
+
+                # Se ainda não tiver dados, coleta novos
+                if st.session_state.dados_processados.empty:
+                    debug_info("Nenhum dado encontrado, coletando novos dados")
+                    return self.coletar_dados_tempo_real()
+                else:
+                    # Se tiver dados do método antigo, persiste no novo formato
+                    self.salvar_dados_persistentes(st.session_state.dados_processados)
+                    return True
+
+        except Exception as e:
+            debug_info("Erro ao carregar dados persistentes", nivel='error', exception=e)
+            self.erros_execucao.append(f"Erro ao carregar dados persistentes: {str(e)}")
+            st.error(f"Erro ao carregar dados: {e}")
+            return False
+
+    @monitorar_funcao
+    def salvar_dados_persistentes(self, df: pd.DataFrame):
+        """Salva dados usando o sistema de persistência"""
+        if df.empty:
+            debug_info("Tentativa de salvar DataFrame vazio", nivel='warning')
+            return False
+
+        try:
+            # Metadata para persistir junto com os dados
+            metadata = {
+                'ultima_coleta': st.session_state.ultima_coleta,
+                'ultima_atualizacao': datetime.now()
+            }
+
+            # Salva usando o gerenciador de persistência
+            resultado = self.persistencia.salvar_dados(df, metadata)
+
+            if resultado:
+                # Atualiza informações da sessão
+                st.session_state.ultima_atualizacao = datetime.now()
+                st.session_state.dados_carregados = True
+                debug_info(f"Dados persistidos com sucesso: {len(df)} registros")
+
+                # Também salva no formato antigo para compatibilidade
+                self.salvar_dados(df)
+
+            return resultado
+
+        except Exception as e:
+            debug_info("Erro ao salvar dados persistentes", nivel='error', exception=e)
+            self.erros_execucao.append(f"Erro ao salvar dados persistentes: {str(e)}")
+            st.error(f"Erro ao salvar dados: {e}")
+            return False
 
 # Inicialização da aplicação
 if __name__ == "__main__":

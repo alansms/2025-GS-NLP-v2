@@ -16677,3 +16677,780 @@ TypeError: Invalid comparison between dtype=datetime64[ns] and date
 2025-06-05 22:55:12,578 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
 2025-06-05 22:55:12,579 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
 2025-06-05 22:55:12,757 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:00:21,077 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:00:52,440 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:00:52,453 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:00:52,456 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:00:52,456 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:00:52,457 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:00:52,500 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:00:52,500 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:00:52,624 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:00:52,624 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:00:52,627 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:00:52,628 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:00:52,862 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:03:15,552 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:03:43,555 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:03:43,565 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:03:43,570 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:03:43,571 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:03:43,572 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:03:43,608 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:03:43,608 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:03:43,713 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:03:43,713 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:03:43,715 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:03:43,716 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:03:43,924 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:09:39,763 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:10:08,253 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:10:08,265 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:10:08,268 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:10:08,268 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:10:08,269 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:10:08,309 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:10:08,310 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:10:08,402 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:10:08,402 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:10:08,404 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:10:08,404 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:10:08,617 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:15:23,414 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:15:51,815 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:15:51,829 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:15:51,832 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:15:51,832 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:15:51,833 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:15:51,868 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:15:51,868 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:15:51,961 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:15:51,961 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:15:51,963 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:15:51,963 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:15:52,174 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:16:14,920 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:16:42,059 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:16:42,067 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:16:42,070 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:16:42,070 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:16:42,071 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:16:42,102 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:16:42,102 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:16:42,194 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:16:42,194 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:16:42,196 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:16:42,196 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:16:42,407 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:22:54,516 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:23:23,551 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:23:23,565 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:23:23,567 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:23:23,567 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:23:23,568 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:23:23,607 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:23:23,607 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:23:23,706 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:23:23,706 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:23:23,708 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:23:23,708 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:23:23,966 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:24:21,152 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:24:51,253 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:24:51,260 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:24:51,263 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:24:51,264 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:24:51,265 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:24:51,300 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:24:51,301 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:24:51,407 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:24:51,407 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:24:51,409 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:24:51,409 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:24:51,619 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:25:58,078 - monitor_emergencias - INFO - Tentando importar AnalisadorSentimento de analise_sentimento
+2025-06-05 23:26:00,518 - monitor_emergencias - INFO - Importação de AnalisadorSentimento bem-sucedida
+2025-06-05 23:26:00,518 - monitor_emergencias - INFO - Tentando importar ExtratorEntidades de extrator_entidades
+2025-06-05 23:26:03,480 - monitor_emergencias - INFO - Importação de ExtratorEntidades bem-sucedida
+2025-06-05 23:26:03,481 - monitor_emergencias - INFO - Tentando importar ClassificadorDesastre de classificador_tipo
+2025-06-05 23:26:03,865 - monitor_emergencias - INFO - Importação de ClassificadorDesastre bem-sucedida
+2025-06-05 23:26:03,866 - monitor_emergencias - INFO - Tentando importar GeradorNuvemPalavras de wordcloud_gen
+2025-06-05 23:26:04,017 - monitor_emergencias - INFO - Importação de GeradorNuvemPalavras bem-sucedida
+2025-06-05 23:26:04,017 - monitor_emergencias - INFO - Tentando importar GeradorMapaEmergencia de mapa
+2025-06-05 23:26:04,018 - monitor_emergencias - INFO - Importação de GeradorMapaEmergencia bem-sucedida
+2025-06-05 23:26:04,260 - monitor_emergencias - INFO - Inicializando MonitorEmergencias
+2025-06-05 23:26:04,260 - monitor_emergencias - INFO - Iniciando execução: inicializar_sessao
+2025-06-05 23:26:04,261 - monitor_emergencias - INFO - Concluído com sucesso: inicializar_sessao
+2025-06-05 23:26:04,261 - monitor_emergencias - INFO - Iniciando execução: carregar_dados_persistentes
+2025-06-05 23:26:04,261 - monitor_emergencias - INFO - Tentando carregar dados do cache persistente
+2025-06-05 23:26:04,261 - monitor_emergencias.persistencia - WARNING - Nenhum arquivo de cache encontrado
+2025-06-05 23:26:04,261 - monitor_emergencias - INFO - Nenhum dado encontrado no cache, tentando carregar do arquivo JSON padrão
+2025-06-05 23:26:04,261 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:26:04,261 - monitor_emergencias - INFO - Tentando carregar dados de: data/mensagens_coletadas.json
+2025-06-05 23:26:04,263 - monitor_emergencias - INFO - Dados carregados com sucesso: 50 mensagens
+2025-06-05 23:26:04,263 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:26:04,263 - monitor_emergencias - INFO - Iniciando execução: salvar_dados_persistentes
+2025-06-05 23:26:04,266 - monitor_emergencias.persistencia - ERROR - Erro ao salvar dados: Object of type datetime is not JSON serializable
+2025-06-05 23:26:04,266 - monitor_emergencias - INFO - Concluído com sucesso: salvar_dados_persistentes
+2025-06-05 23:26:04,266 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados_persistentes
+2025-06-05 23:26:04,266 - monitor_emergencias - INFO - Iniciando execução: construir_interface
+2025-06-05 23:26:04,289 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros
+2025-06-05 23:26:04,292 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros
+2025-06-05 23:26:04,992 - monitor_emergencias - INFO - Concluído com sucesso: construir_interface
+2025-06-05 23:26:09,913 - monitor_emergencias - INFO - Tentando importar AnalisadorSentimento de analise_sentimento
+2025-06-05 23:26:09,913 - monitor_emergencias - INFO - Importação de AnalisadorSentimento bem-sucedida
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Tentando importar ExtratorEntidades de extrator_entidades
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Importação de ExtratorEntidades bem-sucedida
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Tentando importar ClassificadorDesastre de classificador_tipo
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Importação de ClassificadorDesastre bem-sucedida
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Tentando importar GeradorNuvemPalavras de wordcloud_gen
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Importação de GeradorNuvemPalavras bem-sucedida
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Tentando importar GeradorMapaEmergencia de mapa
+2025-06-05 23:26:09,914 - monitor_emergencias - INFO - Importação de GeradorMapaEmergencia bem-sucedida
+2025-06-05 23:26:09,915 - monitor_emergencias - INFO - Inicializando MonitorEmergencias
+2025-06-05 23:26:09,915 - monitor_emergencias - INFO - Iniciando execução: inicializar_sessao
+2025-06-05 23:26:09,916 - monitor_emergencias - INFO - Concluído com sucesso: inicializar_sessao
+2025-06-05 23:26:09,916 - monitor_emergencias - INFO - Iniciando execução: carregar_dados_persistentes
+2025-06-05 23:26:09,916 - monitor_emergencias - INFO - Tentando carregar dados do cache persistente
+2025-06-05 23:26:09,917 - monitor_emergencias.persistencia - ERROR - Erro ao carregar JSON: Expecting value: line 2331 column 27 (char 84966)
+2025-06-05 23:26:09,917 - monitor_emergencias - INFO - Nenhum dado encontrado no cache, tentando carregar do arquivo JSON padrão
+2025-06-05 23:26:09,918 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:26:09,918 - monitor_emergencias - INFO - Tentando carregar dados de: data/mensagens_coletadas.json
+2025-06-05 23:26:09,920 - monitor_emergencias - INFO - Dados carregados com sucesso: 50 mensagens
+2025-06-05 23:26:09,920 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:26:09,920 - monitor_emergencias - INFO - Iniciando execução: salvar_dados_persistentes
+2025-06-05 23:26:09,929 - monitor_emergencias.persistencia - ERROR - Erro ao salvar dados: Object of type datetime is not JSON serializable
+2025-06-05 23:26:09,929 - monitor_emergencias - INFO - Concluído com sucesso: salvar_dados_persistentes
+2025-06-05 23:26:09,929 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados_persistentes
+2025-06-05 23:26:09,929 - monitor_emergencias - INFO - Iniciando execução: construir_interface
+2025-06-05 23:26:09,933 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros
+2025-06-05 23:26:09,935 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros
+2025-06-05 23:26:10,497 - monitor_emergencias - INFO - Concluído com sucesso: construir_interface
+2025-06-05 23:26:35,142 - monitor_emergencias - INFO - Tentando importar AnalisadorSentimento de analise_sentimento
+2025-06-05 23:26:35,143 - monitor_emergencias - INFO - Importação de AnalisadorSentimento bem-sucedida
+2025-06-05 23:26:35,144 - monitor_emergencias - INFO - Tentando importar ExtratorEntidades de extrator_entidades
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Importação de ExtratorEntidades bem-sucedida
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Tentando importar ClassificadorDesastre de classificador_tipo
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Importação de ClassificadorDesastre bem-sucedida
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Tentando importar GeradorNuvemPalavras de wordcloud_gen
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Importação de GeradorNuvemPalavras bem-sucedida
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Tentando importar GeradorMapaEmergencia de mapa
+2025-06-05 23:26:35,145 - monitor_emergencias - INFO - Importação de GeradorMapaEmergencia bem-sucedida
+2025-06-05 23:26:35,148 - monitor_emergencias - INFO - Inicializando MonitorEmergencias
+2025-06-05 23:26:35,148 - monitor_emergencias - INFO - Iniciando execução: inicializar_sessao
+2025-06-05 23:26:35,149 - monitor_emergencias - INFO - Concluído com sucesso: inicializar_sessao
+2025-06-05 23:26:35,150 - monitor_emergencias - INFO - Iniciando execução: carregar_dados_persistentes
+2025-06-05 23:26:35,150 - monitor_emergencias - INFO - Usando dados já carregados na sessão atual
+2025-06-05 23:26:35,150 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados_persistentes
+2025-06-05 23:26:35,150 - monitor_emergencias - INFO - Iniciando execução: construir_interface
+2025-06-05 23:26:35,160 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros
+2025-06-05 23:26:35,163 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros
+2025-06-05 23:26:35,678 - monitor_emergencias - INFO - Concluído com sucesso: construir_interface
+2025-06-05 23:27:35,628 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:27:41,000 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:28:03,019 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:28:03,040 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:28:03,046 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:28:03,046 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:28:03,047 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:28:03,163 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:28:03,163 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:28:03,259 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:28:03,259 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:28:03,262 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:28:03,262 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:28:03,516 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:28:06,593 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:28:06,601 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:28:06,604 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:28:06,604 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:28:06,605 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:28:06,646 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:28:06,646 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:28:06,762 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:28:06,762 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:28:06,764 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:28:06,764 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:28:06,998 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:28:33,916 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:29:03,145 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:29:03,156 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:29:03,158 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:29:03,159 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:29:03,160 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:29:03,193 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:29:03,193 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:29:03,296 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:29:03,297 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:29:03,299 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:29:03,299 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:29:03,506 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:36:28,195 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:36:32,531 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:36:55,644 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:36:55,655 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:36:55,659 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:36:55,659 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:36:55,660 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:36:55,775 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:36:55,775 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:36:55,875 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:36:55,875 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:36:55,878 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:36:55,878 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:36:56,128 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:36:58,856 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:36:58,866 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:36:58,868 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:36:58,868 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:36:58,869 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:36:58,906 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:36:58,906 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:36:59,028 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:36:59,028 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:36:59,030 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:36:59,031 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:36:59,281 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:43:17,905 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:43:44,204 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:43:44,219 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:43:44,222 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:43:44,222 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:43:44,223 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:43:44,269 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:43:44,269 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:43:44,283 - monitor_emergencias - ERROR - Erro ao exibir mapa: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 283, in exibir_mapa
+    mapa = gerador_mapa.gerar_mapa(df_processado)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/mapa.py", line 629, in gerar_mapa
+    local = ocorrencia.get('localizacao', '')
+            ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2025-06-05 23:43:44,283 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:43:44,284 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:43:44,286 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:43:44,286 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:43:44,543 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:45:23,233 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:45:51,188 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:45:51,197 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:45:51,200 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:45:51,200 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:45:51,201 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:45:51,245 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:45:51,246 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:45:51,261 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:45:51,261 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:45:51,263 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:45:51,264 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:45:51,498 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras
+2025-06-05 23:53:13,746 - monitor_emergencias - INFO - Iniciando execução: carregar_dados
+2025-06-05 23:53:39,832 - monitor_emergencias - INFO - Concluído com sucesso: carregar_dados
+2025-06-05 23:53:40,095 - monitor_emergencias - INFO - Iniciando execução: aplicar_filtros_personalizados
+2025-06-05 23:53:40,142 - monitor_emergencias - ERROR - Erro ao aplicar filtros personalizados: Invalid comparison between dtype=datetime64[ns] and date
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 565, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: 2025-06-05
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/2025-GS-NLP/app_sem_subprocess.py", line 416, in aplicar_filtros_personalizados
+    df_filtrado = df_filtrado[(df_filtrado['data'] >= data_inicio) &
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/array_ops.py", line 330, in comparison_op
+    res_values = op(lvalues, rvalues)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+  File "/Users/alansms/Documents/FIAP/2025/GS- Processamento de linguagem natural/Monitoramento de Desastres Naturais-v2/venv/lib/python3.13/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and date
+
+2025-06-05 23:53:40,142 - monitor_emergencias - INFO - Concluído com sucesso: aplicar_filtros_personalizados
+2025-06-05 23:53:40,150 - monitor_emergencias - INFO - Iniciando execução: exibir_estatisticas
+2025-06-05 23:53:40,596 - monitor_emergencias - INFO - Concluído com sucesso: exibir_estatisticas
+2025-06-05 23:53:40,600 - monitor_emergencias - INFO - Iniciando execução: exibir_mapa
+2025-06-05 23:53:40,740 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mapa
+2025-06-05 23:53:40,741 - monitor_emergencias - INFO - Iniciando execução: exibir_mensagens_recentes
+2025-06-05 23:53:40,781 - monitor_emergencias - INFO - Concluído com sucesso: exibir_mensagens_recentes
+2025-06-05 23:53:40,781 - monitor_emergencias - INFO - Iniciando execução: exibir_nuvem_palavras
+2025-06-05 23:53:41,943 - monitor_emergencias - INFO - Concluído com sucesso: exibir_nuvem_palavras

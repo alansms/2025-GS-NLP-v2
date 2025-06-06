@@ -22,6 +22,8 @@ class ColetorSerper:
         """Inicializa o coletor com a chave da API"""
         # Usar a chave fornecida ou uma chave padrão
         self.api_key = api_key or '54842e1a8120d7a6760405cd4dd92a6b2abc6924'
+        # Tempo da última atualização
+        self.ultima_atualizacao = None
 
         # Mapeamento por categoria com termos separados para buscas individuais
         self.consultas = {
@@ -33,12 +35,19 @@ class ColetorSerper:
             "Outro": ["queda de ponte", "desabamento", "colapso de estrutura", "queda de marquise"]
         }
 
-    def buscar_noticias(self, max_resultados: int = 50) -> List[Dict[str, Any]]:
+    def buscar_noticias(self, max_resultados: int = 50, timeout: int = 10) -> List[Dict[str, Any]]:
         """
         Busca notícias para todos os termos de busca e retorna resultados formatados
         para serem compatíveis com o formato de dados do Twitter
+
+        Args:
+            max_resultados (int): Número máximo de resultados a retornar
+            timeout (int): Tempo limite em segundos para cada requisição
+
+        Returns:
+            List[Dict[str, Any]]: Lista de notícias no formato padronizado
         """
-        conn = http.client.HTTPSConnection("google.serper.dev")
+        conn = http.client.HTTPSConnection("google.serper.dev", timeout=timeout)
         headers = {
             'X-API-KEY': self.api_key,
             'Content-Type': 'application/json'
@@ -63,7 +72,7 @@ class ColetorSerper:
                         break
 
                     payload = json.dumps({
-                        "q": termo,
+                        "q": f"{termo} brasil",  # Adicionado 'brasil' para priorizar notícias locais
                         "gl": "br",
                         "hl": "pt-br",
                         "num": 5,  # Limitamos por termo para não exceder o limite da API
@@ -74,6 +83,10 @@ class ColetorSerper:
                         conn.request("POST", "/news", payload, headers)
                         res = conn.getresponse()
                         data = res.read()
+
+                        if res.status != 200:
+                            logger.error(f"Erro na API Serper: Status {res.status} - {data.decode('utf-8')}")
+                            continue
 
                         resultado = json.loads(data.decode("utf-8"))
                         noticias = resultado.get("news", [])
@@ -118,12 +131,19 @@ class ColetorSerper:
                         logger.error(f"Erro ao buscar termo '{termo}': {str(e)}")
                         continue
 
+            # Atualiza o timestamp da última atualização
+            self.ultima_atualizacao = datetime.now()
             logger.info(f"Total de notícias coletadas: {len(resultados)}")
             return resultados
 
         except Exception as e:
             logger.error(f"Erro na busca de notícias: {str(e)}")
             return []
+        finally:
+            try:
+                conn.close()
+            except:
+                pass
 
     def _extrair_localizacoes(self, texto: str) -> List[Dict[str, str]]:
         """
@@ -165,6 +185,10 @@ class ColetorSerper:
         except Exception as e:
             logger.error(f"Erro ao salvar resultados: {str(e)}")
             return ""
+
+    def obter_ultima_atualizacao(self) -> Optional[datetime]:
+        """Retorna a data e hora da última atualização"""
+        return self.ultima_atualizacao
 
 
 # Exemplo de uso

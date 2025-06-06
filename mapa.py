@@ -190,6 +190,9 @@ class GeradorMapaEmergencia:
         # Adiciona controle de camadas
         folium.LayerControl().add_to(mapa)
         
+        # Adiciona o contorno do Brasil
+        self.destacar_limite_brasil(mapa)
+
         return mapa
     
     def adicionar_marcadores_emergencia(self, mapa: folium.Map, 
@@ -213,71 +216,130 @@ class GeradorMapaEmergencia:
         
         # Cria grupo de marcadores se solicitado
         if agrupar_marcadores:
-            marker_cluster = plugins.MarkerCluster().add_to(mapa)
+            marker_cluster = plugins.MarkerCluster(
+                name="Agrupamento de Emergências",
+                overlay=True,
+                control=True,
+                icon_create_function="""
+                function(cluster) {
+                    var childCount = cluster.getChildCount();
+                    var c = ' marker-cluster-';
+                    if (childCount < 10) {
+                        c += 'small';
+                    } else if (childCount < 30) {
+                        c += 'medium';
+                    } else {
+                        c += 'large';
+                    }
+                    return new L.DivIcon({ 
+                        html: '<div><span>' + childCount + '</span></div>', 
+                        className: 'marker-cluster' + c, 
+                        iconSize: new L.Point(40, 40) 
+                    });
+                }
+                """
+            ).add_to(mapa)
             container = marker_cluster
         else:
             container = mapa
         
         for idx, row in dados.iterrows():
-            # Determina cor e ícone baseado no tipo
-            tipo = row.get('tipo_desastre', 'outros')
-            cor = self.cores_emergencia.get(tipo, '#808080')
-            icone = self.icones_emergencia.get(tipo, 'info')
-            
-            # Determina tamanho baseado na urgência
-            urgencia = row.get('nivel_urgencia', 'baixa')
-            if urgencia == 'crítica':
-                tamanho = 'large'
+            # Determina tipo, urgência e origem das coordenadas
+            tipo = row.get('tipo_desastre', 'outros').lower()
+            urgencia = row.get('nivel_urgencia', 'baixa').lower()
+            coords_origem = row.get('coords_origem', 'desconhecida').lower()
+
+            # Mapeamento personalizado de ícones FontAwesome por tipo de desastre
+            icon_map = {
+                'enchente': 'tint',
+                'inundação': 'water',
+                'incendio': 'fire',
+                'deslizamento': 'mountain',
+                'terremoto': 'dizzy',
+                'seca': 'sun',
+                'vendaval': 'wind',
+                'granizo': 'snowflake',
+                'tsunami': 'water',
+                'furacão': 'hurricane',
+                'tempestade': 'cloud-showers-heavy',
+                'vulcão': 'volcano',
+                'acidente': 'car-crash',
+                'emergencia_medica': 'medkit',
+                'outros': 'exclamation-triangle'
+            }
+
+            # Define o ícone com base no tipo de desastre
+            icone = icon_map.get(tipo, 'exclamation-triangle')
+
+            # Define a cor com base na urgência, conforme solicitado
+            if urgencia == 'crítica' or urgencia == 'critica':
+                cor = 'red'
             elif urgencia == 'alta':
-                tamanho = 'medium'
-            else:
-                tamanho = 'small'
-            
+                cor = 'orange'
+            elif urgencia == 'média' or urgencia == 'media':
+                cor = 'blue'
+            else:  # baixa
+                cor = 'gray'
+
             # Cria popup se solicitado
             popup_html = None
             if mostrar_popup:
                 popup_html = self._criar_popup_emergencia(row)
             
-            # Determina cor do marcador baseado no tipo de desastre
-            # Mapeia as cores personalizadas para as cores padrão do Folium
-            cor_folium = 'blue'  # cor padrão
-            if tipo == 'enchente' or tipo == 'Enchente':
-                cor_folium = 'blue'
-            elif tipo == 'incendio' or tipo == 'Incêndio':
-                cor_folium = 'red'
-            elif tipo == 'deslizamento' or tipo == 'Deslizamento':
-                cor_folium = 'darkred'
-            elif tipo == 'vendaval' or tipo == 'Vendaval':
-                cor_folium = 'gray'
-            elif tipo == 'granizo' or tipo == 'Granizo':
-                cor_folium = 'lightblue'
-            elif tipo == 'terremoto' or tipo == 'Terremoto':
-                cor_folium = 'darkpurple'
-            elif tipo == 'acidente' or tipo == 'Acidente':
-                cor_folium = 'orange'
-            elif tipo == 'emergencia_medica' or tipo == 'Emergência Médica':
-                cor_folium = 'green'
-            elif tipo == 'seca' or tipo == 'Seca':
-                cor_folium = 'beige'
+            # Tooltip personalizado baseado na urgência
+            tooltip_style = f"font-weight: bold; color: white; background-color: {cor};"
+            tooltip = f"<span style='{tooltip_style}'>{tipo.title()} - {urgencia.title()}</span>"
 
-            # Adicionar borda mais forte para urgências críticas
-            extra_options = {}
-            if urgencia == 'crítica':
-                extra_options = {"className": "fa-2x"}
+            # Para coordenadas estimadas (menor confiança), usar marcadores diferentes
+            if coords_origem == 'estimada':
+                # Círculo com borda tracejada para coordenadas estimadas
+                folium.CircleMarker(
+                    location=[row['latitude'], row['longitude']],
+                    radius=10,
+                    popup=folium.Popup(popup_html, max_width=300) if popup_html else None,
+                    tooltip=tooltip,
+                    color=cor,
+                    fill=True,
+                    fill_color=cor,
+                    fill_opacity=0.4,
+                    weight=2,
+                    dash_array='5, 5'  # Linha tracejada para indicar estimativa
+                ).add_to(container)
 
-            # Adiciona marcador
-            folium.Marker(
-                location=[row['latitude'], row['longitude']],
-                popup=popup_html,
-                tooltip=f"{tipo.title()} - {urgencia.title()}",
-                icon=folium.Icon(
-                    color=cor_folium,
-                    icon=icone,
-                    prefix='fa',
-                    **extra_options
-                )
-            ).add_to(container)
-        
+                # Adiciona um pequeno marcador com ícone de incerteza
+                folium.Marker(
+                    location=[row['latitude'], row['longitude']],
+                    icon=folium.DivIcon(
+                        icon_size=(20, 20),
+                        icon_anchor=(10, 10),
+                        html=f'<div style="font-size: 12px; color: {cor};"><i class="fa fa-question-circle"></i></div>'
+                    )
+                ).add_to(container)
+            else:
+                # Marcador normal para coordenadas extraídas ou geocodificadas
+                folium.Marker(
+                    location=[row['latitude'], row['longitude']],
+                    popup=folium.Popup(popup_html, max_width=300) if popup_html else None,
+                    tooltip=tooltip,
+                    icon=folium.Icon(
+                        prefix='fa',  # Usa FontAwesome conforme solicitado
+                        icon=icone,
+                        color=cor,
+                        icon_color='white'
+                    )
+                ).add_to(container)
+
+                # Destaque especial para emergências críticas
+                if urgencia == 'crítica' or urgencia == 'critica':
+                    # Adiciona um círculo pulsante vermelho para indicar urgência crítica
+                    folium.CircleMarker(
+                        location=[row['latitude'], row['longitude']],
+                        radius=15,
+                        color='red',
+                        fill=False,
+                        weight=2
+                    ).add_to(container)
+
         return mapa
     
     def _criar_popup_emergencia(self, dados_emergencia: pd.Series) -> str:
@@ -507,62 +569,148 @@ class GeradorMapaEmergencia:
         """
         mapa.save(arquivo)
 
-    def gerar_mapa(self, dados: pd.DataFrame) -> folium.Map:
+    def criar_marcador_estatisticas(self, mapa: folium.Map, coordenadas: Tuple[float, float],
+                                   mensagem: str, tipo: str = 'outros',
+                                   estatisticas: Dict = None) -> None:
         """
-        Gera um mapa completo com todas as emergências
+        Cria um marcador personalizado com estatísticas no mapa
 
         Args:
-            dados (pd.DataFrame): DataFrame com dados de emergências
-
-        Returns:
-            folium.Map: Mapa completo com marcadores
+            mapa (folium.Map): Objeto do mapa
+            coordenadas (Tuple[float, float]): Coordenadas (lat, lon)
+            mensagem (str): Mensagem da ocorrência
+            tipo (str): Tipo de emergência
+            estatisticas (Dict): Dicionário com estatísticas adicionais
         """
-        # Verifica se o DataFrame está vazio
-        if dados.empty:
-            return self.criar_mapa_base()
+        cor = self.cores_emergencia.get(tipo.lower(), self.cores_emergencia['outros'])
+        icone = self.icones_emergencia.get(tipo.lower(), 'info')
 
-        # Verifica se há coordenadas no DataFrame
-        if 'latitude' not in dados.columns or 'longitude' not in dados.columns:
-            raise ValueError("DataFrame não contém coordenadas (latitude/longitude)")
+        # Criar HTML para o popup com estatísticas
+        html_content = f"""
+            <div style="width: 250px">
+                <h4 style="color: {cor}">Ocorrência: {tipo.title()}</h4>
+                <p><strong>Mensagem:</strong> {mensagem}</p>
+                <hr>
+                <div style="font-size: 0.9em">
+        """
 
-        # Calcula centro do mapa baseado na média das coordenadas
-        try:
-            lat_media = dados['latitude'].mean()
-            lon_media = dados['longitude'].mean()
-            centro = (lat_media, lon_media)
-        except:
-            # Se falhar, usa o centro do Brasil
-            centro = self.centro_brasil
+        if estatisticas:
+            for key, value in estatisticas.items():
+                html_content += f"<p><strong>{key}:</strong> {value}</p>"
 
-        # Cria mapa base
-        mapa = self.criar_mapa_base(centro=centro, zoom_inicial=5)
+        html_content += "</div></div>"
 
-        # Adiciona marcadores
-        mapa = self.adicionar_marcadores_emergencia(
-            mapa=mapa,
-            dados=dados,
-            mostrar_popup=True,
-            agrupar_marcadores=True
-        )
-
-        # Adiciona mapa de calor se houver dados suficientes
-        if len(dados) >= 5:
-            mapa = self.adicionar_mapa_calor(
-                mapa=mapa,
-                dados=dados
-            )
-
-        # Adiciona minimap para navegação
-        plugins.MiniMap().add_to(mapa)
-
-        # Adiciona escala ao mapa usando método nativo do folium
-        folium.TileLayer(
-            tiles='cartodbpositron',
-            name='Base Light',
-            control=True,
+        # Criar o marcador com o popup
+        folium.Marker(
+            coordenadas,
+            popup=folium.Popup(html_content, max_width=300),
+            icon=folium.Icon(color=cor, icon=icone, prefix='fa'),
+            tooltip=f"{tipo.title()} - Clique para mais informações"
         ).add_to(mapa)
 
-        # Adiciona fullscreen
-        plugins.Fullscreen().add_to(mapa)
+    def processar_dados_para_mapa(self, mensagem: str, localizacao: str, tipo: str = 'outros') -> dict:
+        """
+        Processa os dados da mensagem para o formato adequado do mapa
+
+        Args:
+            mensagem (str): Texto da mensagem
+            localizacao (str): Local do evento
+            tipo (str): Tipo de ocorrência
+
+        Returns:
+            dict: Dados formatados para o mapa
+        """
+        # Tentar obter coordenadas do texto da localização
+        coordenadas = self.extrair_coordenadas_texto(localizacao)
+        if not coordenadas:
+            coordenadas = self.geocodificar_cidade(localizacao)
+
+        if not coordenadas:
+            return None
+
+        return {
+            'mensagem': mensagem,
+            'localizacao': localizacao,
+            'tipo': tipo,
+            'coordenadas': coordenadas,
+            'data_hora': datetime.now().isoformat(),
+            'severidade': 'Alta',  # Valor padrão, pode ser alterado conforme necessidade
+            'status': 'Em andamento'
+        }
+
+    def gerar_mapa(self, dados: List[Dict]) -> folium.Map:
+        # Criar mapa base
+        mapa = folium.Map(
+            location=self.centro_brasil,
+            zoom_start=4,
+            tiles='cartodbpositron'
+        )
+
+        # Adicionar controle de camadas
+        folium.LayerControl().add_to(mapa)
+
+        # Processar e adicionar marcadores para cada ocorrência
+        for dado in dados:
+            # Garantir que temos uma mensagem e localização
+            mensagem = dado.get('texto', '') if isinstance(dado, dict) else str(dado)
+            localizacao = dado.get('localizacao', '') if isinstance(dado, dict) else ''
+            tipo = dado.get('tipo_desastre', 'outros') if isinstance(dado, dict) else 'outros'
+
+            # Processar dados para o mapa
+            dados_processados = self.processar_dados_para_mapa(mensagem, localizacao, tipo)
+
+            if dados_processados and dados_processados['coordenadas']:
+                # Criar estatísticas para a ocorrência
+                estatisticas = {
+                    'Local': dados_processados['localizacao'],
+                    'Data/Hora': dados_processados['data_hora'],
+                    'Severidade': dados_processados['severidade'],
+                    'Status': dados_processados['status']
+                }
+
+                self.criar_marcador_estatisticas(
+                    mapa,
+                    dados_processados['coordenadas'],
+                    dados_processados['mensagem'],
+                    dados_processados['tipo'],
+                    estatisticas
+                )
+
+        # Adicionar minimap e barra de busca
+        plugins.MiniMap().add_to(mapa)
+        plugins.Geocoder().add_to(mapa)
 
         return mapa
+
+    def destacar_limite_brasil(self, mapa: folium.Map) -> None:
+        """
+        Adiciona o contorno do Brasil ao mapa como um polígono transparente com bordas pretas
+
+        Args:
+            mapa (folium.Map): Objeto do mapa onde o contorno será adicionado
+
+        Returns:
+            None
+        """
+        try:
+            # Caminho para o arquivo GeoJSON com o limite do Brasil
+            geojson_path = 'data/brasil_limite.geojson'
+
+            # Adiciona o GeoJSON ao mapa como uma camada
+            folium.GeoJson(
+                geojson_path,
+                name='Limite do Brasil',
+                style_function=lambda x: {
+                    'fillColor': 'transparent',
+                    'color': 'black',
+                    'weight': 2,
+                    'fillOpacity': 0.1,
+                    'dashArray': '5, 5'  # Borda levemente tracejada para distinguibilidade
+                }
+            ).add_to(mapa)
+
+            # Adiciona a camada ao controle de camadas para permitir ativar/desativar
+            folium.LayerControl().add_to(mapa)
+
+        except Exception as e:
+            print(f"Erro ao carregar o contorno do Brasil: {e}")
