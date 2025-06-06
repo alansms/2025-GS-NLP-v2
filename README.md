@@ -19,7 +19,7 @@ Este projeto consiste em um sistema avançado de monitoramento de emergências q
 
 ## 📄 Relatório Resumido
 
-[![Ver Relatório](https://img.shields.io/badge/Acessar%20Relat%C3%B3rio-PDF-red?logo=adobeacrobatreader&logoColor=white)](https://github.com/alansms/2025-GS-NLP-v2/raw/main/2025-GS-NLP/img/Relatório%20Resumido%20-%20Monitoramento%20de%20Emergências.pdf)
+[![Ver Relatório (PDF)](https://img.shields.io/badge/Acessar%20Relat%C3%B3rio-PDF-red?logo=adobeacrobatreader&logoColor=white)](https://github.com/alansms/2025-GS-NLP-v2/raw/main/2025-GS-NLP/img/Relato%CC%81rio%20Resumido%20-%20Monitoramento%20de%20Emerge%CC%82ncias.pdf))
 
 ## 🔧 Tecnologias Principais
 
