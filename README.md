@@ -13,6 +13,8 @@ Este projeto consiste em um sistema avançado de monitoramento de emergências q
 - Extrai entidades críticas (localizações, contatos)
 - Fornece visualizações interativas e sistema de alertas
 
+  ![Front End](https://raw.github.com/alansms/2025-GS-NLP-v2/blob/main/2025-GS-NLP/img/tela1.png)
+
 ## 🔧 Tecnologias Principais
 
 - **Backend**: Python 3.11+
