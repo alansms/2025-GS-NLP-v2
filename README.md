@@ -13,7 +13,13 @@ Este projeto consiste em um sistema avançado de monitoramento de emergências q
 - Extrai entidades críticas (localizações, contatos)
 - Fornece visualizações interativas e sistema de alertas
 
+## 📄 Sistema on line
+
   ![Front End](https://raw.githubusercontent.com/alansms/2025-GS-NLP-v2/main/2025-GS-NLP/img/app.gif)
+
+## 📄 Relatório Resumido
+
+[![Ver Relatório](https://img.shields.io/badge/Acessar%20Relat%C3%B3rio-PDF-red?logo=adobeacrobatreader&logoColor=white)](https://github.com/alansms/2025-GS-NLP-v2/raw/main/2025-GS-NLP/img/Relatório%20Resumido%20-%20Monitoramento%20de%20Emergências.pdf)
 
 ## 🔧 Tecnologias Principais
 
