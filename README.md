@@ -13,6 +13,8 @@ Este projeto consiste em um sistema avançado de monitoramento de emergências q
 - Extrai entidades críticas (localizações, contatos)
 - Fornece visualizações interativas e sistema de alertas
 
+  ![Front End](https://raw.githubusercontent.com/alansms/2025-GS-RPA/main/favicons-4/%20imag-2.png)
+
 ## 🔧 Tecnologias Principais
 
 - **Backend**: Python 3.11+
