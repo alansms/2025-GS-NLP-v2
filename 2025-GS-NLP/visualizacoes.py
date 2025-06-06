@@ -79,9 +79,13 @@ def exibir_nuvem_palavras(df):
         texto_completo = ' '.join(df['texto'].dropna().astype(str))
         fig = gerador.gerar_wordcloud(texto_completo)
 
+        # Salvando a figura em um buffer
         buf = BytesIO()
         fig.savefig(buf, format='png', bbox_inches='tight', pad_inches=0)
         buf.seek(0)
-        st.image(buf)
+
+        # Exibindo a imagem sem o parâmetro problemático
+        st.image(buf, caption='Nuvem de Palavras')
+
     except Exception as e:
         st.error(f"Erro ao exibir nuvem de palavras: {str(e)}")
