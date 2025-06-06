@@ -1,0 +1,2745 @@
+{
+  "mensagens": [
+    {
+      "id": "a9c7533c-09e6-475d-a4bb-3bd8afafbf4e",
+      "texto": "MP aponta os 19 bairros de Porto Alegre que podem receber indenização em ação por enchente; veja a lista - O Ministério Público (MP) anexou — na ação que pede indenização pelos danos da enchente em Porto Alegre — um parecer que aponta as áreas da cidade que...",
+      "data_criacao": "2025-06-06T09:34:24.893469",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5148301489412513,
+      "score_urgencia": 0.43787762918585094,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "enchente",
+      "titulo": "MP aponta os 19 bairros de Porto Alegre que podem receber indenização em ação por enchente; veja a lista",
+      "link": "https://gauchazh.clicrbs.com.br/porto-alegre/noticia/2025/06/mp-aponta-os-19-bairros-de-porto-alegre-que-podem-receber-indenizacao-em-acao-por-enchente-veja-a-lista-cmbjk5zlw001101e5frm860qo.html",
+      "confianca_classificacao": 0.8780669005679748,
+      "score_completude": 0.6834349591339508
+    },
+    {
+      "id": "0ae83f2e-0f9a-407f-9970-f8579cfe950c",
+      "texto": "A enchente está indo embora, é hora de recomeçar - A partir de hoje, as famílias afetadas pela cheia do Ibirapuitã, receberão o apoio da Prefeitura de Alegrete e do Exército Brasileiro para o retorno às suas...",
+      "data_criacao": "2025-06-06T09:34:24.894308",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5249364831285674,
+      "score_urgencia": 0.6483707389494682,
+      "localizacoes": [
+        {
+          "texto": "Porto Alegre, RS",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "São Paulo, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "enchente",
+      "titulo": "A enchente está indo embora, é hora de recomeçar",
+      "link": "https://www.alegretetudo.com.br/a-enchente-esta-indo-embora-e-hora-de-recomecar/",
+      "confianca_classificacao": 0.8662483414615724,
+      "score_completude": 0.7341174410455555
+    },
+    {
+      "id": "1c707f0f-f933-48a3-b027-c39516d56338",
+      "texto": "Chuvas deixam três mortos na cidade do Rio de Janeiro - As fortes chuvas que atingiram a cidade do Rio de Janeiro na noite de quarta-feira deixaram pelo menos três mortos. Em Guaratiba, na zona oeste,...",
+      "data_criacao": "2025-06-06T09:34:24.894762",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "muito negativo",
+      "score_sentimento": -0.9380572887948617,
+      "score_urgencia": 0.8684860239825777,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "enchente",
+      "titulo": "Chuvas deixam três mortos na cidade do Rio de Janeiro",
+      "link": "https://www.correiodopovo.com.br/not%C3%ADcias/geral/chuvas-deixam-tr%C3%AAs-mortos-na-cidade-do-rio-de-janeiro-1.318032",
+      "confianca_classificacao": 0.7842571467249305,
+      "score_completude": 0.7472210746128296
+    },
+    {
+      "id": "3545a20a-bbde-4330-97fa-a5a1aff0aafa",
+      "texto": "São Paulo sai do estado de atenção para alagamentos - A cidade de São Paulo entrou em estado de atenção para alagamentos às 15h48 desta quinta-feira, 5, por causa das fortes chuvas. Às 17h52, o Centro de...",
+      "data_criacao": "2025-06-06T09:34:25.661804",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5919509923962101,
+      "score_urgencia": 0.4333599932266533,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, AL",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "São Paulo, ES",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "São Paulo, PA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "alagamento",
+      "titulo": "São Paulo sai do estado de atenção para alagamentos",
+      "link": "https://www.estadao.com.br/sustentabilidade/sao-paulo-entra-em-estado-de-atencao-para-alagamentos-5-de-junho-nprm/",
+      "confianca_classificacao": 0.7881666844095321,
+      "score_completude": 0.6350180339201665
+    },
+    {
+      "id": "093c24fe-3a7a-4e3b-81a1-24bc172e278c",
+      "texto": "Idosa agradece policiais militares que a salvaram de alagamento - Jacarezinho| PM Depois de um resgate heroico que evitou uma tragédia, o reencontro entre a idosa Eva Aparecida Coutinho do Nascimento e os policiais m.",
+      "data_criacao": "2025-06-06T09:34:25.662167",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.39932022063568906,
+      "score_urgencia": 0.6793687241765237,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Recife, PE",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "alagamento",
+      "titulo": "Idosa agradece policiais militares que a salvaram de alagamento",
+      "link": "https://tribunadovale.com.br/2025/06/05/idosa-agradece-policiais-militares-que-a-salvaram-de-alagamento/",
+      "confianca_classificacao": 0.8190743457678622,
+      "score_completude": 0.7840533217990553
+    },
+    {
+      "id": "b08f7c1a-62f6-4b8c-8517-e558b8f70fb7",
+      "texto": "Europa ameaçada por inundação de novas drogas, diz agência da UE - Em 2023, autoridades da UE apreenderam carregamentos massivos de substâncias sintéticas desconhecidas, além de novos e potentes opioides mais perigosos que...",
+      "data_criacao": "2025-06-06T09:34:26.394225",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.49198214577216504,
+      "score_urgencia": 0.5577984036585599,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "inundação",
+      "titulo": "Europa ameaçada por inundação de novas drogas, diz agência da UE",
+      "link": "https://www.terra.com.br/noticias/europa-ameacada-por-inundacao-de-novas-drogas-diz-agencia-da-ue,4cde9123cd7596e4ebaf74b595ea27dfr20q03g6.html",
+      "confianca_classificacao": 0.8805757216676025,
+      "score_completude": 0.6482949515268142
+    },
+    {
+      "id": "3cd18cbf-e95a-4fa2-be8b-ca6c2c38ff98",
+      "texto": "Uma semana após temporal com inundações, cerca de 50 pessoas seguem ilhadas em Mostardas - Além de causar alagamento no distrito de Sombrio, temporal também destruiu ponte de madeira e desvio em obras sobre a lagoa de Bacupari. Publicado por.",
+      "data_criacao": "2025-06-06T09:34:26.394542",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3965635303365965,
+      "score_urgencia": 0.6793688290520132,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "inundação",
+      "titulo": "Uma semana após temporal com inundações, cerca de 50 pessoas seguem ilhadas em Mostardas",
+      "link": "https://guaiba.com.br/2025/06/05/uma-semana-apos-temporal-com-inundacoes-cerca-de-50-pessoas-seguem-ilhadas-em-mostardas/",
+      "confianca_classificacao": 0.869745362761404,
+      "score_completude": 0.5632067213240404
+    },
+    {
+      "id": "10498d0d-b445-462e-926b-b797813ea8aa",
+      "texto": "Cachoeirinha tem alto risco para inundações, aponta estudo - Cachoeirinha – A prefeitura de Cachoeirinha poderá formalizar um convênio com o Instituto Votorantim para executar um planejamento para enfrentar de forma.",
+      "data_criacao": "2025-06-06T09:34:26.394578",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.595976687298213,
+      "score_urgencia": 0.6823518309561953,
+      "localizacoes": [
+        {
+          "texto": "Manaus, AM",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "inundação",
+      "titulo": "Cachoeirinha tem alto risco para inundações, aponta estudo",
+      "link": "https://www.oreporter.net/cachoeirinha-tem-alto-risco-para-inundacoes-aponta-estudo/",
+      "confianca_classificacao": 0.9088103960323413,
+      "score_completude": 0.8800653615646503
+    },
+    {
+      "id": "cec60282-67b9-4105-9d74-19eff33b413c",
+      "texto": "Frente fria traz temporais e ventos fortes para o Rio nesta semana - Frente fria chega ao Rio de Janeiro com pancadas de chuva, raios e queda de temperatura. Veja o que esperar nos próximos dias.",
+      "data_criacao": "2025-06-06T09:34:27.155440",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5661933525410834,
+      "score_urgencia": 0.4535138608172086,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "chuvas fortes",
+      "titulo": "Frente fria traz temporais e ventos fortes para o Rio nesta semana",
+      "link": "https://www.tupi.fm/previsao-do-tempo/frente-fria-traz-temporais-e-ventos-fortes-para-o-rio-nesta-semana/",
+      "confianca_classificacao": 0.8515829631236937,
+      "score_completude": 0.7926294784802208
+    },
+    {
+      "id": "48179397-2fc9-48d8-a115-509e319e3f79",
+      "texto": "Chuva forte surpreende São Paulo e deixa cidade em estado de atenção - Fortes chuvas atingiram a capital paulista de forma repentina nesta quinta-feira (5). Para esta sexta-feira (6), a previsão ainda indica tempo instável,...",
+      "data_criacao": "2025-06-06T09:34:27.155533",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3929828739235097,
+      "score_urgencia": 0.4392486488338206,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, ES",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Paulista, MA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "chuvas fortes",
+      "titulo": "Chuva forte surpreende São Paulo e deixa cidade em estado de atenção",
+      "link": "https://cbn.globo.com/programas/ponto-final-cbn/entrevista/2025/06/05/chuva-forte-surpreende-sao-paulo-e-deixa-cidade-em-estado-de-atencao.ghtml",
+      "confianca_classificacao": 0.8866470218292666,
+      "score_completude": 0.6225130550841285
+    },
+    {
+      "id": "5d4e0622-bed2-41df-99c2-201ae187c66b",
+      "texto": "Cidades da região serrana do Rio entram em estágio de atenção - A chuva intensa que causou danos na cidade do Rio durante a noite de quarta e a madrugada de quinta-feira atingiu também as cidades de Petrópolis e Nova...",
+      "data_criacao": "2025-06-06T09:34:28.148848",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3176823637668054,
+      "score_urgencia": 0.46062798405498584,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "transbordamento de rio",
+      "titulo": "Cidades da região serrana do Rio entram em estágio de atenção",
+      "link": "https://www.correiodopovo.com.br/not%C3%ADcias/geral/cidades-da-regi%C3%A3o-serrana-do-rio-entram-em-est%C3%A1gio-de-aten%C3%A7%C3%A3o-1.318145",
+      "confianca_classificacao": 0.7664388744050733,
+      "score_completude": 0.8507833248693439
+    },
+    {
+      "id": "f1cbac9c-7c83-4b2a-8b78-17ffebb60a92",
+      "texto": "Nível do Rio Acre segue em queda e marca 2,55 metros em Rio Branco nesta sexta | ac24horas | Notícias do Acre - A Defesa Civil Municipal de Rio Branco divulgou na manhã desta sexta-feira, 6, o boletim atualizado sobre o nível do Rio Acre. De acordo com o órgão,...",
+      "data_criacao": "2025-06-06T09:34:28.149099",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Enchente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5708300034294055,
+      "score_urgencia": 0.647423159984226,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Enchente",
+      "termo": "transbordamento de rio",
+      "titulo": "Nível do Rio Acre segue em queda e marca 2,55 metros em Rio Branco nesta sexta | ac24horas | Notícias do Acre",
+      "link": "https://ac24horas.com/2025/06/06/nivel-do-rio-acre-segue-em-queda-e-marca-255-metros-em-rio-branco-nesta-sexta/",
+      "confianca_classificacao": 0.7656046073693867,
+      "score_completude": 0.8992491503455816
+    },
+    {
+      "id": "e2e51bfa-4ebc-4cfd-9f79-4ce7bd2d0bda",
+      "texto": "Equipe de busca encontra pegadas próximo a deslizamento de terra em montanha onde fotógrafo brasileiro desapareceu no Peru - Edson Vandeira, de 36 anos, subiu o Nevado Aresonraju na quinta-feira (29), junto com os peruanos Pretel Alonzo Homer Efraín e Picón Huerta Jesús Manuel.",
+      "data_criacao": "2025-06-06T09:34:28.909025",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Deslizamento",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3454276543070819,
+      "score_urgencia": 0.5993988057725461,
+      "localizacoes": [
+        {
+          "texto": "Peru Edson Vandeira",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Deslizamento",
+      "termo": "deslizamento de terra",
+      "titulo": "Equipe de busca encontra pegadas próximo a deslizamento de terra em montanha onde fotógrafo brasileiro desapareceu no Peru",
+      "link": "https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2025/06/05/equipe-de-busca-encontra-pegadas-proximo-a-deslizamento-de-terra-em-montanha-onde-fotografo-brasileiro-desapareceu-no-peru.ghtml",
+      "confianca_classificacao": 0.8092846291087966,
+      "score_completude": 0.7554429896196464
+    },
+    {
+      "id": "1b6f420e-771e-4fa3-8a21-94628ca123a4",
+      "texto": "Exclusivo: STJ mantém condenação por deslizamento que destruiu casas em Concórdia - Concórdia – O Superior Tribunal de Justiça (STJ), em Brasília, manteve a condenação de um empresário considerado responsável pelo deslizamento de terra que...",
+      "data_criacao": "2025-06-06T09:34:28.909732",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Deslizamento",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3769791082779027,
+      "score_urgencia": 0.6938673362277066,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Deslizamento",
+      "termo": "deslizamento de terra",
+      "titulo": "Exclusivo: STJ mantém condenação por deslizamento que destruiu casas em Concórdia",
+      "link": "https://atualfm.com.br/exclusivo-stj-mantem-condenacao-por-deslizamento-que-destruiu-casas-em-concordia/",
+      "confianca_classificacao": 0.7230401083990764,
+      "score_completude": 0.738141305613912
+    },
+    {
+      "id": "d33add2a-0c7e-47fb-9526-6a138b58b23d",
+      "texto": "Resgate encontra desmoronamento de gelo onde brasileiro desapareceu no Peru - Edson Vandeira, 36 anos, participava de uma expedição ao lado dos peruanos Homer Efraín Alonzo Pretel e Jesús Manuel Picón Huerta.",
+      "data_criacao": "2025-06-06T09:34:29.650553",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Deslizamento",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.45489862386206115,
+      "score_urgencia": 0.40759716604844537,
+      "localizacoes": [
+        {
+          "texto": "Peru Edson Vandeira",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Deslizamento",
+      "termo": "desmoronamento",
+      "titulo": "Resgate encontra desmoronamento de gelo onde brasileiro desapareceu no Peru",
+      "link": "https://oglobo.globo.com/brasil/noticia/2025/06/06/resgate-encontra-desmoronamento-de-gelo-onde-brasileiro-desapareceu-no-peru.ghtml",
+      "confianca_classificacao": 0.9255548053004463,
+      "score_completude": 0.8821712965674149
+    },
+    {
+      "id": "3a818033-be5d-4902-af88-84948c25fd92",
+      "texto": "Desmoronamento de pedra bloqueia estrada que conecta Cotiporã com Dois Lajeados - Um desmoronamento de pedra ocorrido ao meio-dia desta quinta-feira (5), compromete o trânsito entre as cidades de Cotiporã e Dois Lajeados.",
+      "data_criacao": "2025-06-06T09:34:29.651113",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Deslizamento",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5018938426622477,
+      "score_urgencia": 0.6909681867150692,
+      "localizacoes": [
+        {
+          "texto": "Petrópolis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Deslizamento",
+      "termo": "desmoronamento",
+      "titulo": "Desmoronamento de pedra bloqueia estrada que conecta Cotiporã com Dois Lajeados",
+      "link": "https://gauchazh.clicrbs.com.br/pioneiro/geral/noticia/2025/06/desmoronamento-de-pedra-bloqueia-estrada-que-conecta-cotipora-com-dois-lajeados-cmbjqega9005j014fa0bmlqww.html",
+      "confianca_classificacao": 0.7753038389376076,
+      "score_completude": 0.5110262841812072
+    },
+    {
+      "id": "11ba3233-3341-48e3-8c66-5a7fa109b8c8",
+      "texto": "Desmoronamento interdita calçada da Ponte da Amizade no sentido Paraguai–Brasil - Autoridades reorganizam tráfego de pedestres após colapso parcial do lado paraguaio; circulação será em duplo sentido na passarela oposta.",
+      "data_criacao": "2025-06-06T09:34:29.651434",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Deslizamento",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.38744035991005454,
+      "score_urgencia": 0.6238630169859672,
+      "localizacoes": [
+        {
+          "texto": "Belo Horizonte, MG",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Campos do Jordão, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Deslizamento",
+      "termo": "desmoronamento",
+      "titulo": "Desmoronamento interdita calçada da Ponte da Amizade no sentido Paraguai–Brasil",
+      "link": "https://foz.portaldacidade.com/noticias/regiao/desmoronamento-interdita-calcada-da-ponte-da-amizade-no-sentido-paraguaibrasil-4148",
+      "confianca_classificacao": 0.953871080786158,
+      "score_completude": 0.5120192602876877
+    },
+    {
+      "id": "0116a6a9-2adb-42ca-b43b-e820491c3e40",
+      "texto": "Terremoto danifica parcialmente sítio arqueológico de Pompeia na Itália - Um pequeno terremoto no sul da Itália causou o colapso parcial de uma parede e parte de uma abóbada no sítio arqueológico de Pompeia, disseram autoridades...",
+      "data_criacao": "2025-06-06T09:34:31.255002",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Baixo",
+      "sentimento": "neutro",
+      "score_sentimento": -0.29745587478301133,
+      "score_urgencia": 0.2212032356725271,
+      "localizacoes": [
+        {
+          "texto": "Itália Um",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "terremoto",
+      "titulo": "Terremoto danifica parcialmente sítio arqueológico de Pompeia na Itália",
+      "link": "https://www.cnnbrasil.com.br/internacional/terremoto-danifica-parcialmente-sitio-arqueologico-de-pompeia-na-italia/",
+      "confianca_classificacao": 0.8038834832181805,
+      "score_completude": 0.8199400559444014
+    },
+    {
+      "id": "467e72bf-6238-477b-85f8-33005f3df921",
+      "texto": "Terremoto danifica parcialmente sítio arqueológico de Pompeia, na Itália - Antigo assentamento foi destruído pela erupção do Monte Vesúvio em 79 d.C.. Da Redação 05/06/2025 17h05. Reprodução/ Pompeii. Um pequeno terremoto na região...",
+      "data_criacao": "2025-06-06T09:34:31.255371",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Baixo",
+      "sentimento": "neutro",
+      "score_sentimento": -0.21716769599652275,
+      "score_urgencia": 0.36537137365499395,
+      "localizacoes": [
+        {
+          "texto": "Itália Antigo",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "terremoto",
+      "titulo": "Terremoto danifica parcialmente sítio arqueológico de Pompeia, na Itália",
+      "link": "https://cultura.uol.com.br/noticias/72251_terremoto-danifica-parcialmente-sitio-arqueologico-de-pompeia-na-italia.html",
+      "confianca_classificacao": 0.9142920727334489,
+      "score_completude": 0.5036946792646659
+    },
+    {
+      "id": "31527a61-68a1-4f02-ab82-99de7445b64d",
+      "texto": "Terremoto de magnitude 3,2 atinge sul da Itália e danifica parte do sítio arqueológico de Pompeia - Terremoto de magnitude 3,2 atinge Pompeia, causando danos parciais em estrutura histórica, mas sem feridos.",
+      "data_criacao": "2025-06-06T09:34:31.255578",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3927580306882106,
+      "score_urgencia": 0.6582046463537092,
+      "localizacoes": [
+        {
+          "texto": "Recife, PE",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "terremoto",
+      "titulo": "Terremoto de magnitude 3,2 atinge sul da Itália e danifica parte do sítio arqueológico de Pompeia",
+      "link": "https://exame.com/mundo/terremoto-de-magnitude-32-atinge-sul-da-italia-danifica-parte-do-sitio-arqueologico-de-pompeia/",
+      "confianca_classificacao": 0.7210330662623089,
+      "score_completude": 0.5664307453888736
+    },
+    {
+      "id": "9b1a3e0a-a840-4638-aede-157a5338907c",
+      "texto": "Em recado claro, Jerry fala em “recuperar fatos recentes” e “reconstruir caminhos” - Um artigo publicado nesta quinta-feira (5) pelo deputado federal Márcio Jerry, presidente estadual do PCdoB e, por décadas, braço-direito de Flávio Dino,...",
+      "data_criacao": "2025-06-06T09:34:31.868653",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5158972484463351,
+      "score_urgencia": 0.6817965695347008,
+      "localizacoes": [
+        {
+          "texto": "Angra dos Reis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "abalo sísmico",
+      "titulo": "Em recado claro, Jerry fala em “recuperar fatos recentes” e “reconstruir caminhos”",
+      "link": "https://marrapa.com/marrapa-politica/em-recado-claro-jerry-fala-em-recuperar-fatos-recentes-e-reconstruir-caminhos/05/06/2025/",
+      "confianca_classificacao": 0.9334190753071544,
+      "score_completude": 0.6085361625321071
+    },
+    {
+      "id": "0b97c64f-bbba-4ea3-9c06-0b778d882990",
+      "texto": "BZNotícias - Tremor de terra é registrado em Carnaubais, no interior do RN - O Laboratório Sismológico da Universidade Federal do Rio Grande do Norte (LabSis/UFRN) registrou, na noite dessa quarta-feira (4), um tremor de terra no...",
+      "data_criacao": "2025-06-06T09:34:31.868962",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.4514183100800513,
+      "score_urgencia": 0.5857521827194057,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "abalo sísmico",
+      "titulo": "BZNotícias - Tremor de terra é registrado em Carnaubais, no interior do RN",
+      "link": "https://bznoticias.com.br/noticia/tremor-de-terra-e-registrado-em-carnaubais-no-interior-do-rn",
+      "confianca_classificacao": 0.8543205581509115,
+      "score_completude": 0.5959023938080145
+    },
+    {
+      "id": "3890f0b0-ed49-45a0-8ab4-b11cacb4315b",
+      "texto": "Atividade sísmica intensifica-se em São Miguel com mais de 14 sismos sentidos - Incremento começou na noite de 3 de junho. Epicentro localiza-se a sul da Povoação e o abalo mais forte atingiu 3,4 na escala de Richter.",
+      "data_criacao": "2025-06-06T09:34:31.869005",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5298067077087737,
+      "score_urgencia": 0.434929210778114,
+      "localizacoes": [
+        {
+          "texto": "São Miguel",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "abalo sísmico",
+      "titulo": "Atividade sísmica intensifica-se em São Miguel com mais de 14 sismos sentidos",
+      "link": "https://rumores.pt/atividade-sismica-intensifica-se-em-sao-miguel-com-mais-de-14-sismos-sentidos/152191/",
+      "confianca_classificacao": 0.8528779492250438,
+      "score_completude": 0.5180858968584682
+    },
+    {
+      "id": "97fba003-04d5-4b72-bda2-5ab4673b626c",
+      "texto": "Atividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira - A atividade sísmica a sul do concelho da Povoação, na ilha de São Miguel, intensificou-se, desde quarta-feira, com pelo menos 14 sismos já sentidos até esta...",
+      "data_criacao": "2025-06-06T09:34:32.593164",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3139741678288877,
+      "score_urgencia": 0.47695650856775207,
+      "localizacoes": [
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "sismo",
+      "titulo": "Atividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira",
+      "link": "https://observador.pt/2025/06/05/atividade-sismica-na-ilha-de-sao-miguel-intensificou-se-desde-quarta-feira/",
+      "confianca_classificacao": 0.8466199510774111,
+      "score_completude": 0.8751685312640889
+    },
+    {
+      "id": "2a219926-cca8-4b1d-9c57-117e4673cf3d",
+      "texto": "Actividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira - O sismo mais forte dos últimos dias foi registado na manhã desta quinta-feira, com uma magnitude de 3,4 graus.",
+      "data_criacao": "2025-06-06T09:34:32.593688",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5127073661383714,
+      "score_urgencia": 0.5121248910252979,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "sismo",
+      "titulo": "Actividade sísmica na ilha de São Miguel intensificou-se desde quarta-feira",
+      "link": "https://www.publico.pt/2025/06/05/ciencia/noticia/actividade-sismica-ilha-sao-miguel-intensificouse-desde-quartafeira-2135664?ref=ciencia",
+      "confianca_classificacao": 0.9792388941321568,
+      "score_completude": 0.5757958086563499
+    },
+    {
+      "id": "ffe42cac-fda9-4f51-931a-af50e9e1bfaf",
+      "texto": "Temblor en México: últimos sismos reportados hoy viernes 6 de junio - Un sismo o terremoto es un movimiento brusco de la tierra causado por la liberación repentina de energía dentro de la misma. La causa más común de este...",
+      "data_criacao": "2025-06-06T09:34:32.594042",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.37071218305428466,
+      "score_urgencia": 0.633492462067536,
+      "localizacoes": [
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "sismo",
+      "titulo": "Temblor en México: últimos sismos reportados hoy viernes 6 de junio",
+      "link": "https://www.lanacion.com.ar/estados-unidos/temblor-en-mexico-ultimos-sismos-reportados-hoy-viernes-6-de-junio-nid06062025/",
+      "confianca_classificacao": 0.925439168490787,
+      "score_completude": 0.5529211240535777
+    },
+    {
+      "id": "198ef37c-3828-4dd0-9239-803c6c679b36",
+      "texto": "Terra volta a tremer no município de Carnaubais, interior do Rio Grande do Norte - Nesta quarta-feira, 04 de junho, o Laboratório Sismológico da UFRN, através de suas estações sismográficas, registrou um tremor de terra no município de...",
+      "data_criacao": "2025-06-06T09:34:33.638210",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5904887518165547,
+      "score_urgencia": 0.5052518027218577,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "tremor de terra",
+      "titulo": "Terra volta a tremer no município de Carnaubais, interior do Rio Grande do Norte",
+      "link": "https://blogdeassis.com.br/2025/terra-volta-a-tremer-no-municipio-de-carnaubais-interior-do-rio-grande-do-norte/421171/",
+      "confianca_classificacao": 0.84318473957938,
+      "score_completude": 0.6166269727001545
+    },
+    {
+      "id": "dc7596c5-7c8e-4214-ac85-0c05685487e5",
+      "texto": "Mineradora opera sem estudo ambiental após tremor em Bonito; entenda o caso - A mineradora Calluz, responsável pela explosão que causou tremor de terra em Bonito no dia 3 de junho, admitiu que não apresentou Estudo de Impacto...",
+      "data_criacao": "2025-06-06T09:34:33.638698",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Terremoto",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.34952275780268666,
+      "score_urgencia": 0.646649099740317,
+      "localizacoes": [
+        {
+          "texto": "Bonito",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Terremoto",
+      "termo": "tremor de terra",
+      "titulo": "Mineradora opera sem estudo ambiental após tremor em Bonito; entenda o caso",
+      "link": "https://www.campograndenews.com.br/meio-ambiente/mineradora-que-causou-tremor-em-bonito-opera-sem-estudo-de-impacto-ambiental",
+      "confianca_classificacao": 0.9549109048242463,
+      "score_completude": 0.5401869529351597
+    },
+    {
+      "id": "11f54673-a07c-417f-bfc4-b49ea7d14fe8",
+      "texto": "Brasileiro é preso suspeito de iniciar incêndio que matou companheira na Itália: 'Não demonstrou arrependimento' - Entre indícios que podem incriminar homem está o fato de que a porta da frente do imóvel estava trancada por fora, sendo que casal tinha apenas uma única...",
+      "data_criacao": "2025-06-06T09:34:34.482002",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3164157160017522,
+      "score_urgencia": 0.5384741238960388,
+      "localizacoes": [
+        {
+          "texto": "Itália",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "incêndio",
+      "titulo": "Brasileiro é preso suspeito de iniciar incêndio que matou companheira na Itália: 'Não demonstrou arrependimento'",
+      "link": "https://oglobo.globo.com/brasil/noticia/2025/06/06/brasileiro-e-preso-suspeito-de-iniciar-incendio-que-matou-companheira-na-italia-nao-demonstrou-arrependimento.ghtml",
+      "confianca_classificacao": 0.9151087668485361,
+      "score_completude": 0.8166469589120957
+    },
+    {
+      "id": "b7d6e531-22b8-4736-916d-4c2aaddbf3c0",
+      "texto": "Incêndio em cortiço deu início à saída de usuários da cracolândia, diz secretário - Endereço no centro de SP funcionava como ponto de distribuição de drogas, segundo a gestão do prefeito Ricardo Nunes.",
+      "data_criacao": "2025-06-06T09:34:34.482306",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.49755876094475415,
+      "score_urgencia": 0.62318505984448,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "incêndio",
+      "titulo": "Incêndio em cortiço deu início à saída de usuários da cracolândia, diz secretário",
+      "link": "https://www1.folha.uol.com.br/cotidiano/2025/06/incendio-em-cortico-deu-inicio-a-saida-de-usuarios-da-cracolandia-diz-secretario.shtml",
+      "confianca_classificacao": 0.7869195127092091,
+      "score_completude": 0.698420504236706
+    },
+    {
+      "id": "9242f5c0-00e7-4adc-b5ad-76ac92090778",
+      "texto": "Incêndio em ar-condicionado coloca em risco vidas de funcionários do Hemoal Trapiche - O SINDPREV-AL teve acesso a um vídeo e fotos do incêndio em um dos ar-condicionados do Hemoal Trapiche na noite/madrugada de quinta para sexta-feira (6).",
+      "data_criacao": "2025-06-06T09:34:34.482336",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.41067243699733336,
+      "score_urgencia": 0.5488933294492292,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "incêndio",
+      "titulo": "Incêndio em ar-condicionado coloca em risco vidas de funcionários do Hemoal Trapiche",
+      "link": "https://www.sindprev-al.org.br/2025/06/incendio-em-ar-condicionado-coloca-em-risco-vidas-de-funcionarios-do-hemoal-trapiche/",
+      "confianca_classificacao": 0.8904579942215402,
+      "score_completude": 0.6150765690138166
+    },
+    {
+      "id": "b2abcd59-ba32-44df-b045-0c450fa187fa",
+      "texto": "Perna queimada e joelho inchado: Ciclistas são atropeladas por carro do Segurança Presente na Lapa e denunciam omissão de socorro - Acidente ocorreu na Rua Riachuelo na quinta-feira; Operação diz que vai apurar o caso.",
+      "data_criacao": "2025-06-06T09:34:35.400817",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3009080800481514,
+      "score_urgencia": 0.5367208740205975,
+      "localizacoes": [
+        {
+          "texto": "Lapa",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rua Riachuelo",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "queimada",
+      "titulo": "Perna queimada e joelho inchado: Ciclistas são atropeladas por carro do Segurança Presente na Lapa e denunciam omissão de socorro",
+      "link": "https://extra.globo.com/rio/noticia/2025/06/perna-queimada-e-joelho-inchado-ciclistas-sao-atropeladas-por-carro-do-seguranca-presente-na-lapa-e-denunciam-omissao-de-socorro.ghtml",
+      "confianca_classificacao": 0.9253787848750825,
+      "score_completude": 0.8952638772370868
+    },
+    {
+      "id": "4d4bd35b-0d6a-4e16-8622-7de317c2fb45",
+      "texto": "Mulher queimada dentro de casa está em estado gravíssimo - Uma mulher de 45 anos que foi queimada dentro de casa no bairro Jardim Oriental, em Maringá, no Paraná, está em estado grave.",
+      "data_criacao": "2025-06-06T09:34:35.401499",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Alto",
+      "sentimento": "negativo",
+      "score_sentimento": -0.6029134308092668,
+      "score_urgencia": 0.9752908638525664,
+      "localizacoes": [
+        {
+          "texto": "Maringá, ES",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Maringá, PA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Paraná",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "queimada",
+      "titulo": "Mulher queimada dentro de casa está em estado gravíssimo",
+      "link": "https://ric.com.br/seguranca/mulher-queimada-dentro-de-casa-esta-em-estado-grave/",
+      "confianca_classificacao": 0.8005936573776724,
+      "score_completude": 0.6653197623700728
+    },
+    {
+      "id": "9415bbea-8c19-4cbc-841e-8a0a2c38a589",
+      "texto": "Fogo e agricultura impulsionam a degradação do solo no sul da Amazônia - Estudo mostra que perdas de carbono e nitrogênio do solo persistem por quase uma década após queimadas e que a conversão para agricultura causa impactos...",
+      "data_criacao": "2025-06-06T09:34:35.401901",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3404151751338984,
+      "score_urgencia": 0.6032406606617979,
+      "localizacoes": [
+        {
+          "texto": "Recife, PE",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "queimada",
+      "titulo": "Fogo e agricultura impulsionam a degradação do solo no sul da Amazônia",
+      "link": "https://agencia.fapesp.br/fogo-e-agricultura-impulsionam-a-degradacao-do-solo-no-sul-da-amazonia/54960",
+      "confianca_classificacao": 0.9204594488575969,
+      "score_completude": 0.8996686138484139
+    },
+    {
+      "id": "36a1ae1c-1064-44d8-bc10-1f8f72317602",
+      "texto": "Clima seco: incêndio atinge 2 hectares no Parque dos Poderes em MS - Um incêndio atingiu uma área de vegetação no Parque dos Poderes na tarde desta quinta-feira (5). O fogo começou nas imediações do Cetremi (Centro de Triagem...",
+      "data_criacao": "2025-06-06T09:34:36.065636",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3418316021702164,
+      "score_urgencia": 0.5329685854072863,
+      "localizacoes": [
+        {
+          "texto": "Parque",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "fogo em vegetação",
+      "titulo": "Clima seco: incêndio atinge 2 hectares no Parque dos Poderes em MS",
+      "link": "https://www.campograndenews.com.br/meio-ambiente/vento-espalha-chamas-e-incendio-consome-2-hectares-no-parque-dos-poderes",
+      "confianca_classificacao": 0.838958608445423,
+      "score_completude": 0.5606155609310073
+    },
+    {
+      "id": "38bc74d4-1cef-4970-8647-7b545c308c93",
+      "texto": "Agentes do Parque Nacional da Chapada dos Guimarães antecipam ações de combate aos incêndios florestais - Em 2024, o Parque Nacional da Chapada dos Guimarães, em Chapada dos Guimarães, a 62 quilômetros de Cuiabá, enfrentou um dos maiores incêndios florestais de...",
+      "data_criacao": "2025-06-06T09:34:36.066106",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.4007839795018956,
+      "score_urgencia": 0.5571799748636155,
+      "localizacoes": [
+        {
+          "texto": "Cuiabá, MA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Chapada",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "fogo em vegetação",
+      "titulo": "Agentes do Parque Nacional da Chapada dos Guimarães antecipam ações de combate aos incêndios florestais",
+      "link": "https://primeirapagina.com.br/meio-ambiente/periodo-de-queimadas-parque-nacional-de-chapada-adota-acoes-preventivas/",
+      "confianca_classificacao": 0.8701220413386569,
+      "score_completude": 0.7502082277467641
+    },
+    {
+      "id": "9bdf1c3e-acf9-435a-84fd-d35e618cbc03",
+      "texto": "Caminhão carregado com óleo vegetal pega fogo na BR-135, no Piauí e motorista consegue sair do veículo - O fogo não chegou a atingir a carga, portanto não houve derramamento de óleo na rodovia. Incêndio começou nos semirreboques e pode ter sido causado por um...",
+      "data_criacao": "2025-06-06T09:34:36.066349",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.47319657573667784,
+      "score_urgencia": 0.44351473168182476,
+      "localizacoes": [
+        {
+          "texto": "Piauí",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "fogo em vegetação",
+      "titulo": "Caminhão carregado com óleo vegetal pega fogo na BR-135, no Piauí e motorista consegue sair do veículo",
+      "link": "https://g1.globo.com/pi/piaui/noticia/2025/06/05/caminhao-fica-destruido-apos-pegar-fogo-na-br-135-no-piaui-motorista-conseguiu-sair-de-veiculo-em-chamas.ghtml",
+      "confianca_classificacao": 0.9133282309430966,
+      "score_completude": 0.7880785878640265
+    },
+    {
+      "id": "94d176fc-d55c-45dd-ad64-09c4aa575c31",
+      "texto": "Herói resgata motorista idoso de carro em chamas momentos antes da explosão - Uma cena que parece saída de um filme de ação, mas foi real: um herói salvou um motorista idoso preso dentro de um carro em chamas, momentos antes da...",
+      "data_criacao": "2025-06-06T09:34:36.919306",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.496616739223886,
+      "score_urgencia": 0.6987404188061455,
+      "localizacoes": [
+        {
+          "texto": "Petrópolis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "explosão",
+      "titulo": "Herói resgata motorista idoso de carro em chamas momentos antes da explosão",
+      "link": "https://www.sonoticiaboa.com.br/2025/06/06/heroi-resgata-motorista-carro-chamas-antes-explosao",
+      "confianca_classificacao": 0.7435746383675221,
+      "score_completude": 0.5514513283585288
+    },
+    {
+      "id": "3f3b5ad1-06ff-4d37-a9a1-9312bfda546e",
+      "texto": "Explosão de carro-bomba na Síria deixa pelo menos 34 mortos - Pelo menos 34 pessoas morreram nesta sexta-feira e outras 50 ficaram feridas após a explosão de ...",
+      "data_criacao": "2025-06-06T09:34:36.919984",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Alto",
+      "sentimento": "negativo",
+      "score_sentimento": -0.8890998105856536,
+      "score_urgencia": 0.8624842100756519,
+      "localizacoes": [
+        {
+          "texto": "Síria",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "explosão",
+      "titulo": "Explosão de carro-bomba na Síria deixa pelo menos 34 mortos",
+      "link": "https://www.terra.com.br/noticias/mundo/mundo-arabe/explosao-de-carro-bomba-na-siria-deixa-pelo-menos-34-mortos,3ef0df8bd27b6410VgnCLD200000b2bf46d0RCRD.html",
+      "confianca_classificacao": 0.918575042168816,
+      "score_completude": 0.6256797286955194
+    },
+    {
+      "id": "c29d07af-8d80-4256-ba14-e9999bbf960b",
+      "texto": "Após 20 dias internado, Lúcio comemora saída do hospital com chimarrão: De volta para as tradições - Há mais de duas semanas internado por queimaduras de segundo grau após um acidente doméstico, o ex-zagueiro Lúcio comemorou a volta para casa no melhor...",
+      "data_criacao": "2025-06-06T09:34:36.920420",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Incêndio",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.43100382721347263,
+      "score_urgencia": 0.5454248700579042,
+      "localizacoes": [
+        {
+          "texto": "Belo Horizonte, MG",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Angra dos Reis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Incêndio",
+      "termo": "explosão",
+      "titulo": "Após 20 dias internado, Lúcio comemora saída do hospital com chimarrão: De volta para as tradições",
+      "link": "https://www.folhape.com.br/noticia/amp/416325/apos-20-dias-internado-lucio-comemora-saida-do-hospital-com/",
+      "confianca_classificacao": 0.97358094666983,
+      "score_completude": 0.7301243319046591
+    },
+    {
+      "id": "bfce76ce-fc7c-4321-bf6b-1f8880501474",
+      "texto": "Prefeitura multa Iguá em mais de R$ 5 milhões por obra que pode ter causado seca do Lago do Bosque da Barra - A prefeitura do Rio aplicou duas multas à concessionária Iguá Saneamento por conta de uma obra para ampliação da Estação de Tratamento de Esgoto da Barra da...",
+      "data_criacao": "2025-06-06T09:34:37.878964",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5971710363319795,
+      "score_urgencia": 0.6945859942526121,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "seca",
+      "titulo": "Prefeitura multa Iguá em mais de R$ 5 milhões por obra que pode ter causado seca do Lago do Bosque da Barra",
+      "link": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/06/05/prefeitura-multa-igua-bosque-da-barra.ghtml",
+      "confianca_classificacao": 0.8116431489982692,
+      "score_completude": 0.5167251780119744
+    },
+    {
+      "id": "fd471f7a-ed12-4346-a902-bd7e79cf485f",
+      "texto": "Seca atinge todo o RN e chuvas ocorrem abaixo da média em 2025 - O Rio Grande do Norte enfrenta um dos cenários hídricos mais preocupantes dos últimos anos. De acordo com o Monitor de Secas e dados do Instituto de Gestão...",
+      "data_criacao": "2025-06-06T09:34:37.879203",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.4429350649407573,
+      "score_urgencia": 0.46247456523533104,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "seca",
+      "titulo": "Seca atinge todo o RN e chuvas ocorrem abaixo da média em 2025",
+      "link": "https://saibamais.jor.br/2025/06/seca-atinge-todo-o-rn-e-chuvas-ocorrem-abaixo-da-media-em-2025/",
+      "confianca_classificacao": 0.8917603224089614,
+      "score_completude": 0.5488268904243674
+    },
+    {
+      "id": "fe250d6b-9811-42b2-9f37-8fd0e815022f",
+      "texto": "Ministro anuncia ações de combate à seca no Piauí em entrevista exclusiva ao Cidade Verde - Foto: Secom/Divulgação Com mais de 200 municípios em situação de emergência federal em decorrência da seca e da estiagem que atinge o Piauí, o ministro da...",
+      "data_criacao": "2025-06-06T09:34:37.879274",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5713776961897616,
+      "score_urgencia": 0.4722753877256867,
+      "localizacoes": [
+        {
+          "texto": "Piauí",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "seca",
+      "titulo": "Ministro anuncia ações de combate à seca no Piauí em entrevista exclusiva ao Cidade Verde",
+      "link": "https://cidadeverde.com/noticias/435852/ministro-anuncia-acoes-de-combate-a-seca-no-piaui-em-entrevista-exclusiva-ao-cidade-verde",
+      "confianca_classificacao": 0.9420837614607059,
+      "score_completude": 0.8349358763401797
+    },
+    {
+      "id": "1af0749b-347d-48f4-b940-2c5571623624",
+      "texto": "São Carlos recebe kit estiagem do governo do estado de São Paulo - SÃO CARLOS/SP - A cidade de São Carlos foi contemplada com um Kit Estiagem completo dentro da Operação São Paulo Sem Fogo, uma iniciativa do Governo d...",
+      "data_criacao": "2025-06-06T09:34:38.590515",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5938196268903777,
+      "score_urgencia": 0.4584243679923767,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, GO",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "São Paulo, SE",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "São Paulo, PA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Fogo",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "estiagem",
+      "titulo": "São Carlos recebe kit estiagem do governo do estado de São Paulo",
+      "link": "https://www.radiosanca.com.br/sao-carlos/politica/sao-carlos-recebe-kit-estiagem-do-governo-do-estado-de-sao-paulo",
+      "confianca_classificacao": 0.7585518403498503,
+      "score_completude": 0.7797840535459981
+    },
+    {
+      "id": "c61ab22d-4bba-40f1-9491-197bdbf59db3",
+      "texto": "MS supera estiagem e registra alta na safra de soja 2024/2025 - Apesar dos desafios climáticos enfrentados, especialmente a estiagem que atingiu 52% da área produtiva, Mato Grosso do Sul finalizou a safra de soja...",
+      "data_criacao": "2025-06-06T09:34:38.591000",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5290921674704576,
+      "score_urgencia": 0.62779167402968,
+      "localizacoes": [
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "São Paulo, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "estiagem",
+      "titulo": "MS supera estiagem e registra alta na safra de soja 2024/2025",
+      "link": "https://www.opantaneiro.com.br/agronegocio/ms-supera-estiagem-e-registra-alta-na-safra-de-soja-20242025/226712/",
+      "confianca_classificacao": 0.7210817056248714,
+      "score_completude": 0.7963200759616584
+    },
+    {
+      "id": "40b016f1-9ed7-4f7c-b68c-ed7bb7b49ea7",
+      "texto": "Mesmo com estiagem em 52% da área produtiva, MS colhe safra de soja acima do esperado - Mesmo com um cenário climático desafiador, marcado por estiagem em 52% da área produtiva, Mato Grosso do Sul encerrou a safra 2024/2025 da soja com...",
+      "data_criacao": "2025-06-06T09:34:38.591374",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.46316031896359644,
+      "score_urgencia": 0.49450738842875686,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "estiagem",
+      "titulo": "Mesmo com estiagem em 52% da área produtiva, MS colhe safra de soja acima do esperado",
+      "link": "https://sba1.com/noticias/noticia/40097/Mesmo-com-estiagem-em-52-da-area-produtiva-MS-colhe-safra-de-soja-acima-do-esperado",
+      "confianca_classificacao": 0.9326994882399016,
+      "score_completude": 0.5632217793097005
+    },
+    {
+      "id": "d680faf7-d456-47da-9b0d-3a843393ff20",
+      "texto": "Começa a colheita da safra de café 2025 em Minas Gerais - Maior produtor de café do Brasil, Minas Gerais deve colher 26,09 milhões de sacas de 60 quilos na safra 2025, uma queda de 7,1%.",
+      "data_criacao": "2025-06-06T09:34:39.336524",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5562907732385299,
+      "score_urgencia": 0.5407977235260651,
+      "localizacoes": [
+        {
+          "texto": "Minas Gerais Maior",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "falta de chuva",
+      "titulo": "Começa a colheita da safra de café 2025 em Minas Gerais",
+      "link": "https://diariodocomercio.com.br/agronegocio/colheita-da-safra-de-cafe-2025-em-minas-gerais-e-iniciada/",
+      "confianca_classificacao": 0.7990216406656973,
+      "score_completude": 0.6624734963739382
+    },
+    {
+      "id": "630540c5-9764-415c-8262-0d5799c64829",
+      "texto": "Interrupção deixa Atibaia inteira sem água nesta quinta-feira (5) - Abastecimento foi interrompido às 18h por falha em adutora do Rio Atibaia; ainda não há previsão para normalização do serviço.",
+      "data_criacao": "2025-06-06T09:34:39.336878",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3578364952392268,
+      "score_urgencia": 0.6741478746443814,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "falta de chuva",
+      "titulo": "Interrupção deixa Atibaia inteira sem água nesta quinta-feira (5)",
+      "link": "https://atibaia.portaldacidade.com/noticias/cidade/interrupcao-deixa-atibaia-inteira-sem-agua-nesta-quinta-feira-5-5915",
+      "confianca_classificacao": 0.9060007038940713,
+      "score_completude": 0.8040511720830492
+    },
+    {
+      "id": "9bb8341f-a783-4f84-bce5-8963d83357a8",
+      "texto": "Prefeitura de Ilhabela envia mais 10 mil litros de água potável para as ilhas de Búzios e da Vitória - No final da tarde desta terça-feira (4) a Prefeitura de Ilhabela, por meio da Secretaria das Comunidades Tradicionais, Pesca e Agricultura, enviou mais de...",
+      "data_criacao": "2025-06-06T09:34:40.212090",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.4865147128985301,
+      "score_urgencia": 0.5644905824712492,
+      "localizacoes": [
+        {
+          "texto": "Vitória, PR",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Vitória, AL",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "crise hídrica",
+      "titulo": "Prefeitura de Ilhabela envia mais 10 mil litros de água potável para as ilhas de Búzios e da Vitória",
+      "link": "https://www.atribunadopovo.com.br/post/prefeitura-de-ilhabela-envia-mais-10-mil-litros-de-%C3%A1gua-pot%C3%A1vel-para-as-ilhas-de-b%C3%BAzios-e-da-vit%C3%B3ria",
+      "confianca_classificacao": 0.8300027308545946,
+      "score_completude": 0.8641534606771022
+    },
+    {
+      "id": "0d72dd5e-e401-4c24-9ce0-64465f38bd57",
+      "texto": "Projeto aprovado na Câmara prevê uso de água do mar em vasos nas áreas litorâneas - Nova proposta amplia possibilidades para enfrentar crise hídrica com reuso, dessalinização e água do mar. ⭐ Seguir o SCD no Google News.",
+      "data_criacao": "2025-06-06T09:34:40.212758",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.47174533605432645,
+      "score_urgencia": 0.5821067866915836,
+      "localizacoes": [
+        {
+          "texto": "Câmara",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Google News",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "crise hídrica",
+      "titulo": "Projeto aprovado na Câmara prevê uso de água do mar em vasos nas áreas litorâneas",
+      "link": "https://seucreditodigital.com.br/pl-libera-uso-de-agua-do-mar-e-da-chuva/",
+      "confianca_classificacao": 0.7055669776181952,
+      "score_completude": 0.832920460374826
+    },
+    {
+      "id": "9e30334a-ea7f-4ac2-8642-3d23c439ebee",
+      "texto": "Crise hídrica pode ameaçar produção agrícola em Livramento e Dom Basílio - A irrigação que abrange os municípios de Livramento de Nossa Senhora e Dom Basílio, será drasticamente reduzida. O novo cronograma começa a operar a partir...",
+      "data_criacao": "2025-06-06T09:34:40.213615",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.535141720291362,
+      "score_urgencia": 0.4807556234910178,
+      "localizacoes": [
+        {
+          "texto": "Livramento",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "crise hídrica",
+      "titulo": "Crise hídrica pode ameaçar produção agrícola em Livramento e Dom Basílio",
+      "link": "https://sudoesteacontece.com.br/?p=112722",
+      "confianca_classificacao": 0.7157588665701421,
+      "score_completude": 0.5564060454164488
+    },
+    {
+      "id": "8adcf024-9ee2-419e-bbf2-6a8901716400",
+      "texto": "Candiota enfrenta risco de racionamento de água e prefeitura faz apelo por uso consciente - A Prefeitura de Candiota voltou a alertar a população sobre o risco de racionamento de água no município. Em um vídeo divulgado na tarde de quarta-feira (4)...",
+      "data_criacao": "2025-06-06T09:34:40.861763",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Baixo",
+      "sentimento": "neutro",
+      "score_sentimento": -0.1257055569407775,
+      "score_urgencia": 0.3107946905231428,
+      "localizacoes": [
+        {
+          "texto": "Angra dos Reis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Porto Alegre, RS",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "racionamento de água",
+      "titulo": "Candiota enfrenta risco de racionamento de água e prefeitura faz apelo por uso consciente",
+      "link": "https://www.jornalminuano.com.br/noticia/2025/06/05/candiota-enfrenta-risco-de-racionamento-de-agua-e-prefeitura-faz-apelo-por-uso-consciente",
+      "confianca_classificacao": 0.9525178892702062,
+      "score_completude": 0.8326984752295963
+    },
+    {
+      "id": "a7b8d308-776c-4c93-bf89-b890418c4c06",
+      "texto": "João Azevêdo inspeciona obras de infraestrutura rodoviária e autoriza investimentos em abastecimento de água - O governador João Azevêdo esteve, nesta quinta-feira (5), nos municípios de Remígio, Areia, Alagoa Nova e São Sebastião de Lagoa de Roça, no Brejo paraibano...",
+      "data_criacao": "2025-06-06T09:34:40.862374",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5089733382559058,
+      "score_urgencia": 0.5333699912323332,
+      "localizacoes": [
+        {
+          "texto": "Brejo",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "racionamento de água",
+      "titulo": "João Azevêdo inspeciona obras de infraestrutura rodoviária e autoriza investimentos em abastecimento de água",
+      "link": "https://www.politicaetc.com.br/2025/06/joao-azevedo-inspeciona-obras-de-infraestrutura-rodoviaria-e-autoriza-investimentos-em-abastecimento-de-agua/",
+      "confianca_classificacao": 0.7959957411094081,
+      "score_completude": 0.6815422722925986
+    },
+    {
+      "id": "1498dabc-ac69-443f-9158-88f9d43d979c",
+      "texto": "Inclusão de direito à água potável na Lei Orgânica é aprovada em 1º turno - Aprovação, com apoio do líder de governo e votos contrários da bancada do PL, marcou o Dia Mundial do Meio Ambiente.",
+      "data_criacao": "2025-06-06T09:34:40.862904",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Seca",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5851613623849028,
+      "score_urgencia": 0.4390718994199647,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Seca",
+      "termo": "racionamento de água",
+      "titulo": "Inclusão de direito à água potável na Lei Orgânica é aprovada em 1º turno",
+      "link": "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2025/06/inclus%C3%A3o-de-direito-%C3%A0-%C3%A1gua-pot%C3%A1vel-na-lei-org%C3%A2nica-%C3%A9-aprovada-em-1%C2%BA",
+      "confianca_classificacao": 0.7867067784401575,
+      "score_completude": 0.5005684256092544
+    },
+    {
+      "id": "15dfacc4-3789-4ffa-a02a-a11518cc86de",
+      "texto": "Prefeitura inicia reconstrução de ponte entre Monte Castelo e Vila Operária em VG - Queda causou transtornos significativos a moradores, trabalhadores e estudantes da comunidade.",
+      "data_criacao": "2025-06-06T09:34:41.518924",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5082669996712255,
+      "score_urgencia": 0.5191017350602818,
+      "localizacoes": [
+        {
+          "texto": "Recife, PE",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Salvador, BA",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de ponte",
+      "titulo": "Prefeitura inicia reconstrução de ponte entre Monte Castelo e Vila Operária em VG",
+      "link": "https://www.hnt.com.br/cidades/prefeitura-inicia-reconstrucao-de-ponte-entre-monte-castelo-e-vila-operaria-em-vg/489068",
+      "confianca_classificacao": 0.9772788773626848,
+      "score_completude": 0.6502393039973038
+    },
+    {
+      "id": "f00f2e5b-f19a-4982-941c-747f37b0db54",
+      "texto": "Após queda da ponte, empresas conseguem liminar para não pagar pedágio de R$ 50 em Tocantinópolis - Três empresas entraram na Justiça para conseguir a liberação do pagamento da Taxa de Manutenção Viária (TMV), instituída pela Prefeitura de Tocantinópolis.",
+      "data_criacao": "2025-06-06T09:34:41.519339",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.46998861509430734,
+      "score_urgencia": 0.5656135592610625,
+      "localizacoes": [
+        {
+          "texto": "Tocantinópolis Três",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Justiça",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de ponte",
+      "titulo": "Após queda da ponte, empresas conseguem liminar para não pagar pedágio de R$ 50 em Tocantinópolis",
+      "link": "https://atitudeto.com.br/noticias/estado/apos-queda-da-ponte-empresas-conseguem-liminar-para-nao-pagar-pedagio-de-r-50-em-tocantinopolis/",
+      "confianca_classificacao": 0.8301339044226066,
+      "score_completude": 0.584998853173132
+    },
+    {
+      "id": "fe1c57d6-5e10-4bd7-8bce-3e439f5984da",
+      "texto": "Dnit restrige trânsito de veículos pesados das 18h às 6h nas travessias dos rios Curuçá e Autaz Mirim, da BR-319 - Conforme o Dnit, Durante o dia, o tráfego de caminhões e carretas é controlado pela equipe de campo, enquanto o trânsito de veículos leves está liberado.",
+      "data_criacao": "2025-06-06T09:34:41.519767",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Baixo",
+      "sentimento": "neutro",
+      "score_sentimento": -0.1546452054046394,
+      "score_urgencia": 0.22305733223616558,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de ponte",
+      "titulo": "Dnit restrige trânsito de veículos pesados das 18h às 6h nas travessias dos rios Curuçá e Autaz Mirim, da BR-319",
+      "link": "https://18horas.com.br/noticias/dnit-restrige-transito-de-veiculos-pesados-das-18h-as-6h-nas-travessias-dos-rios-curuca-e-autaz-mirim-da-br-319/",
+      "confianca_classificacao": 0.7048796413087223,
+      "score_completude": 0.5525068276177739
+    },
+    {
+      "id": "6adc46d2-5f9a-4cbe-9d85-b958caa9b326",
+      "texto": "Com risco de desabamento há décadas, antigo Terminal Turístico de Cidreira será demolido; veja fotos - Governo vai investir R$ 465 mil para terminar de colocar abaixo a estrutura.",
+      "data_criacao": "2025-06-06T09:34:42.409945",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3821926538528877,
+      "score_urgencia": 0.48284146349022194,
+      "localizacoes": [
+        {
+          "texto": "Salvador, BA",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "São Sebastião, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "desabamento",
+      "titulo": "Com risco de desabamento há décadas, antigo Terminal Turístico de Cidreira será demolido; veja fotos",
+      "link": "https://gauchazh.clicrbs.com.br/colunistas/jocimar-farina/noticia/2025/06/com-risco-de-desabamento-ha-decadas-antigo-terminal-turistico-de-cidreira-sera-demolido-veja-fotos-cmbkqaew800hn014fo99ogiyx.html",
+      "confianca_classificacao": 0.8850970257799773,
+      "score_completude": 0.7178593257407517
+    },
+    {
+      "id": "4500009d-5e81-4734-a08c-06f7b3412de1",
+      "texto": "Homem morre após ser atingido por desabamento de laje de imóvel em Natal - Um homem morreu na tarde desta quinta-feira 5 após ser atingido pela laje de um imóvel na rua Alberto Silva, localizada no bairro Tirol, zona....",
+      "data_criacao": "2025-06-06T09:34:42.410687",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5004032314379533,
+      "score_urgencia": 0.5115754336737383,
+      "localizacoes": [
+        {
+          "texto": "Natal, AL",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal Um",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "desabamento",
+      "titulo": "Homem morre após ser atingido por desabamento de laje de imóvel em Natal",
+      "link": "https://agorarn.com.br/ultimas/homem-morre-desabamento-de-laje-de-imovel/",
+      "confianca_classificacao": 0.7631852553636559,
+      "score_completude": 0.5172929875491445
+    },
+    {
+      "id": "3270198d-693c-43cf-9c16-f76d41eb8f23",
+      "texto": "Idoso morre após marquise cair por cima dele em Natal - Acidente aconteceu na Rua Alberto Silva, no Tirol, na tarde desta quinta-feira (5). Vítima morreu na hora e foi encontrada por baixo dos escombros.",
+      "data_criacao": "2025-06-06T09:34:42.411597",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5498640395720188,
+      "score_urgencia": 0.4293362930951091,
+      "localizacoes": [
+        {
+          "texto": "Natal, AC",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal, AL",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal Acidente",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rua Alberto Silva",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Tirol",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "desabamento",
+      "titulo": "Idoso morre após marquise cair por cima dele em Natal",
+      "link": "https://g1.globo.com/rn/rio-grande-do-norte/noticia/2025/06/05/queda-marquise-natal-morte.ghtml",
+      "confianca_classificacao": 0.9156143913848771,
+      "score_completude": 0.8679214778003008
+    },
+    {
+      "id": "032790e0-b2e1-4a8a-ad38-1b2446d7c91b",
+      "texto": "O colapso do sistema financeiro nacional - O Brasil vive uma contradição gritante e perigosa: enquanto o mercado de capitais se expande em ritmo acelerado, a Comissão de Valores Mobiliários (CVM),",
+      "data_criacao": "2025-06-06T09:34:43.359951",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5901135830072906,
+      "score_urgencia": 0.45159710216372767,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "colapso de estrutura",
+      "titulo": "O colapso do sistema financeiro nacional",
+      "link": "https://iclnoticias.com.br/o-colapso-do-sistema-financeiro-nacional/",
+      "confianca_classificacao": 0.7351555675140071,
+      "score_completude": 0.8975583100009
+    },
+    {
+      "id": "7b586be2-bfe8-4baf-bad0-b0f30732bfe9",
+      "texto": "Alta Defensivos anuncia mudanças na estrutura executiva - A Alta, empresa referência em soluções para proteção de cultivos e integrante do grupo Agrihold, comunica ao mercado importantes mudanças em sua estrutura...",
+      "data_criacao": "2025-06-06T09:34:43.360193",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.324272088766238,
+      "score_urgencia": 0.5298122733584424,
+      "localizacoes": [
+        {
+          "texto": "Porto Alegre, RS",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Petrópolis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "colapso de estrutura",
+      "titulo": "Alta Defensivos anuncia mudanças na estrutura executiva",
+      "link": "https://revistacultivar.com.br/noticias/alta-defensivos-anuncia-mudancas-na-estrutura-executiva",
+      "confianca_classificacao": 0.847590286487873,
+      "score_completude": 0.5358408438510932
+    },
+    {
+      "id": "2cd68e5d-53e9-4a5e-bb7d-42f91feaeb90",
+      "texto": "Nova ponte sobre o rio Caeté é confirmada pelo DNIT - Em recente entrevista, o superintendente do DNIT no estado, Ricardo Araújo, informou que a construção de uma nova ponte sobre o Rio Caeté está confirmada.",
+      "data_criacao": "2025-06-06T09:34:43.360666",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.312890425863783,
+      "score_urgencia": 0.4021551030545093,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "colapso de estrutura",
+      "titulo": "Nova ponte sobre o rio Caeté é confirmada pelo DNIT",
+      "link": "https://acrejornal.com.br/nova-ponte-sobre-o-rio-caete-e-confirmada-pelo-dnit/",
+      "confianca_classificacao": 0.8744570452268972,
+      "score_completude": 0.6007156175223107
+    },
+    {
+      "id": "75359c2d-5add-4c1c-a18f-e0f6537cf7b8",
+      "texto": "Marquise desaba e mata homem próximo ao Shopping Midway Mall em Natal - Homem morre após marquise desabar na Rua Alberto Silva, ao lado do Shopping Midway Mall, em Natal. Corpo de Bombeiros foi acionado para retirada dos...",
+      "data_criacao": "2025-06-06T09:34:44.089470",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.375978893097745,
+      "score_urgencia": 0.5781077187598967,
+      "localizacoes": [
+        {
+          "texto": "Natal, AC",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal, AL",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal, AP",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal, MA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal, PA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Natal Homem",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rua Alberto Silva",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de marquise",
+      "titulo": "Marquise desaba e mata homem próximo ao Shopping Midway Mall em Natal",
+      "link": "https://pordentrodorn.com.br/2025/06/05/marquise-cai-homem-morre-midway-mall-natal/",
+      "confianca_classificacao": 0.7946242833981294,
+      "score_completude": 0.6519314364749685
+    },
+    {
+      "id": "ef1b6444-c7b4-4461-8ddd-bd4191dfcf83",
+      "texto": "Marquise de restaurante desaba durante ventania em São Miguel dos Milagres - Testemunhas relataram que a queda provocou apenas danos materiais. As causas do desabamento serão apuradas.",
+      "data_criacao": "2025-06-06T09:34:44.090030",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5714994011665486,
+      "score_urgencia": 0.6106842222715441,
+      "localizacoes": [
+        {
+          "texto": "São Miguel",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de marquise",
+      "titulo": "Marquise de restaurante desaba durante ventania em São Miguel dos Milagres",
+      "link": "https://www.al102.com.br/noticias/26103/marquise-de-restaurante-desaba-durante-ventania-em-sao-miguel-dos-milagres",
+      "confianca_classificacao": 0.9666863277947424,
+      "score_completude": 0.8188852886948321
+    },
+    {
+      "id": "22e3813f-68dc-4fa4-af31-969563f524bb",
+      "texto": "Thriller com Julianne Moore, comédia com Sandra Hüller e horror nacional marcam estreias da semana nos cinemas - ECHO VALLEY. Kate Garrett (Julianne Moore) é uma mulher divorciada que cria cavalos em uma fazenda isolada na Pensilvânia, Estados Unidos.",
+      "data_criacao": "2025-06-06T09:34:44.989305",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.33012559949650777,
+      "score_urgencia": 0.6791116331313182,
+      "localizacoes": [
+        {
+          "texto": "Pensilvânia",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de muro",
+      "titulo": "Thriller com Julianne Moore, comédia com Sandra Hüller e horror nacional marcam estreias da semana nos cinemas",
+      "link": "https://vejario.abril.com.br/programe-se/julianne-moore-sandra-huller-estreias-semana-cinemas/",
+      "confianca_classificacao": 0.8341279484109615,
+      "score_completude": 0.5496859942793437
+    },
+    {
+      "id": "dfb2a5a3-4383-4e2a-ad23-c24932174b0b",
+      "texto": "Ladrão trapalhão tenta roubar casa, pula muro, cai e se machuca - Um homem, conhecido por envolvimento em furtos, tentou roubar uma nova casa, mas tentou pular o muro do imóvel, que estava protegido com uma cerca de...",
+      "data_criacao": "2025-06-06T09:34:44.989761",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.45754044994258847,
+      "score_urgencia": 0.5510827958803598,
+      "localizacoes": [
+        {
+          "texto": "Belo Horizonte, MG",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de muro",
+      "titulo": "Ladrão trapalhão tenta roubar casa, pula muro, cai e se machuca",
+      "link": "https://sampi.net.br/nacional/noticias/2907837/geral/2025/06/ladrao-trapalhao-tenta-roubar-casa-pula-muro-cai-e-se-machuca",
+      "confianca_classificacao": 0.9553858691643249,
+      "score_completude": 0.6940074892079205
+    },
+    {
+      "id": "c6099e9d-5d3d-411a-97a7-cb578766438d",
+      "texto": "Após temporal, árvore cai sobre ônibus no centro de Foz do Iguaçu - Susto na área central de Foz do Iguaçu, na hora do almoço desta quinta-feira (5), com a queda de uma árvore sobre um ônibus estacionado.",
+      "data_criacao": "2025-06-06T09:34:44.990083",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Outro",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.508166721394268,
+      "score_urgencia": 0.5584915740963448,
+      "localizacoes": [
+        {
+          "texto": "São Paulo, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Outro",
+      "termo": "queda de muro",
+      "titulo": "Após temporal, árvore cai sobre ônibus no centro de Foz do Iguaçu",
+      "link": "https://www.h2foz.com.br/cidade/queda-arvore-onibus-foz-do-iguacu-temporal/",
+      "confianca_classificacao": 0.7861062400453579,
+      "score_completude": 0.8976502190215929
+    },
+    {
+      "id": "84f4523a-968d-43c7-a38c-2b344a01a66c",
+      "texto": "Motociclista fica em estado grave em acidente envolvendo cinco veículos na Rodovia Santos Dumont - Vítima foi levada em estado grave ao Hospital das Clínicas da Unicamp, em Campinas. A pista precisou ser bloqueada após o acidente,...",
+      "data_criacao": "2025-06-06T09:34:45.719468",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "muito negativo",
+      "score_sentimento": -0.9989207983469345,
+      "score_urgencia": 0.7255216876212107,
+      "localizacoes": [
+        {
+          "texto": "Campinas, AC",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Campinas, AP",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Santos, ES",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Campinas, PR",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Campinas, PI",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Campinas, SE",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Campinas, AM",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Santos, MA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rodovia Santos Dumont Vítima",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente grave em rodovia",
+      "titulo": "Motociclista fica em estado grave em acidente envolvendo cinco veículos na Rodovia Santos Dumont",
+      "link": "https://g1.globo.com/sp/campinas-regiao/noticia/2025/06/06/motociclista-fica-em-estado-grave-em-acidente-envolvendo-cinco-veiculos-na-rodovia-santos-dumont.ghtml",
+      "confianca_classificacao": 0.8929693420742421,
+      "score_completude": 0.7692646303154493
+    },
+    {
+      "id": "4e703b2a-f95e-4513-8215-8236b34708f6",
+      "texto": "Acidente com utilitário deixa uma vítima fatal na Rodovia Castello Branco em São Roque - Um grave acidente ocorreu na tarde de terça-feira (4) na Rodovia Castello Branco (SP-280), em São Roque, na altura do km 61, sentido capital (leste).",
+      "data_criacao": "2025-06-06T09:34:45.720004",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "muito negativo",
+      "score_sentimento": -0.6261144251666821,
+      "score_urgencia": 0.8972690515573187,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente grave em rodovia",
+      "titulo": "Acidente com utilitário deixa uma vítima fatal na Rodovia Castello Branco em São Roque",
+      "link": "https://www.odemocrata.com.br/acidente-com-utilitario-deixa-uma-vitima-fatal-na-rodovia-castello-branco-em-sao-roque/",
+      "confianca_classificacao": 0.8818825117656924,
+      "score_completude": 0.5461537925235616
+    },
+    {
+      "id": "543359a8-c857-4962-af90-5f2162e53846",
+      "texto": "Engavetamento com seis veículos deixa três feridos na Rodovia Raposo Tavares, em Presidente Prudente - Um grave acidente de trânsito envolvendo seis veículos foi registrado no fim da tarde desta quinta-feira (5), no km 568+750 metros da Rodovia Raposo Tavares...",
+      "data_criacao": "2025-06-06T09:34:45.720081",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "negativo",
+      "score_sentimento": -0.6248543132347066,
+      "score_urgencia": 0.9772750239491186,
+      "localizacoes": [
+        {
+          "texto": "Presidente Prudente Um",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rodovia Raposo Tavares",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente grave em rodovia",
+      "titulo": "Engavetamento com seis veículos deixa três feridos na Rodovia Raposo Tavares, em Presidente Prudente",
+      "link": "https://www.portalbueno.com.br/post.php?id=39721&t=engavetamento-com-seis-veiculos-deixa-tres-feridos-na-rodovia-raposo-tavares-em-presidente-prudente",
+      "confianca_classificacao": 0.772951708516155,
+      "score_completude": 0.8612619325650925
+    },
+    {
+      "id": "cce801a9-e7d5-4010-8d85-73db3ecbf296",
+      "texto": "Motociclista morre em batida com carro na Avenida Getúlio Vargas em Uberlândia - Acidente de trânsito envolvendo a motocicleta e um carro de passeio ocorreu, na manhã desta sexta-feira (6), em Uberlândia.",
+      "data_criacao": "2025-06-06T09:34:46.451849",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5788727721777757,
+      "score_urgencia": 0.6777929546311829,
+      "localizacoes": [
+        {
+          "texto": "Uberlândia, AC",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Uberlândia Acidente",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Avenida Getúlio Vargas",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente com morte",
+      "titulo": "Motociclista morre em batida com carro na Avenida Getúlio Vargas em Uberlândia",
+      "link": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2025/06/06/motociclista-morre-em-batida-com-carro-na-avenida-getulio-vargas-em-uberlandia.ghtml",
+      "confianca_classificacao": 0.7698536837198459,
+      "score_completude": 0.5697548794240015
+    },
+    {
+      "id": "a8955ec5-d501-4d0b-8b45-21f7727e748a",
+      "texto": "Homem morre atropelado por motociclista na Via Expressa, em Contagem - Um homem, ainda não identificado, morreu após ser atropelado por uma moto na manhã desta sexta-feira (6 de junho), na Via Expressa.",
+      "data_criacao": "2025-06-06T09:34:46.452400",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.3458568454339568,
+      "score_urgencia": 0.6472211503293981,
+      "localizacoes": [
+        {
+          "texto": "Contagem, AP",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Contagem",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Contagem Um",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Via Expressa",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente com morte",
+      "titulo": "Homem morre atropelado por motociclista na Via Expressa, em Contagem",
+      "link": "https://www.otempo.com.br/cidades/2025/6/6/homem-morre-atropelado-por-motociclista-na-via-expressa-em-contagem",
+      "confianca_classificacao": 0.8657923127558438,
+      "score_completude": 0.897092425497634
+    },
+    {
+      "id": "2beeaed8-9f6c-4043-92d8-002ca78a7654",
+      "texto": "Acidente com morte de motorista e carreta tombada tem duas versões - Polícia Militar Rodoviária informou que a carreta saiu de Ponte Nova (MG) com destino ao Porto de Santos (SP) e transportava uma carga de porcos.",
+      "data_criacao": "2025-06-06T09:34:46.453201",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5481716081956662,
+      "score_urgencia": 0.45824351189083395,
+      "localizacoes": [
+        {
+          "texto": "Santos, MA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente com morte",
+      "titulo": "Acidente com morte de motorista e carreta tombada tem duas versões",
+      "link": "https://www.em.com.br/gerais/2025/06/7166391-acidente-com-morte-de-motorista-de-carro-e-carreta-tombada-tem-2-versoes.html",
+      "confianca_classificacao": 0.7130822215039458,
+      "score_completude": 0.587490190625697
+    },
+    {
+      "id": "7247b675-1fda-4be4-b4cb-a5a60d995f9e",
+      "texto": "IML busca por familiares de homem vítima de acidente de trânsito - O Instituto Médico Legal (IML) solicita que os familiares de Raul Josué Martinez Vasquez, de 22 anos, compareçam à sede do Instituto para o reconhecimento e...",
+      "data_criacao": "2025-06-06T09:34:47.254242",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.346937948540659,
+      "score_urgencia": 0.6340185663334625,
+      "localizacoes": [
+        {
+          "texto": "Manaus, AM",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Brasília, DF",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente de trânsito",
+      "titulo": "IML busca por familiares de homem vítima de acidente de trânsito",
+      "link": "https://www.ssp.am.gov.br/iml-busca-por-familiares-de-homem-vitima-de-acidente-de-transito/",
+      "confianca_classificacao": 0.7687846523689025,
+      "score_completude": 0.7721837114224982
+    },
+    {
+      "id": "38e6394e-9122-4de6-a782-a072e1d4a3d3",
+      "texto": "Campanha busca recursos para jornalista que perdeu os dedos em acidente de trânsito - A jornalista Maêdra Pacheco Machado, conhecida por sua atuação na TV A Crítica, enfrenta um delicado momento após sofrer um grave acidente de trânsito em...",
+      "data_criacao": "2025-06-06T09:34:47.254499",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "muito negativo",
+      "score_sentimento": -0.6635693961077361,
+      "score_urgencia": 0.7924018847509746,
+      "localizacoes": [
+        {
+          "texto": "Curitiba, PR",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente de trânsito",
+      "titulo": "Campanha busca recursos para jornalista que perdeu os dedos em acidente de trânsito",
+      "link": "https://www.blogdomarioadolfo.com.br/campanha-busca-recursos-para-jornalista-que-perdeu-os-dedos-em-acidente-de-transito/",
+      "confianca_classificacao": 0.865214964380894,
+      "score_completude": 0.7239990662420529
+    },
+    {
+      "id": "c5a339f5-53c9-4e37-877a-eae1326579c8",
+      "texto": "Siate é acionado para atender acidente de trânsito no Alto Alegre - Socorristas do Siate foram acionados para atenderem um acidente de trânsito na Rua Graciliano Ramos em Cascavel. A CGN está se deslocando para o local e em...",
+      "data_criacao": "2025-06-06T09:34:47.254676",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.30955210161863816,
+      "score_urgencia": 0.629787446530429,
+      "localizacoes": [
+        {
+          "texto": "Cascavel, ES",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Cascavel, PA",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Cascavel, SE",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Alto Alegre Socorristas",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rua Graciliano Ramos",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente de trânsito",
+      "titulo": "Siate é acionado para atender acidente de trânsito no Alto Alegre",
+      "link": "https://cgn.inf.br/noticia/1854238/siate-e-acionado-para-atender-acidente-de-transito-no-alto-alegre-19",
+      "confianca_classificacao": 0.8730631200422475,
+      "score_completude": 0.7326152810226076
+    },
+    {
+      "id": "0753415f-0ece-45af-bde3-925b63f9effd",
+      "texto": "Menino de 2 anos morre atropelado em estacionamento de supermercado - Uma tragédia abalou a cidade de Medianeira nesta quinta-feira (05 de junho), quando um menino de aproximadamente dois anos foi vítima de um atropelamento no...",
+      "data_criacao": "2025-06-06T09:34:48.636179",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.45712231973073947,
+      "score_urgencia": 0.4156969265661525,
+      "localizacoes": [
+        {
+          "texto": "Petrópolis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Brasília, DF",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "atropelamento fatal",
+      "titulo": "Menino de 2 anos morre atropelado em estacionamento de supermercado",
+      "link": "https://cgn.inf.br/noticia/1854231/menino-de-2-anos-morre-atropelado-em-estacionamento-de-supermercado",
+      "confianca_classificacao": 0.9699721244394729,
+      "score_completude": 0.7132288613102807
+    },
+    {
+      "id": "aa5ec9a2-66aa-41ad-b882-bcfc952b559f",
+      "texto": "MP do Rio busca reverter soltura de Vítor Belarmino após atropelamento fatal - O Ministério Público do Estado do Rio de Janeiro (MPRJ) entrou com um recurso para contestar a decisão judicial que revogou a prisão preventiva de Vítor...",
+      "data_criacao": "2025-06-06T09:34:48.636748",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "negativo",
+      "score_sentimento": -0.8760264638803525,
+      "score_urgencia": 0.8176448101160376,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "atropelamento fatal",
+      "titulo": "MP do Rio busca reverter soltura de Vítor Belarmino após atropelamento fatal",
+      "link": "https://www.dm.com.br/brasil/mp-do-rio-busca-reverter-soltura-de-vitor-belarmino-apos-atropelamento-fatal/",
+      "confianca_classificacao": 0.9675905407637102,
+      "score_completude": 0.5889528981728747
+    },
+    {
+      "id": "6731d2dd-73be-4738-b184-94f3ca2f5fbc",
+      "texto": "Engavetamento deixa três pessoas feridas na Rodovia Raposo Tavares, em Presidente Prudente - Um engavetamento envolvendo seis veículos deixou três pessoas feridas, nesta quinta-feira (5), no km 568,750 da Rodovia Raposo Tavares (SP-270),...",
+      "data_criacao": "2025-06-06T09:34:49.300902",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.4115020523851017,
+      "score_urgencia": 0.6279292568321719,
+      "localizacoes": [
+        {
+          "texto": "Presidente Prudente Um",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Rodovia Raposo Tavares",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "engavetamento",
+      "titulo": "Engavetamento deixa três pessoas feridas na Rodovia Raposo Tavares, em Presidente Prudente",
+      "link": "https://g1.globo.com/sp/presidente-prudente-regiao/noticia/2025/06/06/engavetamento-deixa-tres-pessoas-feridas-na-rodovia-raposo-tavares-em-presidente-prudente.ghtml",
+      "confianca_classificacao": 0.966029471737385,
+      "score_completude": 0.8905666022346885
+    },
+    {
+      "id": "20a126ce-6df8-4540-aaa8-ad280ab26c5c",
+      "texto": "Engavetamento com motos, carros e micro-ônibus fere três pessoas na SP-270 - 08h39. Redação Bastos Já Três pessoas sofreram ferimentos em um engavetamento que envolveu automóveis, motocicletas e um micro-ônibus na Rodovia Raposo...",
+      "data_criacao": "2025-06-06T09:34:49.301525",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.4574227255493916,
+      "score_urgencia": 0.6590200117255689,
+      "localizacoes": [
+        {
+          "texto": "Rodovia Raposo",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "engavetamento",
+      "titulo": "Engavetamento com motos, carros e micro-ônibus fere três pessoas na SP-270",
+      "link": "https://www.bastosja.com.br/noticias/ver/item/11155/t/engavetamento-com-motos-carros-e-micro-onibus-fere-tres-pessoas-na-sp-270",
+      "confianca_classificacao": 0.8672291278582562,
+      "score_completude": 0.5116240300453643
+    },
+    {
+      "id": "dcbef92a-f762-4dad-92a4-bc38f446cdae",
+      "texto": "Colisão frontal entre HB20 e Jeep Renegade deixa duas pessoas feridas em Rancho Queimado - Foto: Corpo de Bombeiros Militar de Santa Catarina Na tarde desta quinta-feira (05), por volta das 14h, um grave acidente de trânsito envolvendo um HB20.",
+      "data_criacao": "2025-06-06T09:34:50.335637",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Alto",
+      "sentimento": "muito negativo",
+      "score_sentimento": -0.824532182574859,
+      "score_urgencia": 0.8094787515264407,
+      "localizacoes": [
+        {
+          "texto": "Rancho Queimado Foto",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "colisão frontal",
+      "titulo": "Colisão frontal entre HB20 e Jeep Renegade deixa duas pessoas feridas em Rancho Queimado",
+      "link": "https://clicrdc.com.br/transito/colisao-frontal-entre-hb20-e-jeep-renegade-deixa-duas-pessoas-feridas-em-rancho-queimado/",
+      "confianca_classificacao": 0.7242523458806878,
+      "score_completude": 0.742700398990426
+    },
+    {
+      "id": "2e82a5dd-ad93-42d5-ae09-dbb60f67e4e8",
+      "texto": "Colisão frontal deixa três pessoas feridas em Xanxerê - Uma colisão frontal envolvendo uma Saveiro e um Prisma foi registrada no início da manhã desta sexta-feira (6), por volta das 7h15, na rua Avelino Batisti,...",
+      "data_criacao": "2025-06-06T09:34:50.336302",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.38110181420694667,
+      "score_urgencia": 0.5904398162501898,
+      "localizacoes": [
+        {
+          "texto": "Xanxerê Uma",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Batisti",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "colisão frontal",
+      "titulo": "Colisão frontal deixa três pessoas feridas em Xanxerê",
+      "link": "https://www.tudosobrexanxere.com.br/noticias/14863/colisao-frontal-deixa-tres-pessoas-feridas-em-xanxere.html",
+      "confianca_classificacao": 0.7677778523052027,
+      "score_completude": 0.5524259469566775
+    },
+    {
+      "id": "0638f6b8-554f-444b-a29e-b4ec6f854bc2",
+      "texto": "Colisão frontal deixa três pessoas feridas na RS-522 - Na manhã desta sexta-feira (6), uma colisão frontal entre dois veículos resultou em três pessoas feridas na RS-522, entre os municípios de Ijuí e Augusto...",
+      "data_criacao": "2025-06-06T09:34:50.336872",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5067988009767455,
+      "score_urgencia": 0.5030260527899921,
+      "localizacoes": [
+        {
+          "texto": "Belo Horizonte, MG",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "colisão frontal",
+      "titulo": "Colisão frontal deixa três pessoas feridas na RS-522",
+      "link": "https://www.observadorregional.com.br/colisao-frontal-deixa-tres-pessoas-feridas-na-rs-522/",
+      "confianca_classificacao": 0.7283690345476433,
+      "score_completude": 0.6564247110799999
+    },
+    {
+      "id": "41b3a030-dd49-4172-b530-e5614a4d18dd",
+      "texto": "Entenda o que é epilepsia, doença de piloto de avião que morreu em acidente em BH - Nesta quarta-feira (4), três pessoas foram atropeladas na capital depois que um motorista sofreu um ataque epilético.",
+      "data_criacao": "2025-06-06T09:34:51.200039",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.5012404543270848,
+      "score_urgencia": 0.4217657786110893,
+      "localizacoes": [
+        {
+          "texto": "Salvador, BA",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "São Sebastião, SP",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente de avião",
+      "titulo": "Entenda o que é epilepsia, doença de piloto de avião que morreu em acidente em BH",
+      "link": "https://noticias.r7.com/minas-gerais/entenda-o-que-e-epilepsia-doenca-de-piloto-de-aviao-que-morreu-em-acidente-em-bh-06062025/",
+      "confianca_classificacao": 0.8184140390180243,
+      "score_completude": 0.696838814028085
+    },
+    {
+      "id": "d7306941-96bf-42b5-a745-021a152d8911",
+      "texto": "BH: Piloto de avião que caiu em 3 casas estava inapto para voar, diz laudo - Cenipa afirmou que piloto não poderia estar à frente de uma aeronave por possuir condições médicas contrárias às normas da aviação. Acidente aconteceu em...",
+      "data_criacao": "2025-06-06T09:34:51.200852",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.41172023216428505,
+      "score_urgencia": 0.48587650742825245,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente de avião",
+      "titulo": "BH: Piloto de avião que caiu em 3 casas estava inapto para voar, diz laudo",
+      "link": "https://www.em.com.br/gerais/2025/06/7166087-piloto-de-aviao-que-caiu-no-carlos-prates-estava-inapto-a-voar-diz-laudo.html",
+      "confianca_classificacao": 0.7831936903369392,
+      "score_completude": 0.6131622492325505
+    },
+    {
+      "id": "6c3b42c6-36f9-4745-a42c-4cc0fd229563",
+      "texto": "Corpo encontrado em avião que levava Emiliano Sala é resgatado - As autoridades britânicas anunciaram nesta quarta-feira ter recuperado o corpo localizado no avião que caiu no Canal da Mancha. A bordo da aeronave estavam...",
+      "data_criacao": "2025-06-06T09:34:51.201590",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.3360283903079874,
+      "score_urgencia": 0.5027742064640394,
+      "localizacoes": [
+        {
+          "texto": "Sala",
+          "tipo": "cidade",
+          "confianca": "alta"
+        },
+        {
+          "texto": "Canal",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "acidente de avião",
+      "titulo": "Corpo encontrado em avião que levava Emiliano Sala é resgatado",
+      "link": "https://www.correiodopovo.com.br/esportes/corpo-encontrado-em-avi%C3%A3o-que-levava-emiliano-sala-%C3%A9-resgatado-1.318016",
+      "confianca_classificacao": 0.7035889306187455,
+      "score_completude": 0.8298063279641568
+    },
+    {
+      "id": "7406722d-430e-4b7b-b490-29e67f833316",
+      "texto": "Equipe de paraquedismo da FAB realiza treinamento com helicóptero da Marinha - De 2 a 5 de junho, a Equipe de Paraquedismo da Força Aérea Brasileira - conhecida como Falcões - participou de um treinamento conjunto com o efetivo do...",
+      "data_criacao": "2025-06-06T09:34:52.012837",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.31833004795158554,
+      "score_urgencia": 0.4625546612543045,
+      "localizacoes": [
+        {
+          "texto": "Manaus, AM",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        },
+        {
+          "texto": "Blumenau, SC",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "queda de helicóptero",
+      "titulo": "Equipe de paraquedismo da FAB realiza treinamento com helicóptero da Marinha",
+      "link": "https://www.fab.mil.br/noticias/mostra/44290",
+      "confianca_classificacao": 0.7326281358619339,
+      "score_completude": 0.7242614237963533
+    },
+    {
+      "id": "52d17e88-f9ba-408b-b79a-e66e15d1a5ed",
+      "texto": "O helicóptero furtivo usado na missão contra Bin Laden era tão secreto que foi destruído após o ataque e nunca mais apareceu - O helicóptero stealth usado na missão contra Bin Laden foi tão secreto que foi destruído no local. Conheça o misterioso Stealth Hawk da operação Geronimo.",
+      "data_criacao": "2025-06-06T09:34:52.013037",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "neutro",
+      "score_sentimento": -0.39797941708125845,
+      "score_urgencia": 0.5292517187190239,
+      "localizacoes": [
+        {
+          "texto": "Rio de Janeiro, RJ",
+          "tipo": "cidade",
+          "confianca": "alta"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "queda de helicóptero",
+      "titulo": "O helicóptero furtivo usado na missão contra Bin Laden era tão secreto que foi destruído após o ataque e nunca mais apareceu",
+      "link": "https://clickpetroleoegas.com.br/a-aeronave-que-voava-7-vezes-a-velocidade-do-som-chegava-ao-espaco-e-voltava-em-queda-livre-tudo-isso-nos-anos-1960-vml97/",
+      "confianca_classificacao": 0.8983641348025451,
+      "score_completude": 0.7908426189956397
+    },
+    {
+      "id": "a6f1d35d-fee8-4930-a2bb-246171141d04",
+      "texto": "Imagens aéreas do helicóptero Falcão mostram abordagem que terminou com foragido detido - Na tarde desta quinta-feira (05) a equipe do helicóptero Falcão, em uma operação de vigilância aérea, registrou imagens de quatro indivíduos empurrando três...",
+      "data_criacao": "2025-06-06T09:34:52.013074",
+      "usuario": "SerperAPI",
+      "tipo_desastre": "Acidente",
+      "nivel_urgencia": "Médio",
+      "sentimento": "negativo",
+      "score_sentimento": -0.5328808595659712,
+      "score_urgencia": 0.5281360110513434,
+      "localizacoes": [
+        {
+          "texto": "Angra dos Reis, RJ",
+          "tipo": "cidade",
+          "confianca": "baixa"
+        }
+      ],
+      "telefones": [],
+      "pessoas": [],
+      "fonte": "noticia",
+      "categoria": "Acidente",
+      "termo": "queda de helicóptero",
+      "titulo": "Imagens aéreas do helicóptero Falcão mostram abordagem que terminou com foragido detido",
+      "link": "https://cgn.inf.br/noticia/1853914/imagens-aereas-do-helicoptero-falcao-mostram-abordagem-que-terminou-com-foragido-detido/amp?ref=AcessadosHome",
+      "confianca_classificacao": 0.9274639785556426,
+      "score_completude": 0.8333704595218635
+    }
+  ],
+  "ultima_atualizacao": "2025-06-06T09:34:52.013167"
+}
