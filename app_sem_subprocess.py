@@ -434,7 +434,144 @@ def aplicar_filtros_personalizados(df, data_inicio=None, data_fim=None, tipos=No
         # Em caso de erro, retornar o DataFrame original
         return df
 
-# Fun��ão principal do aplicativo
+# Função para construir a barra lateral
+def construir_sidebar():
+    """Constrói a barra lateral do Streamlit"""
+    with st.sidebar:
+        # Logo FIAP
+        st.image("FIAP-transparente.png", use_container_width=True)
+
+        st.title("⚙️ Configurações")
+
+        # Seção de Atualização Manual
+        st.subheader("🔄 Atualização de Dados")
+        if st.button("🔄 Atualizar dados agora"):
+            with st.spinner("Coletando dados..."):
+                coletar_dados()
+                st.success("✅ Dados atualizados com sucesso!")
+
+        # Mostrar última atualização
+        if 'ultima_atualizacao' in st.session_state and st.session_state.ultima_atualizacao:
+            st.info(f"📅 Última atualização: {st.session_state.ultima_atualizacao}")
+
+        st.markdown("---")
+
+        # Configurações da API do Twitter
+        st.subheader("🐦 Configuração Twitter API")
+        with st.expander("Configurar API do Twitter"):
+            config = carregar_config_twitter()
+            bearer_token = st.text_input("Bearer Token",
+                                       value=config.get('bearer_token', '') if config else '',
+                                       type="password")
+
+            if st.button("💾 Salvar configurações"):
+                if bearer_token:
+                    config_dict = {'bearer_token': bearer_token}
+                    salvar_config_twitter(config_dict)
+                    st.success("✅ Configurações salvas com sucesso!")
+                else:
+                    st.error("❌ Bearer Token é obrigatório")
+
+        # Filtros
+        st.subheader("🔍 Filtros")
+        st.session_state.filtro_tipo = st.selectbox(
+            "Tipo de desastre",
+            ["Todos", "Enchente", "Deslizamento", "Terremoto", "Incêndio", "Seca", "Outro"]
+        )
+
+        st.session_state.filtro_urgencia = st.selectbox(
+            "Nível de urgência",
+            ["Todos", "Alto", "Médio", "Baixo"]
+        )
+
+        st.session_state.filtro_periodo = st.selectbox(
+            "Período",
+            ["24 horas", "7 dias", "30 dias", "Todos"]
+        )
+
+        # Seção de geração de relatórios
+        st.subheader("📊 Relatórios")
+
+        relatorio_tipo = st.selectbox(
+            "Tipo de Relatório",
+            ["Completo", "Resumido", "Análise de Sentimento", "Análise de Urgência"]
+        )
+
+        periodo_relatorio = st.selectbox(
+            "Período do Relatório",
+            ["Últimas 24 horas", "Última semana", "Último mês", "Todo o período"]
+        )
+
+        formato_relatorio = st.radio(
+            "Formato do Relatório",
+            ["HTML", "PDF"],
+            horizontal=True
+        )
+
+        if st.button("📑 Gerar Relatório"):
+            try:
+                if not st.session_state.dados_processados.empty:
+                    with st.spinner(f"Gerando relatório {relatorio_tipo.lower()}..."):
+                        gerador = GeradorRelatorios()
+
+                        # Filtra os dados pelo período selecionado
+                        df_relatorio = st.session_state.dados_processados.copy()
+                        if periodo_relatorio != "Todo o período":
+                            agora = pd.Timestamp.now()
+                            if periodo_relatorio == "Últimas 24 horas":
+                                inicio = agora - pd.Timedelta(days=1)
+                            elif periodo_relatorio == "Última semana":
+                                inicio = agora - pd.Timedelta(days=7)
+                            else:  # Último mês
+                                inicio = agora - pd.Timedelta(days=30)
+                            df_relatorio = df_relatorio[df_relatorio['data_criacao'] >= inicio]
+
+                        # Gera o relatório de acordo com o tipo selecionado
+                        if relatorio_tipo == "Completo":
+                            resultado = gerador.gerar_relatorio_completo(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+                        elif relatorio_tipo == "Resumido":
+                            resultado = gerador.gerar_relatorio_resumido(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+                        elif relatorio_tipo == "Análise de Sentimento":
+                            resultado = gerador.gerar_relatorio_sentimentos(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+                        else:  # Análise de Urgência
+                            resultado = gerador.gerar_relatorio_urgencia(df_relatorio, 'relatorios', formato=formato_relatorio.lower())
+
+                        # Verifica qual arquivo foi gerado
+                        if formato_relatorio == "HTML":
+                            caminho_arquivo = resultado['arquivos'].get('relatorio_html', '')
+                        else:
+                            caminho_arquivo = resultado['arquivos'].get('relatorio_pdf', '')
+
+                        if caminho_arquivo and os.path.exists(caminho_arquivo):
+                            st.success(f"✅ Relatório {relatorio_tipo.lower()} gerado com sucesso!")
+
+                            # Abre o arquivo gerado
+                            with open(caminho_arquivo, 'rb') as f:
+                                arquivo_bytes = f.read()
+
+                            # Cria botão de download
+                            nome_arquivo = os.path.basename(caminho_arquivo)
+                            st.download_button(
+                                label=f"⬇️ Download do Relatório ({formato_relatorio})",
+                                data=arquivo_bytes,
+                                file_name=nome_arquivo,
+                                mime=f"application/{formato_relatorio.lower()}"
+                            )
+                        else:
+                            st.error("Não foi possível encontrar o arquivo gerado.")
+                else:
+                    st.warning("Não há dados para gerar relatório.")
+            except Exception as e:
+                st.error(f"Erro ao gerar relatório: {str(e)}")
+                logger.error(f"Erro ao gerar relatório: {str(e)}")
+
+        # Auto atualização
+        st.session_state.auto_refresh = st.checkbox(
+            "Atualização automática (5 min)",
+            value=st.session_state.get('auto_refresh', False)
+        )
+
+# Função principal do aplicativo
 def main():
     # Título e descrição do app
     st.title("🚨 Monitor de Emergências")
